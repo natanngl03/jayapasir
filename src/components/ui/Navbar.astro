@@ -1,13 +1,12 @@
 ---
 import { BatuList } from '../products/Batu.astro';
 import { PasirList } from '../products/Pasir.astro';
-import Logo from './Logo.astro';
 ---
 
 <div class='container-fluid fixed-top bg-white shadow-sm'>
    <nav class='navbar navbar-expand-lg navbar-light px-lg-5'>
       <a href='/' class='navbar-brand ms-4 ms-lg-0'>
-         <Logo />
+         <img src='/img/logo24.webp' alt='logo image' class='logo' />
       </a>
       <button type='button' class='navbar-toggler me-4' data-bs-toggle='collapse' data-bs-target='#navbarCollapse'>
          <span class='navbar-toggler-icon'></span>
@@ -19,7 +18,7 @@ import Logo from './Logo.astro';
             <a href='/#faq' class='nav-item nav-link custom'>Pertanyaan</a>
 
             <div class='nav-item dropdown'>
-               <a href='#' class='nav-link dropdown-toggle' data-bs-toggle='dropdown'>Pasir</a>
+               <a href='#' class='nav-link dropdown-toggle' data-bs-toggle='dropdown'>Harga Pasir</a>
                <div class='dropdown-menu m-0'>
                   {
                      PasirList.map((val, idx) => (
@@ -31,7 +30,7 @@ import Logo from './Logo.astro';
                </div>
             </div>
             <div class='nav-item dropdown'>
-               <a href='#' class='nav-link dropdown-toggle' data-bs-toggle='dropdown'>Batu</a>
+               <a href='#' class='nav-link dropdown-toggle' data-bs-toggle='dropdown'>Harga Batu</a>
                <div class='dropdown-menu m-0'>
                   {
                      BatuList.map((val, idx) => (
@@ -58,18 +57,15 @@ import Logo from './Logo.astro';
    document.querySelectorAll('.custom').forEach((link) => {
       link.addEventListener('click', () => {
          document.querySelector('.navbar-collapse')?.classList.remove('show');
-         const newLink = link as HTMLElement;
-
-         // const hrefTarget = newLink.dataset.href;
-         // if (!hrefTarget) return;
-
-         // const itemLink = document.querySelector(hrefTarget);
-         // if (!itemLink) return;
-
-         // itemLink.scrollIntoView({
-         //    behavior: 'smooth',
-         //    block: 'start',
-         // });
       });
    });
 </script>
+
+<style>
+   .logo {
+      width: 100%;
+      height: 100%;
+      max-width: 125px;
+      max-height: 85px;
+   }
+</style>

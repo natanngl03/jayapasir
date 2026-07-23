@@ -3,23 +3,28 @@
    <div id='header-carousel' class='carousel slide' data-bs-ride='carousel'>
       <div class='carousel-inner'>
          <div class='carousel-item active'>
-            <img class='w-100' src='/img/pasir1.png' alt='Image' />
+            <img class='w-100' src='/img/pasir1.webp' alt='Image' />
             <div class='carousel-caption'>
                <div class='row h-100 align-items-center justify-content-center'>
-                  <div class='col-10 col-md-8'>
-                     <!-- <h1 class='text-white animated slideInDown mb-2'>
-                        Penyedia Pasir & Batu Berkualitas untuk <span class='text-primary'>Jabodetabek</span>
-                     </h1> -->
-
-                     <h1 class='text-white'>
-                        <span id='typed'></span>
-                     </h1>
+                  <div class='col-md-8'>
+                     <div class='typingcontainer'>
+                        <h1 class='text-white'>
+                           <span id='typed'></span>
+                        </h1>
+                     </div>
 
                      <h6 class='mb-5 animated slideInDown'>
                         Melayani pengiriman berbagai jenis pasir dan batu bangunan ke seluruh wilayah Jabodetabek dengan armada sendiri,
                         harga kompetitif, dan pengiriman tepat waktu.
                      </h6>
-                     <a href='' class='btn btn-primary py-3 px-4 animated slideInDown'>Explore More</a>
+                     <div class='d-flex flex-column justify-content-md-center align-items-md-center'>
+                        <a
+                           href=''
+                           class='border border-2 border-white text-decoration-none py-2 px-3 mb-3 d-block text-white fs-5 fw-bold rounded'
+                           >Info: 0851 1743 6727</a
+                        >
+                        <button type='button' class='btn btn-primary py-2 px-4 animated slideInDown' id='exploreMore'>Selengkapnya</button>
+                     </div>
                   </div>
                </div>
             </div>
@@ -30,6 +35,10 @@
 <!-- Header End -->
 
 <style>
+   .typingcontainer {
+      height: 150px;
+   }
+
    .carousel-item {
       position: relative;
    }
@@ -67,7 +76,9 @@
    import Typed from 'typed.js';
 
    new Typed('#typed', {
-      strings: ["Penyedia Pasir &amp; Batu Berkualitas untuk <span class='text-primary'>Jabodetabek</span>"],
+      strings: [
+         "Penyedia <span class='text-primary'>Pasir &amp; Batu</span> Berkualitas untuk <span class='text-primary'>Jabodetabek</span>",
+      ],
       typeSpeed: 40,
       backSpeed: 30,
       backDelay: 5000,
@@ -75,4 +86,31 @@
       loop: true,
       contentType: 'html',
    });
+
+   const exploreMore = document.querySelector('#exploreMore');
+   if (exploreMore) {
+      const navbar = document.querySelector('.navbar') as any;
+      if (navbar) {
+         const offset = navbar?.offsetHeight;
+         const explore = exploreMore as any;
+         if (explore) {
+            explore?.addEventListener('click', () => {
+               scrollToSection('#chooseUs', 80);
+            });
+         }
+      }
+   }
+
+   function scrollToSection(selector: string, offset = 0) {
+      const element = document.querySelector(selector);
+
+      if (!element) return;
+
+      const top = element.getBoundingClientRect().top + window.pageYOffset - offset;
+
+      window.scrollTo({
+         top,
+         behavior: 'smooth',
+      });
+   }
 </script>

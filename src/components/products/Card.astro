@@ -1,5 +1,4 @@
 ---
-import Modal from './Modal.astro';
 export interface CardProps {
    title: string;
    imgAlt: string;
@@ -15,7 +14,7 @@ const imgSrc = type == 'pasir' ? `/img/pasir/${imgAlt}.webp` : `/img/batu/${imgA
 ---
 
 <div class='card shadow'>
-   <a href={`/product/${imgAlt}`}>
+   <a href={imgSrc} class='glightbox' data-gallery='gallery'>
       <img src={imgSrc} class='card-img-top cardimg' alt={imgAlt} />
    </a>
    <div class='card-body'>
@@ -26,8 +25,6 @@ const imgSrc = type == 'pasir' ? `/img/pasir/${imgAlt}.webp` : `/img/batu/${imgA
       </a>
    </div>
 </div>
-
-<Modal />
 
 <style>
    .cardimg {

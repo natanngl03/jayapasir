@@ -1,67 +1,61 @@
+---
+const testimonials = [
+   {
+      name: 'Budi Santoso',
+      testimoni: 'Pasirnya bersih, kualitas sesuai pesanan, dan pengiriman selalu tepat waktu. Sangat membantu proyek kami.',
+      role: 'Kontraktor',
+   },
+   {
+      name: 'Andi Pratama',
+      testimoni: 'Sudah beberapa kali pesan batu split di sini. Kualitas konsisten dan pelayanannya cepat.',
+      role: 'Mandor Proyek',
+   },
+   {
+      name: 'Rina Lestari',
+      testimoni: 'Material datang sesuai jumlah pesanan dan kualitas pasirnya bagus untuk pekerjaan plester maupun cor.',
+      role: 'Pemilik Rumah',
+   },
+   {
+      name: 'Dedi Saputra',
+      testimoni: 'Supplier yang dapat diandalkan. Pengiriman selalu sesuai jadwal sehingga pekerjaan proyek tidak terlambat.',
+      role: 'Developer Perumahan',
+   },
+];
+---
+
 <!-- Testimonial Start -->
-<div class='container-fluid bg-white py-5'>
+<div class='container-fluid bg-white py-5 mb-5'>
    <div class='container'>
-      <div class='text-center mx-auto wow fadeIn' data-wow-delay='0.1s' style='max-width: 600px;'>
+      <!-- <div class='text-center mx-auto wow fadeIn' data-wow-delay='0.1s' style='max-width: 600px;'>
          <p class='fs-4 font-dancing-script text-primary mb-0'>Testimonial</p>
          <h1 class='display-4 mb-5'>Guest Stories And Experiences</h1>
+      </div> -->
+
+      <div class='text-center wow fadeIn' data-wow-delay='0.1s'>
+         <h1 class='mb-5'>Apa Kata <span class='text-primary bg-light px-2'>Mereka ?</span></h1>
       </div>
+
+      <p class='text-center mb-5'>
+         Kepuasan pelanggan adalah prioritas kami. Simak pengalaman mereka menggunakan pasir dan batu berkualitas dari Jaya Pasir.
+      </p>
+
       <div class='owl-carousel testimonial-carousel wow fadeIn' data-wow-delay='0.1s'>
-         <div class='testimonial-item'>
-            <div class='testimonial-text position-relative bg-light text-center rounded px-4 py-5'>
-               <i class='fa fa-quote-left fa-2x mb-3'></i>
-               <p class='mb-0'>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris nulla, vestibulum sed mollis non, efficitur in
-                  mauris.
-               </p>
-            </div>
-            <div class='text-center pt-4'>
-               <img class='img-fluid rounded mx-auto my-3' src='img/testimonial-1.jpg' />
-               <h5 class='mb-1'>Alexander Bell</h5>
-               <small>Designer</small>
-            </div>
-         </div>
-         <div class='testimonial-item'>
-            <div class='testimonial-text position-relative bg-light text-center rounded px-4 py-5'>
-               <i class='fa fa-quote-left fa-2x mb-3'></i>
-               <p class='mb-0'>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris nulla, vestibulum sed mollis non, efficitur in
-                  mauris.
-               </p>
-            </div>
-            <div class='text-center pt-4'>
-               <img class='img-fluid rounded mx-auto my-3' src='img/testimonial-2.jpg' />
-               <h5 class='mb-1'>Boris Johnson</h5>
-               <small>Engineer</small>
-            </div>
-         </div>
-         <div class='testimonial-item'>
-            <div class='testimonial-text position-relative bg-light text-center rounded px-4 py-5'>
-               <i class='fa fa-quote-left fa-2x mb-3'></i>
-               <p class='mb-0'>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris nulla, vestibulum sed mollis non, efficitur in
-                  mauris.
-               </p>
-            </div>
-            <div class='text-center pt-4'>
-               <img class='img-fluid rounded mx-auto my-3' src='img/testimonial-3.jpg' />
-               <h5 class='mb-1'>Donald Pakura</h5>
-               <small>Manager</small>
-            </div>
-         </div>
-         <div class='testimonial-item'>
-            <div class='testimonial-text position-relative bg-light text-center rounded px-4 py-5'>
-               <i class='fa fa-quote-left fa-2x mb-3'></i>
-               <p class='mb-0'>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris nulla, vestibulum sed mollis non, efficitur in
-                  mauris.
-               </p>
-            </div>
-            <div class='text-center pt-4'>
-               <img class='img-fluid rounded mx-auto my-3' src='img/testimonial-4.jpg' />
-               <h5 class='mb-1'>Andrew Phillips</h5>
-               <small>Programmer</small>
-            </div>
-         </div>
+         {
+            testimonials.map((item, idx) => (
+               <div class='testimonial-item'>
+                  <div class='testimonial-text position-relative bg-light text-center rounded px-4 py-5'>
+                     <i class='fa fa-quote-left fa-2x mb-3' />
+                     <p class='mb-0'>{item.testimoni}</p>
+                  </div>
+                  <div class='text-center pt-4'>
+                     {/* <img class='img-fluid rounded mx-auto my-3' src={`/img/testimoni/person-${idx + 1}.webp`} /> */}
+                     <i class='fas fa-user img-fluid rounded mx-auto my-3 fa-3x ' />
+                     <h5 class='mb-1'>{item.name}</h5>
+                     <small>{item.role}</small>
+                  </div>
+               </div>
+            ))
+         }
       </div>
    </div>
 </div>
@@ -126,5 +120,9 @@
 
    .testimonial-carousel .owl-dot.active {
       background: var(--bs-primary);
+   }
+
+   .fa-user {
+      color: var(--bs-gray);
    }
 </style>

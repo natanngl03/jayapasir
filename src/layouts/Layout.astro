@@ -1,9 +1,11 @@
 ---
+import 'glightbox/dist/css/glightbox.min.css';
 import './../assets/scss/bootstrap.min.css';
 
 // import Navbar from './../components/navbar/index.astro';
 import Navbar from './../components/ui/Navbar.astro';
 import Footer from './../components/ui/Footer.astro';
+import WhatsappBtn from '../components/ui/WhatsappBtn.astro';
 ---
 
 <!doctype html>
@@ -34,6 +36,7 @@ import Footer from './../components/ui/Footer.astro';
       <Navbar />
       <slot />
       <Footer />
+      <WhatsappBtn />
 
       <!-- SCRIPT -->
       <!-- <script>
@@ -42,6 +45,60 @@ import Footer from './../components/ui/Footer.astro';
 
       <script>
          import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
+         // import GLightbox from 'glightbox';
+
+         // const lightbox = GLightbox({
+         //    selector: '.glightbox',
+         // });
+
+         // let isOpen = false;
+
+         // lightbox.on('open', () => {
+         //    isOpen = true;
+         //    history.pushState({ lightbox: true }, '');
+         // });
+
+         // lightbox.on('close', () => {
+         //    isOpen = false;
+         // });
+
+         // window.addEventListener('popstate', () => {
+         //    if (isOpen) {
+         //       lightbox.close();
+         //    }
+         // });
+
+         import GLightbox from 'glightbox';
+
+         const lightbox = GLightbox({
+            selector: '.glightbox',
+         });
+
+         let isOpen = false;
+         let closingFromBack = false;
+
+         lightbox.on('open', () => {
+            isOpen = true;
+            history.pushState({ lightbox: true }, '');
+         });
+
+         lightbox.on('close', () => {
+            isOpen = false;
+
+            if (!closingFromBack) {
+               history.back();
+            }
+
+            closingFromBack = false;
+         });
+
+         window.addEventListener('popstate', () => {
+            if (isOpen) {
+               closingFromBack = true;
+               lightbox.close();
+            }
+         });
       </script>
 
       <script is:inline src='https://code.jquery.com/jquery-3.4.1.min.js' defer></script>
