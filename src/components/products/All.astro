@@ -1,0 +1,32 @@
+---
+import { BatuList } from './Batu.astro';
+import Card, { type CardProps } from './Card.astro';
+import { PasirList } from './Pasir.astro';
+---
+
+<div class='row g-4'>
+   {
+      PasirList.map((item) => {
+         const type = 'pasir';
+         const { title, imgAlt } = item;
+
+         return (
+            <div class='col-6 col-md-3'>
+               <Card {...{ title, imgAlt, type }} />
+            </div>
+         );
+      })
+   }
+   {
+      BatuList.map((item) => {
+         const type = 'batu';
+         const { title, imgAlt } = item;
+
+         return (
+            <div class='col-6 col-md-3'>
+               <Card {...{ title, imgAlt, type }} />
+            </div>
+         );
+      })
+   }
+</div>

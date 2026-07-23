@@ -1,0 +1,78 @@
+<!-- Header Start -->
+<div class='container-fluid p-0'>
+   <div id='header-carousel' class='carousel slide' data-bs-ride='carousel'>
+      <div class='carousel-inner'>
+         <div class='carousel-item active'>
+            <img class='w-100' src='/img/pasir1.png' alt='Image' />
+            <div class='carousel-caption'>
+               <div class='row h-100 align-items-center justify-content-center'>
+                  <div class='col-10 col-md-8'>
+                     <!-- <h1 class='text-white animated slideInDown mb-2'>
+                        Penyedia Pasir & Batu Berkualitas untuk <span class='text-primary'>Jabodetabek</span>
+                     </h1> -->
+
+                     <h1 class='text-white'>
+                        <span id='typed'></span>
+                     </h1>
+
+                     <h6 class='mb-5 animated slideInDown'>
+                        Melayani pengiriman berbagai jenis pasir dan batu bangunan ke seluruh wilayah Jabodetabek dengan armada sendiri,
+                        harga kompetitif, dan pengiriman tepat waktu.
+                     </h6>
+                     <a href='' class='btn btn-primary py-3 px-4 animated slideInDown'>Explore More</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- Header End -->
+
+<style>
+   .carousel-item {
+      position: relative;
+   }
+
+   .carousel-item::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.35);
+      z-index: 1;
+   }
+
+   .carousel-caption {
+      z-index: 2;
+   }
+
+   .typing {
+      overflow: hidden;
+      white-space: nowrap;
+      width: 0;
+      animation: typing 3s steps(100, end) forwards;
+   }
+
+   @keyframes typing {
+      from {
+         width: 0;
+      }
+      to {
+         width: 100%;
+      }
+   }
+</style>
+
+<script>
+   import Typed from 'typed.js';
+
+   new Typed('#typed', {
+      strings: ["Penyedia Pasir &amp; Batu Berkualitas untuk <span class='text-primary'>Jabodetabek</span>"],
+      typeSpeed: 40,
+      backSpeed: 30,
+      backDelay: 5000,
+      showCursor: true,
+      loop: true,
+      contentType: 'html',
+   });
+</script>

@@ -1,0 +1,35 @@
+{
+   "name": "pasir-rangkas",
+   "type": "module",
+   "version": "0.0.1",
+   "engines": {
+      "node": ">=22.12.0"
+   },
+   "scripts": {
+      "dev": "astro dev --host",
+      "build": "astro build",
+      "preview": "astro preview --host",
+      "astro": "astro"
+   },
+   "dependencies": {
+      "@astrojs/react": "^5.0.7",
+      "@iconify-json/fa6-brands": "^1.2.6",
+      "@iconify-json/fa6-regular": "^1.2.4",
+      "@iconify-json/fa6-solid": "^1.2.4",
+      "@types/react": "^19.2.17",
+      "@types/react-dom": "^19.2.3",
+      "aos": "^2.3.4",
+      "astro": "^6.3.3",
+      "astro-icon": "^1.1.5",
+      "bootstrap": "^5.0.0",
+      "react": "^19.2.7",
+      "react-dom": "^19.2.7",
+      "swiper": "^12.2.0",
+      "typed.js": "^3.0.0"
+   },
+   "devDependencies": {
+      "prettier": "^3.8.4",
+      "prettier-plugin-astro": "^0.14.1",
+      "sass-embedded": "^1.100.0"
+   }
+}

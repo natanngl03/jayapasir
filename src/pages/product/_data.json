@@ -1,0 +1,287 @@
+{
+   "pasir-bangka-putih": {
+      "deskripsi": "Pasir Bangka Putih adalah salah satu jenis pasir bangunan premium yang berasal dari Kepulauan Bangka Belitung. Pasir ini terkenal karena warna putih hingga putih krem, teksturnya yang halus, dan kandungan lumpur yang relatif rendah sehingga banyak digunakan untuk pekerjaan finishing bangunan.",
+      "truk": {
+         "jakarta": "Rp 1,2 Jt",
+         "bogor": "Rp 1,2 Jt",
+         "depok": "Rp 1,2 Jt",
+         "tangerang": "Rp 1,2 Jt",
+         "bekasi": "Rp 1,2 Jt"
+      },
+      "engkel": {
+         "jakarta": "Rp. 1",
+         "bogor": "Rp. 1",
+         "depok": "Rp. 1",
+         "tangerang": "Rp. 1",
+         "bekasi": "Rp. 1"
+      },
+
+      "pickup": null
+   },
+   "pasir-bangka-kuning": {
+      "deskripsi": "Sebagai informasi, Pasir Bangka tidak selalu berwarna putih. Di pasaran terdapat beberapa variasi warna seperti putih, putih kecokelatan, cokelat, dan kuning kecokelatan. Perbedaan warna ini merupakan hal yang normal dan dipengaruhi oleh lokasi galian serta kondisi geologinya.",
+      "truk": {
+         "jakarta": "Rp. 1",
+         "bogor": "Rp. 1",
+         "depok": "Rp. 1",
+         "tangerang": "Rp. 1",
+         "bekasi": "Rp. 1"
+      },
+      "engkel": {
+         "jakarta": "Rp. 1",
+         "bogor": "Rp. 1",
+         "depok": "Rp. 1",
+         "tangerang": "Rp. 1",
+         "bekasi": "Rp. 1"
+      },
+
+      "pickup": null
+   },
+   "pasir-bangka-sadai": {
+      "deskripsi": "Secara umum, Pasir Bangka Sadai merupakan salah satu jenis pasir Bangka yang berasal dari lokasi tambang di wilayah Sadai. Di pasaran, penjual sering membedakannya sebagai produk tersendiri karena memiliki karakteristik warna dan gradasi yang konsisten, meskipun sama-sama termasuk kategori pasir Bangka",
+      "truk": {
+         "jakarta": "Rp. 1",
+         "bogor": "Rp. 1",
+         "depok": "Rp. 1",
+         "tangerang": "Rp. 1",
+         "bekasi": "Rp. 1"
+      },
+      "engkel": {
+         "jakarta": "Rp. 1",
+         "bogor": "Rp. 1",
+         "depok": "Rp. 1",
+         "tangerang": "Rp. 1",
+         "bekasi": "Rp. 1"
+      },
+
+      "pickup": null
+   },
+   "pasir-bangka-jambi": {
+      "deskripsi": "Secara umum, Pasir Bangka Jambi merupakan salah satu jenis pasir Bangka yang berasal dari lokasi tambang di wilayah Bangka Belitung. Di pasaran, penjual sering membedakannya sebagai produk tersendiri karena memiliki karakteristik warna dan gradasi yang konsisten, meskipun sama-sama termasuk kategori pasir Bangka",
+      "truk": {
+         "jakarta": "Rp. 1",
+         "bogor": "Rp. 1",
+         "depok": "Rp. 1",
+         "tangerang": "Rp. 1",
+         "bekasi": "Rp. 1"
+      },
+      "engkel": {
+         "jakarta": "Rp. 1",
+         "bogor": "Rp. 1",
+         "depok": "Rp. 1",
+         "tangerang": "Rp. 1",
+         "bekasi": "Rp. 1"
+      },
+
+      "pickup": null
+   },
+   "pasir-rangkas-kuning": {
+      "deskripsi": "Pasir Rangkas Kuning adalah pasir bangunan yang berasal dari daerah Rangkasbitung, Kabupaten Lebak, Banten. Pasir ini banyak digunakan di wilayah Jabodetabek karena pasokannya melimpah dan harganya relatif lebih ekonomis dibanding pasir Bangka.",
+      "truk": {
+         "jakarta": "Rp. 1",
+         "bogor": "Rp. 1",
+         "depok": "Rp. 1",
+         "tangerang": "Rp. 1",
+         "bekasi": "Rp. 1"
+      },
+      "engkel": {
+         "jakarta": "Rp. 1",
+         "bogor": "Rp. 1",
+         "depok": "Rp. 1",
+         "tangerang": "Rp. 1",
+         "bekasi": "Rp. 1"
+      },
+
+      "pickup": null
+   },
+   "pasir-rangkas-hitam": {
+      "deskripsi": "Pasir Rangkas Hitam adalah pasir bangunan yang berasal dari wilayah Rangkasbitung, Kabupaten Lebak, Banten, dengan ciri khas warna abu-abu tua hingga hitam. Warna tersebut umumnya dipengaruhi oleh kandungan mineral dan jenis batuan asalnya.",
+      "truk": {
+         "jakarta": "Rp. 1",
+         "bogor": "Rp. 1",
+         "depok": "Rp. 1",
+         "tangerang": "Rp. 1",
+         "bekasi": "Rp. 1"
+      },
+      "engkel": {
+         "jakarta": "Rp. 1",
+         "bogor": "Rp. 1",
+         "depok": "Rp. 1",
+         "tangerang": "Rp. 1",
+         "bekasi": "Rp. 1"
+      },
+
+      "pickup": null
+   },
+   "pasir-rangkas-abadi": {
+      "deskripsi": "Pasir Rangkas Abadi adalah pasir bangunan berkualitas dari wilayah Rangkasbitung yang cocok untuk berbagai kebutuhan konstruksi, mulai dari pekerjaan pasangan bata, plester dinding, hingga pengecoran. Tersedia dalam beberapa pilihan sesuai kebutuhan proyek dengan kualitas yang telah melalui proses seleksi untuk menghasilkan material yang bersih dan siap digunakan.",
+      "truk": {
+         "jakarta": "Rp. 1",
+         "bogor": "Rp. 1",
+         "depok": "Rp. 1",
+         "tangerang": "Rp. 1",
+         "bekasi": "Rp. 1"
+      },
+      "engkel": {
+         "jakarta": "Rp. 1",
+         "bogor": "Rp. 1",
+         "depok": "Rp. 1",
+         "tangerang": "Rp. 1",
+         "bekasi": "Rp. 1"
+      },
+
+      "pickup": null
+   },
+   "pasir-cilegon-ayak": {
+      "deskripsi": "Pasir Cilegon Ayak adalah pasir alam dari wilayah Cilegon, Banten yang telah melalui proses pengayakan (screening) untuk memisahkan kerikil, batu kecil, dan kotoran sehingga menghasilkan butiran yang lebih halus dan seragam.",
+      "truk": {
+         "jakarta": "Rp. 1",
+         "bogor": "Rp. 1",
+         "depok": "Rp. 1",
+         "tangerang": "Rp. 1",
+         "bekasi": "Rp. 1"
+      },
+      "engkel": {
+         "jakarta": "Rp. 1",
+         "bogor": "Rp. 1",
+         "depok": "Rp. 1",
+         "tangerang": "Rp. 1",
+         "bekasi": "Rp. 1"
+      },
+
+      "pickup": null
+   },
+   "pasir-cilegon-cuci": {
+      "deskripsi": "Pasir Cilegon Cuci adalah pasir bangunan dari wilayah Cilegon, Banten yang telah melalui proses pencucian (washing) untuk menghilangkan lumpur, tanah, dan kotoran. Hasilnya adalah pasir yang lebih bersih, lebih cerah, dan memiliki kualitas lebih baik dibanding pasir Cilegon biasa.",
+      "truk": {
+         "jakarta": "Rp. 1",
+         "bogor": "Rp. 1",
+         "depok": "Rp. 1",
+         "tangerang": "Rp. 1",
+         "bekasi": "Rp. 1"
+      },
+      "engkel": {
+         "jakarta": "Rp. 1",
+         "bogor": "Rp. 1",
+         "depok": "Rp. 1",
+         "tangerang": "Rp. 1",
+         "bekasi": "Rp. 1"
+      },
+
+      "pickup": null
+   },
+   "pasir-urug": {
+      "deskripsi": "Pasir Urug adalah pasir yang digunakan sebagai material pengurugan atau lapisan dasar dalam pekerjaan konstruksi. Jenis pasir ini tidak mengutamakan kehalusan, melainkan fungsi sebagai material pengisi dan perata.",
+      "truk": {
+         "jakarta": "Rp. 1",
+         "bogor": "Rp. 1",
+         "depok": "Rp. 1",
+         "tangerang": "Rp. 1",
+         "bekasi": "Rp. 1"
+      },
+      "engkel": {
+         "jakarta": "Rp. 1",
+         "bogor": "Rp. 1",
+         "depok": "Rp. 1",
+         "tangerang": "Rp. 1",
+         "bekasi": "Rp. 1"
+      },
+
+      "pickup": null
+   },
+   "batu-abu": {
+      "deskripsi": "Abu Batu adalah material berkualitas hasil proses pemecahan batu yang memiliki tekstur halus dan gradasi seragam. Cocok digunakan sebagai campuran paving block, batako, beton pracetak, lapisan dasar paving, serta material pengisi pada berbagai proyek konstruksi. Dengan daya padat yang baik dan harga yang ekonomis, abu batu menjadi pilihan ideal untuk meningkatkan kualitas pekerjaan bangunan dan infrastruktur.",
+      "truk": {
+         "jakarta": "Rp. 1",
+         "bogor": "Rp. 1",
+         "depok": "Rp. 1",
+         "tangerang": "Rp. 1",
+         "bekasi": "Rp. 1"
+      },
+      "engkel": {
+         "jakarta": "Rp. 1",
+         "bogor": "Rp. 1",
+         "depok": "Rp. 1",
+         "tangerang": "Rp. 1",
+         "bekasi": "Rp. 1"
+      },
+
+      "pickup": null
+   },
+   "batu-belah": {
+      "deskripsi": "Batu Belah merupakan batu alam berkualitas tinggi yang dipecah menjadi ukuran ideal untuk kebutuhan konstruksi. Material ini sangat cocok digunakan sebagai pondasi bangunan, pasangan batu, talud, drainase, dan berbagai pekerjaan sipil lainnya. Dengan kekuatan yang tinggi serta daya tahan yang baik terhadap cuaca dan beban, batu belah menjadi pilihan tepat untuk menghasilkan struktur yang kokoh dan tahan lama.",
+      "truk": {
+         "jakarta": "Rp. 1",
+         "bogor": "Rp. 1",
+         "depok": "Rp. 1",
+         "tangerang": "Rp. 1",
+         "bekasi": "Rp. 1"
+      },
+      "engkel": {
+         "jakarta": "Rp. 1",
+         "bogor": "Rp. 1",
+         "depok": "Rp. 1",
+         "tangerang": "Rp. 1",
+         "bekasi": "Rp. 1"
+      },
+
+      "pickup": null
+   },
+   "batu-makadam": {
+      "deskripsi": "Batu Makadam adalah batu pecah berkualitas tinggi yang cocok digunakan sebagai material pondasi jalan, urugan, dan drainase. Dengan ukuran yang lebih besar serta daya dukung yang tinggi, batu makadam mampu menciptakan lapisan dasar yang kuat, stabil, dan tahan terhadap beban berat sehingga ideal untuk proyek konstruksi skala kecil maupun besar.",
+      "truk": {
+         "jakarta": "Rp. 1",
+         "bogor": "Rp. 1",
+         "depok": "Rp. 1",
+         "tangerang": "Rp. 1",
+         "bekasi": "Rp. 1"
+      },
+      "engkel": {
+         "jakarta": "Rp. 1",
+         "bogor": "Rp. 1",
+         "depok": "Rp. 1",
+         "tangerang": "Rp. 1",
+         "bekasi": "Rp. 1"
+      },
+
+      "pickup": null
+   },
+   "batu-sirtu": {
+      "deskripsi": "Batu Sirtu adalah material campuran pasir dan batu berkualitas yang ideal untuk pekerjaan urugan, pondasi, jalan, dan perataan lahan. Dengan gradasi alami yang baik serta mudah dipadatkan, batu sirtu menjadi pilihan ekonomis untuk menciptakan lapisan dasar yang kuat dan stabil pada berbagai proyek konstruksi.",
+      "truk": {
+         "jakarta": "Rp. 1",
+         "bogor": "Rp. 1",
+         "depok": "Rp. 1",
+         "tangerang": "Rp. 1",
+         "bekasi": "Rp. 1"
+      },
+      "engkel": {
+         "jakarta": "Rp. 1",
+         "bogor": "Rp. 1",
+         "depok": "Rp. 1",
+         "tangerang": "Rp. 1",
+         "bekasi": "Rp. 1"
+      },
+
+      "pickup": null
+   },
+   "batu-split": {
+      "deskripsi": "Batu Split merupakan batu pecah berkualitas tinggi yang diproses menggunakan mesin stone crusher sehingga menghasilkan ukuran yang seragam. Cocok digunakan untuk cor beton, pondasi, jalan, drainase, dan berbagai kebutuhan konstruksi. Dengan daya tekan tinggi dan daya rekat yang baik terhadap semen, batu split menjadi pilihan utama untuk menghasilkan struktur bangunan yang kuat dan tahan lama.",
+      "truk": {
+         "jakarta": "Rp. 1",
+         "bogor": "Rp. 1",
+         "depok": "Rp. 1",
+         "tangerang": "Rp. 1",
+         "bekasi": "Rp. 1"
+      },
+      "engkel": {
+         "jakarta": "Rp. 1",
+         "bogor": "Rp. 1",
+         "depok": "Rp. 1",
+         "tangerang": "Rp. 1",
+         "bekasi": "Rp. 1"
+      },
+
+      "pickup": null
+   }
+}

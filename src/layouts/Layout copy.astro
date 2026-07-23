@@ -1,0 +1,44 @@
+---
+interface Props {
+   lang?: 'id' | 'en';
+   withOwlCarousel?: boolean;
+}
+
+const { lang = 'id', withOwlCarousel = false } = Astro.props;
+---
+
+<!doctype html>
+<html lang={lang}>
+   <head>
+      <meta charset='UTF-8' />
+      <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+
+      <slot name='head' />
+   </head>
+
+   <body>
+      <!-- slot for content -->
+      <slot name='body' />
+
+      {
+         withOwlCarousel && (
+            <Fragment>
+               <script is:inline src='/js/jquery-3.4.1.min.js' defer />
+               <script is:inline src='/js/owl.carousel.min.js' defer />
+               <script is:inline src='/js/public.js' defer />
+               <script>import './../assets/style/owl.carousel.min.css';</script>
+            </Fragment>
+         )
+      }
+
+      <!-- slot for dynamic script -->
+      <slot name='script' />
+
+      <script>
+         import 'aos/dist/aos.css';
+         import './../assets/scss/bootstrap.min.css';
+         import './../assets/style/style.css';
+         import './../assets/js/main';
+      </script>
+   </body>
+</html>

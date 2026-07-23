@@ -1,0 +1,12 @@
+/* custom here */
+
+// $theme-colors: (
+//    'primary': #3581b8,
+// );
+
+$primary: #c89a6b;
+$secondary: #ffd36a;
+$table-cell-padding-y: 0.75rem;
+$table-cell-padding-x: 1rem;
+
+@import './../../../node_modules/bootstrap/scss/bootstrap.scss';

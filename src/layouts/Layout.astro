@@ -1,0 +1,53 @@
+---
+import './../assets/scss/bootstrap.min.css';
+
+// import Navbar from './../components/navbar/index.astro';
+import Navbar from './../components/ui/Navbar.astro';
+import Footer from './../components/ui/Footer.astro';
+---
+
+<!doctype html>
+<html lang='en'>
+   <head>
+      <meta charset='UTF-8' />
+      <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+
+      <!-- Favicon -->
+      <link href='img/favicon.ico' rel='icon' />
+
+      <!-- Google Web Fonts -->
+      <link rel='preconnect' href='https://fonts.gstatic.com' />
+      <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap' rel='stylesheet' />
+
+      <!-- Font Awesome -->
+      <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css' rel='stylesheet' />
+
+      <!-- Libraries Stylesheet -->
+      <link href='/lib/owlcarousel/assets/owl.carousel.min.css' rel='stylesheet' />
+
+      <!-- Customized Bootstrap Stylesheet -->
+      <link href='/css/style.css' rel='stylesheet' />
+
+      <title>Pasir Rangkas</title>
+   </head>
+   <body>
+      <Navbar />
+      <slot />
+      <Footer />
+
+      <!-- SCRIPT -->
+      <!-- <script>
+         import './../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
+      </script> -->
+
+      <script>
+         import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+      </script>
+
+      <script is:inline src='https://code.jquery.com/jquery-3.4.1.min.js' defer></script>
+      <!-- <script is:inline src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js' defer></script> -->
+      <!-- <script is:inline src='/lib/easing/easing.min.js' defer></script> -->
+      <script is:inline src='/lib/owlcarousel/owl.carousel.min.js' defer></script>
+      <script is:inline src='/js/main.js' defer></script>
+   </body>
+</html>

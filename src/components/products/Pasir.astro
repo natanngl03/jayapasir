@@ -1,0 +1,31 @@
+---
+import Card, { type CardProps } from './Card.astro';
+
+export const PasirList: CardProps[] = [
+   { title: 'Pasir Bangka Putih', imgAlt: 'pasir-bangka-putih' },
+   { title: 'Pasir Bangka Kuning', imgAlt: 'pasir-bangka-kuning' },
+   { title: 'Pasir Bangka Sadai', imgAlt: 'pasir-bangka-sadai' },
+   { title: 'Pasir Bangka Jambi', imgAlt: 'pasir-bangka-jambi' },
+   { title: 'Pasir Rangkas Kuning', imgAlt: 'pasir-rangkas-kuning' },
+   { title: 'Pasir Rangkas Hitam', imgAlt: 'pasir-rangkas-hitam' },
+   { title: 'Pasir Rangkas Abadi', imgAlt: 'pasir-rangkas-abadi' },
+   { title: 'Pasir Cilegon Ayak', imgAlt: 'pasir-cilegon-ayak' },
+   { title: 'Pasir Cilegon Cuci', imgAlt: 'pasir-cilegon-cuci' },
+   { title: 'Pasir Urug', imgAlt: 'pasir-urug' },
+];
+---
+
+<div class='row g-4'>
+   {
+      PasirList.map((item) => {
+         const type = 'pasir';
+         const { title, imgAlt } = item;
+
+         return (
+            <div class='col-6 col-md-3'>
+               <Card {...{ title, imgAlt, type }} />
+            </div>
+         );
+      })
+   }
+</div>

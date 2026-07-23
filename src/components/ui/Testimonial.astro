@@ -1,0 +1,130 @@
+<!-- Testimonial Start -->
+<div class='container-fluid bg-white py-5'>
+   <div class='container'>
+      <div class='text-center mx-auto wow fadeIn' data-wow-delay='0.1s' style='max-width: 600px;'>
+         <p class='fs-4 font-dancing-script text-primary mb-0'>Testimonial</p>
+         <h1 class='display-4 mb-5'>Guest Stories And Experiences</h1>
+      </div>
+      <div class='owl-carousel testimonial-carousel wow fadeIn' data-wow-delay='0.1s'>
+         <div class='testimonial-item'>
+            <div class='testimonial-text position-relative bg-light text-center rounded px-4 py-5'>
+               <i class='fa fa-quote-left fa-2x mb-3'></i>
+               <p class='mb-0'>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris nulla, vestibulum sed mollis non, efficitur in
+                  mauris.
+               </p>
+            </div>
+            <div class='text-center pt-4'>
+               <img class='img-fluid rounded mx-auto my-3' src='img/testimonial-1.jpg' />
+               <h5 class='mb-1'>Alexander Bell</h5>
+               <small>Designer</small>
+            </div>
+         </div>
+         <div class='testimonial-item'>
+            <div class='testimonial-text position-relative bg-light text-center rounded px-4 py-5'>
+               <i class='fa fa-quote-left fa-2x mb-3'></i>
+               <p class='mb-0'>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris nulla, vestibulum sed mollis non, efficitur in
+                  mauris.
+               </p>
+            </div>
+            <div class='text-center pt-4'>
+               <img class='img-fluid rounded mx-auto my-3' src='img/testimonial-2.jpg' />
+               <h5 class='mb-1'>Boris Johnson</h5>
+               <small>Engineer</small>
+            </div>
+         </div>
+         <div class='testimonial-item'>
+            <div class='testimonial-text position-relative bg-light text-center rounded px-4 py-5'>
+               <i class='fa fa-quote-left fa-2x mb-3'></i>
+               <p class='mb-0'>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris nulla, vestibulum sed mollis non, efficitur in
+                  mauris.
+               </p>
+            </div>
+            <div class='text-center pt-4'>
+               <img class='img-fluid rounded mx-auto my-3' src='img/testimonial-3.jpg' />
+               <h5 class='mb-1'>Donald Pakura</h5>
+               <small>Manager</small>
+            </div>
+         </div>
+         <div class='testimonial-item'>
+            <div class='testimonial-text position-relative bg-light text-center rounded px-4 py-5'>
+               <i class='fa fa-quote-left fa-2x mb-3'></i>
+               <p class='mb-0'>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris nulla, vestibulum sed mollis non, efficitur in
+                  mauris.
+               </p>
+            </div>
+            <div class='text-center pt-4'>
+               <img class='img-fluid rounded mx-auto my-3' src='img/testimonial-4.jpg' />
+               <h5 class='mb-1'>Andrew Phillips</h5>
+               <small>Programmer</small>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- Testimonial End -->
+
+<style is:global>
+   /*** Testimonial ***/
+   .testimonial-item .testimonial-text i {
+      color: var(--bs-primary);
+   }
+
+   .testimonial-item .testimonial-text * {
+      transition: 0.5s;
+   }
+
+   .testimonial-item .testimonial-text::after {
+      position: absolute;
+      content: '';
+      bottom: -29px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border: 15px solid;
+      border-color: var(--bs-light) transparent transparent transparent;
+   }
+
+   .testimonial-carousel .owl-item.center .testimonial-item .testimonial-text::after {
+      border-color: var(--bs-primary) transparent transparent transparent;
+   }
+
+   .testimonial-carousel .owl-item.center .testimonial-item .testimonial-text {
+      background: var(--bs-primary) !important;
+   }
+
+   .testimonial-carousel .owl-item.center .testimonial-item .testimonial-text * {
+      color: #ffffff;
+   }
+
+   .testimonial-carousel .owl-item .testimonial-item img {
+      width: 75px;
+      height: 75px;
+   }
+
+   .testimonial-carousel .owl-dots {
+      margin-top: 24px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+   }
+
+   .testimonial-carousel .owl-dot {
+      position: relative;
+      display: inline-block;
+      margin: 0 5px;
+      width: 15px;
+      height: 15px;
+      border-radius: 4px;
+      border: 1px solid var(--bs-primary);
+      transition: 0.5s;
+   }
+
+   .testimonial-carousel .owl-dot.active {
+      background: var(--bs-primary);
+   }
+</style>

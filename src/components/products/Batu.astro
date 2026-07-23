@@ -1,0 +1,26 @@
+---
+import Card, { type CardProps } from './Card.astro';
+
+export const BatuList: CardProps[] = [
+   { title: 'Batu Split', imgAlt: 'batu-split' },
+   { title: 'Batu Belah', imgAlt: 'batu-belah' },
+   { title: 'Batu Makadam', imgAlt: 'batu-makadam' },
+   { title: 'Batu Sirtu', imgAlt: 'batu-sirtu' },
+   { title: 'Batu Abu', imgAlt: 'batu-abu' },
+];
+---
+
+<div class='row g-4'>
+   {
+      BatuList.map((item) => {
+         const type = 'batu';
+         const { title, imgAlt } = item;
+
+         return (
+            <div class='col-6 col-md-3'>
+               <Card {...{ title, imgAlt, type }} />
+            </div>
+         );
+      })
+   }
+</div>

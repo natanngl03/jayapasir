@@ -1,0 +1,134 @@
+---
+import FaqJSON from './../../data/faq.json';
+
+const faq1 = FaqJSON.slice(0, 6);
+const faq2 = FaqJSON.slice(6);
+---
+
+<!-- FAQ Start -->
+<div class='container-fluid py-5 bg-light border-top border-bottom' id='faq'>
+   <div class='container'>
+      <div class='text-center wow fadeIn' data-wow-delay='0.1s'>
+         <h2 class='mb-5'>Yang Sering <span class='text-primary px-2'>Ditanyakan</span></h2>
+      </div>
+
+      <div class='row'>
+         <div class='col-lg-6'>
+            <div class='accordion' id='accordionFAQ1'>
+               {
+                  faq1.map((val, idx) => {
+                     const targetId = `faqOne${idx}`;
+                     const targetHeading = `faqOneHeading${idx}`;
+
+                     return (
+                        <div class='accordion-item'>
+                           <h2 class='accordion-header' id={targetHeading}>
+                              <button
+                                 class='accordion-button collapsed border-bottom'
+                                 type='button'
+                                 data-bs-toggle='collapse'
+                                 data-bs-target={`#${targetId}`}
+                                 aria-expanded='false'
+                              >
+                                 {val.faq}
+                              </button>
+                           </h2>
+                           <div
+                              id={targetId}
+                              class='accordion-collapse collapse'
+                              aria-labelledby={targetHeading}
+                              data-bs-parent='#accordionFAQ1'
+                           >
+                              <div class='accordion-body p-3'>
+                                 <p class='m-0'>{val.answer.text}</p>
+
+                                 {val.answer.list && val.answer.list.length > 0 && (
+                                    <ul>
+                                       {val.answer.list.map((val) => (
+                                          <li>{val}</li>
+                                       ))}
+                                    </ul>
+                                 )}
+                              </div>
+                           </div>
+                        </div>
+                     );
+                  })
+               }
+            </div>
+         </div>
+         <div class='col-lg-6'>
+            <div class='accordion' id='accordionFAQ2'>
+               {
+                  faq2.map((val, idx) => {
+                     const targetId = `faqTwo${idx}`;
+                     const targetHeading = `faqTwoHeading${idx}`;
+
+                     return (
+                        <div class='accordion-item'>
+                           <h2 class='accordion-header' id={targetHeading}>
+                              <button
+                                 class='accordion-button collapsed border-bottom'
+                                 type='button'
+                                 data-bs-toggle='collapse'
+                                 data-bs-target={`#${targetId}`}
+                                 aria-expanded='false'
+                              >
+                                 {val.faq}
+                              </button>
+                           </h2>
+                           <div
+                              id={targetId}
+                              class='accordion-collapse collapse'
+                              aria-labelledby={targetHeading}
+                              data-bs-parent='#accordionFAQ2'
+                           >
+                              <div class='accordion-body p-3'>
+                                 <p class='m-0'>{val.answer.text}</p>
+
+                                 {val.answer.list && val.answer.list.length > 0 && (
+                                    <ul>
+                                       {val.answer.list.map((val) => (
+                                          <li>{val}</li>
+                                       ))}
+                                    </ul>
+                                 )}
+                              </div>
+                           </div>
+                        </div>
+                     );
+                  })
+               }
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<!-- FAQ End -->
+
+<style>
+   #faq {
+      scroll-margin-top: 80px;
+   }
+
+   .accordion .accordion-item {
+      border: none;
+      margin-bottom: 15px;
+   }
+
+   .accordion .accordion-button {
+      background: var(--light);
+      border-radius: 2px;
+   }
+
+   .accordion .accordion-button:not(.collapsed) {
+      color: #000;
+      background: var(--primary);
+      box-shadow: none;
+   }
+
+   .accordion .accordion-body {
+      padding: 15px 0 0 0;
+   }
+</style>

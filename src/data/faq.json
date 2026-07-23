@@ -1,0 +1,92 @@
+[
+   {
+      "faq": "Apa saja produk yang dijual?",
+      "answer": {
+         "text": "Kami menyediakan berbagai kebutuhan material bangunan, antara lain:",
+         "list": [
+            "Pasir Bangka (Putih, Kuning, Sadai, Jambi)",
+            "Pasir Rangkas (Kuning, Hitam, Abadi)",
+            "Pasir Cilegon (Ayak & Cuci)",
+            "Pasir Urug",
+            "Batu Split",
+            "Batu Sirtu",
+            "Batu Makadam",
+            "Batu Belah",
+            "Batu Abu"
+         ]
+      }
+   },
+   {
+      "faq": "Melayani pengiriman ke mana saja?",
+      "answer": {
+         "text": "Kami melayani pengiriman khusus wilayah Jabodetabek (Jakarta, Bogor, Depok, Tangerang, dan Bekasi).",
+         "list": []
+      }
+   },
+   {
+      "faq": "Apakah memiliki armada sendiri?",
+      "answer": {
+         "text": "Ya. Kami memiliki armada sendiri berupa truk engkel dan truk besar, sehingga pengiriman lebih cepat, terjadwal, dan terjamin.",
+         "list": []
+      }
+   },
+   {
+      "faq": "Bagaimana sistem pembayarannya?",
+      "answer": {
+         "text": "Kami menyediakan dua pilihan pembayaran:",
+         "list": [
+            "DP 40%, kemudian sisa pembayaran dilakukan secara COD di lokasi setelah material tiba.",
+            "Pembayaran lunas (Full Payment) sebelum pengiriman."
+         ]
+      }
+   },
+   {
+      "faq": "Apakah harga sudah termasuk ongkos kirim?",
+      "answer": {
+         "text": "Ya. Harga yang kami berikan sudah termasuk biaya pengiriman (ongkir) ke area layanan Jabodetabek.",
+         "list": []
+      }
+   },
+   {
+      "faq": "Apakah harga sudah termasuk jasa bongkar?",
+      "answer": {
+         "text": "Ya. Harga juga sudah termasuk jasa kuli bongkar, sehingga Anda tidak perlu mencari tenaga bongkar tambahan.",
+         "list": []
+      }
+   },
+   {
+      "faq": "Apakah bisa pesan dalam jumlah kecil maupun besar?",
+      "answer": {
+         "text": "Bisa. Kami melayani pemesanan untuk kebutuhan rumah tinggal, renovasi, ruko, gudang, hingga proyek konstruksi dalam jumlah besar. Namun ini tergantung jenis produknya",
+         "list": []
+      }
+   },
+   {
+      "faq": "Bagaimana cara melakukan pemesanan?",
+      "answer": {
+         "text": "Anda dapat menghubungi kami melalui WhatsApp atau telepon. Tim kami akan membantu memberikan informasi produk, menghitung kebutuhan material, serta memberikan penawaran harga.",
+         "list": []
+      }
+   },
+   {
+      "faq": "Apakah material yang dikirim sesuai pesanan?",
+      "answer": {
+         "text": "Tentu. Kami memastikan jenis material yang dikirim sesuai dengan pesanan dan spesifikasi yang telah disepakati.",
+         "list": []
+      }
+   },
+   {
+      "faq": "Berapa lama proses pengiriman?",
+      "answer": {
+         "text": "Pengiriman disesuaikan dengan jadwal, ketersediaan armada, dan lokasi tujuan. Kami selalu berusaha mengirimkan material secepat mungkin setelah pembayaran atau konfirmasi pesanan diterima.",
+         "list": []
+      }
+   },
+   {
+      "faq": "Apakah bisa membeli secara rutin untuk proyek?",
+      "answer": {
+         "text": "Bisa. Kami melayani kebutuhan kontraktor, developer, toko bangunan, maupun proyek dengan pengiriman berkala sesuai jadwal yang disepakati.",
+         "list": []
+      }
+   }
+]
