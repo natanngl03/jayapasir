@@ -1,5 +1,5 @@
 <!-- Header Start -->
-<div class='container-fluid p-0'>
+<header class='container-fluid p-0'>
    <div id='header-carousel' class='carousel slide' data-bs-ride='carousel'>
       <div class='carousel-inner'>
          <div class='carousel-item active'>
@@ -8,9 +8,13 @@
                <div class='row h-100 align-items-center justify-content-center'>
                   <div class='col-md-8'>
                      <div class='typingcontainer'>
-                        <h1 class='text-white'>
-                           <span id='typed'></span>
+                        <h1>
+                           Penyedia <span class='text-primary'>Pasir &amp; Batu</span> Berkualitas untuk <span class='text-primary'
+                              >Jabodetabek</span
+                           >
                         </h1>
+
+                        <span id='typed' class='fs-3'></span>
                      </div>
 
                      <h6 class='mb-5 animated slideInDown'>
@@ -19,10 +23,13 @@
                      </h6>
                      <div class='d-flex flex-column justify-content-md-center align-items-md-center'>
                         <a
-                           href=''
+                           href='https://wa.me/6285117436727?text=Hallo%20Jayapasir,%20saya%20ingin%20melakukan%20order.'
+                           target='_blank'
+                           rel='noopener noreferrer'
                            class='border border-2 border-white text-decoration-none py-2 px-3 mb-3 d-block text-white fs-5 fw-bold rounded'
                            >Info: 0851 1743 6727</a
                         >
+
                         <button type='button' class='btn btn-primary py-2 px-4 animated slideInDown' id='exploreMore'>Selengkapnya</button>
                      </div>
                   </div>
@@ -31,12 +38,12 @@
          </div>
       </div>
    </div>
-</div>
+</header>
 <!-- Header End -->
 
 <style>
    .typingcontainer {
-      height: 150px;
+      height: 180px;
    }
 
    .carousel-item {
@@ -76,12 +83,25 @@
    import Typed from 'typed.js';
 
    new Typed('#typed', {
+      // strings: [
+      //    "Penyedia <span class='text-primary'>Pasir &amp; Batu</span> Berkualitas untuk <span class='text-primary'>Jabodetabek</span>",
+      // ],
       strings: [
-         "Penyedia <span class='text-primary'>Pasir &amp; Batu</span> Berkualitas untuk <span class='text-primary'>Jabodetabek</span>",
+         'Pasir Bangka',
+         'Pasir Kalimantan',
+         'Pasir Jambi',
+         'Pasir Cilegon',
+         'Pasir Rangkas',
+         'Pasir Jambi',
+         'Batu Sirtu',
+         'Batu Makadam',
+         'Batu Split',
+         'Batu Abu',
+         'Batu Belah',
       ],
       typeSpeed: 40,
       backSpeed: 30,
-      backDelay: 5000,
+      backDelay: 500,
       showCursor: true,
       loop: true,
       contentType: 'html',

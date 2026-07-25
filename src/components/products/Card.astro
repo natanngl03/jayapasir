@@ -15,7 +15,7 @@ const imgSrc = type == 'pasir' ? `/img/pasir/${imgAlt}.webp` : `/img/batu/${imgA
 
 <div class='card shadow'>
    <a href={imgSrc} class='glightbox' data-gallery='gallery'>
-      <img src={imgSrc} class='card-img-top cardimg' alt={imgAlt} />
+      <img src={imgSrc} class='card-img-top cardimg' alt={imgAlt} width='100%' />
    </a>
    <div class='card-body'>
       <h6 class='card-title text-center mb-3'>{title}</h6>
@@ -34,14 +34,5 @@ const imgSrc = type == 'pasir' ? `/img/pasir/${imgAlt}.webp` : `/img/batu/${imgA
    .card {
       border-radius: 10px;
       overflow: hidden;
-   }
-
-   .card-body span {
-      /* font-size: 12px; */
-   }
-
-   .btn {
-      width: 100%;
-      /* border-radius: 20px; */
    }
 </style>

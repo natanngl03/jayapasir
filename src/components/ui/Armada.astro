@@ -1,0 +1,53 @@
+---
+import { Image } from 'astro:assets';
+import SplitIMG from './../../assets/img/armada.png';
+---
+
+<!-- Feature Start -->
+<section class='container-fluid py-5 border-top' id='chooseUs'>
+   <div class='container'>
+      <p class='mb-5 text-center fs-3 fw-bold'>Gallery <span class='text-primary px-2'>Armada</span></p>
+
+      <div class='row g-3'>
+         {
+            [...Array(4)].map((val, idx) => {
+               return (
+                  <div class='col-6 col-md-3'>
+                     <a href={`/img/armada/armada${idx + 1}.webp`} class='glightbox' data-gallery='gallery-armada'>
+                        <img
+                           src={`/img/armada/armada${idx + 1}.webp`}
+                           alt={`armada ${idx + 1}`}
+                           width='100%'
+                           style='border-radius: 10px;'
+                        />
+                     </a>
+                  </div>
+               );
+            })
+         }
+
+         {
+            ['a', 'b', 'c'].map((val) => (
+               <div class='col-6 col-md-4'>
+                  <a href={`/img/armada/armada${val}.webp`} class='glightbox' data-gallery='gallery-armada'>
+                     <img src={`/img/armada/armada${val}.webp`} alt='armada' width='100%' style='border-radius: 10px;' />
+                  </a>
+               </div>
+            ))
+         }
+      </div>
+   </div>
+</section>
+<!-- Feature End -->
+
+<style>
+   #chooseUs {
+      scroll-margin-top: 80px;
+   }
+
+   .choose {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+   }
+</style>
