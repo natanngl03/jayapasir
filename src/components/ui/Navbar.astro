@@ -1,14 +1,27 @@
 ---
-import { BatuList } from '../products/Batu.astro';
-import { PasirList } from '../products/Pasir.astro';
+// import { BatuList } from '../products/Batu.astro';
+// import { PasirList } from '../products/Pasir.astro';
+import { Image } from 'astro:assets';
+import PasirList from '../../data/pasir.json';
+import BatuList from '../../data/batu.json';
+
+import LogoImg from '../../assets/img/logo24.webp';
 ---
 
 <div class='container-fluid fixed-top bg-white shadow-sm'>
    <nav class='navbar navbar-expand-lg navbar-light px-lg-5'>
       <a href='/' class='navbar-brand ms-4 ms-lg-0'>
-         <img src='/img/logo24.webp' alt='logo image' class='logo' />
+         <!-- <img src='/img/logo24.webp' alt='logo image' class='logo' /> -->
+
+         <Image src={LogoImg} alt='logo image' layout='constrained' quality='low' loading='lazy' class='logo' />
       </a>
-      <button type='button' class='navbar-toggler me-4' data-bs-toggle='collapse' data-bs-target='#navbarCollapse'>
+      <button
+         type='button'
+         class='navbar-toggler me-4'
+         data-bs-toggle='collapse'
+         data-bs-target='#navbarCollapse'
+         aria-label='toggle navigation'
+      >
          <span class='navbar-toggler-icon'></span>
       </button>
       <div class='collapse navbar-collapse pb-1 pb-md-0' id='navbarCollapse'>
@@ -22,7 +35,7 @@ import { PasirList } from '../products/Pasir.astro';
                <div class='dropdown-menu m-0'>
                   {
                      PasirList.map((val, idx) => (
-                        <a href={`/product/${val.imgAlt}`} class='dropdown-item custom'>
+                        <a href={`/product/${val.params.product}`} class='dropdown-item custom'>
                            {val.title}
                         </a>
                      ))
@@ -34,7 +47,7 @@ import { PasirList } from '../products/Pasir.astro';
                <div class='dropdown-menu m-0'>
                   {
                      BatuList.map((val, idx) => (
-                        <a href={`/product/${val.imgAlt}`} class='dropdown-item custom'>
+                        <a href={`/product/${val.params.product}`} class='dropdown-item custom'>
                            {val.title}
                         </a>
                      ))

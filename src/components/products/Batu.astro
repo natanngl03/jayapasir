@@ -1,30 +1,35 @@
 ---
-import Card, { type CardProps } from './Card.astro';
+import Card from './Card.astro';
+import Json from './../../data/batu.json';
 
-export const BatuList: CardProps[] = [
-   { title: 'Batu Abu', imgAlt: 'batu-abu' },
-   { title: 'Batu Belah', imgAlt: 'batu-belah' },
-   { title: 'Batu Beskos', imgAlt: 'batu-beskos' },
-   { title: 'Batu Brangkal HS', imgAlt: 'batu-brangkal-hs' },
-   { title: 'Batu Kuricak', imgAlt: 'batu-kuricak' },
-   { title: 'Batu Makadam', imgAlt: 'batu-makadam' },
-   { title: 'Batu Sekrining', imgAlt: 'batu-sekrining' },
-   { title: 'Batu Sirtu', imgAlt: 'batu-sirtu' },
-   { title: 'Batu Split Ancol', imgAlt: 'batu-split-ancol' },
-];
+const BatuData = Json as ProductType[];
+
+const images = import.meta.glob<{ default: ImageMetadata }>('../../assets/img/products/*.{jpg,jpeg,png,webp}', {
+   eager: true,
+});
+
+function getImage(name: string) {
+   return images[`../../assets/img/products/${name}`]?.default;
+}
 ---
 
 <div class='row g-4'>
    {
-      BatuList.map((item) => {
-         const type = 'batu';
-         const { title, imgAlt } = item;
+      BatuData &&
+         BatuData.map((val, idx) => {
+            const img = getImage(val.image);
 
-         return (
-            <div class='col-6 col-md-3'>
-               <Card {...{ title, imgAlt, type }} />
-            </div>
-         );
-      })
+            return (
+               <div class='col-6 col-md-3'>
+                  <Card
+                     img={img}
+                     alt={`batu_${idx}`}
+                     gallery='batu_gallery'
+                     title={val.title}
+                     page={val.params.product}
+                  />
+               </div>
+            );
+         })
    }
 </div>

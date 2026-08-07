@@ -1,32 +1,39 @@
 ---
-import { BatuList } from './Batu.astro';
-import Card, { type CardProps } from './Card.astro';
-import { PasirList } from './Pasir.astro';
+import Card from './Card.astro';
+import PasirJson from './../../data/pasir.json';
+import BatuJson from './../../data/batu.json';
+
+const PasirData = PasirJson as ProductType[];
+const BatuData = BatuJson as ProductType[];
+
+const AllData: ProductType[] = [...PasirData, ...BatuData];
+
+const images = import.meta.glob<{ default: ImageMetadata }>('../../assets/img/products/*.{jpg,jpeg,png,webp}', {
+   eager: true,
+});
+
+function getImage(name: string) {
+   return images[`../../assets/img/products/${name}`]?.default;
+}
 ---
 
 <div class='row g-4'>
    {
-      PasirList.map((item) => {
-         const type = 'pasir';
-         const { title, imgAlt } = item;
+      AllData &&
+         AllData.map((val, idx) => {
+            const img = getImage(val.image);
 
-         return (
-            <div class='col-6 col-md-3'>
-               <Card {...{ title, imgAlt, type }} />
-            </div>
-         );
-      })
-   }
-   {
-      BatuList.map((item) => {
-         const type = 'batu';
-         const { title, imgAlt } = item;
-
-         return (
-            <div class='col-6 col-md-3'>
-               <Card {...{ title, imgAlt, type }} />
-            </div>
-         );
-      })
+            return (
+               <div class='col-6 col-md-3'>
+                  <Card
+                     img={img}
+                     alt={`pasir_${idx}`}
+                     gallery='pasir_gallery'
+                     title={val.title}
+                     page={val.params.product}
+                  />
+               </div>
+            );
+         })
    }
 </div>

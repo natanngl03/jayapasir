@@ -5,17 +5,24 @@ import Youtube from './Youtube.astro';
 <!-- Feature Start -->
 <section class='container-fluid py-5 border-top bg-light' id='chooseUs'>
    <div class='container'>
-      <p class='mb-5 text-center fs-3 fw-bold'>Video<span class='text-primary px-2'>Gallery</span></p>
+      <h2 class='mb-5 text-center fs-3 fw-bold'>Video <span class='text-primary px-2'>Gallery</span></h2>
 
       <div class='row g-3'>
          {
-            ['80DgEWi50o8', 'CCI6gIfaEaU', 'g0LNyQHTuXE', 'tXND1MwAqJc', 'z_U5dxvcymo', 'Atg7ZpUTdp4', '9ESuah39uQ0', '34-SRhpT4SQ'].map(
-               (val) => (
-                  <div class='col-md-4'>
-                     <Youtube video_id={val} />
-                  </div>
-               )
-            )
+            [
+               '80DgEWi50o8',
+               'CCI6gIfaEaU',
+               'g0LNyQHTuXE',
+               'tXND1MwAqJc',
+               'z_U5dxvcymo',
+               'Atg7ZpUTdp4',
+               '9ESuah39uQ0',
+               '34-SRhpT4SQ',
+            ].map((val) => (
+               <div class='col-md-4'>
+                  <Youtube video_id={val} />
+               </div>
+            ))
          }
       </div>
    </div>

@@ -1,29 +1,35 @@
 ---
-import Card, { type CardProps } from './Card.astro';
+import Card from './Card.astro';
+import Json from './../../data/pasir.json';
 
-export const PasirList: CardProps[] = [
-   { title: 'Pasir Bangka Super', imgAlt: 'bangka-super' },
-   { title: 'Pasir Bangka Putih', imgAlt: 'bangka-putih' },
-   { title: 'Pasir Kalimantan Tayan', imgAlt: 'kalimantan-tayan' },
-   { title: 'Pasir Jambi', imgAlt: 'jambi' },
-   { title: 'Pasir Rangkas Kuning', imgAlt: 'rangkas-kuning' },
-   { title: 'Pasir Rangkas Hitam', imgAlt: 'rangkas-hitam' },
-   { title: 'Pasir Cilegon Ayak', imgAlt: 'cilegon-ayak' },
-   { title: 'Pasir Cilegon Cuci', imgAlt: 'cilegon-cuci' },
-];
+const PasirData = Json as ProductType[];
+
+const images = import.meta.glob<{ default: ImageMetadata }>('../../assets/img/products/*.{jpg,jpeg,png,webp}', {
+   eager: true,
+});
+
+function getImage(name: string) {
+   return images[`../../assets/img/products/${name}`]?.default;
+}
 ---
 
 <div class='row g-4'>
    {
-      PasirList.map((item) => {
-         const type = 'pasir';
-         const { title, imgAlt } = item;
+      PasirData &&
+         PasirData.map((val, idx) => {
+            const img = getImage(val.image);
 
-         return (
-            <div class='col-6 col-md-3'>
-               <Card {...{ title, imgAlt, type }} />
-            </div>
-         );
-      })
+            return (
+               <div class='col-6 col-md-3'>
+                  <Card
+                     img={img}
+                     alt={`pasir_${idx}`}
+                     gallery='pasir_gallery'
+                     title={val.title}
+                     page={val.params.product}
+                  />
+               </div>
+            );
+         })
    }
 </div>

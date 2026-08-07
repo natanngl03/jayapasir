@@ -1,43 +1,32 @@
-{
-   "bangka-super": {
-      "truk": "2.985.000",
-      "engkel": "1.775.000",
-      "pickup": "-"
+[
+   {
+      "params": { "product": "bangka" },
+      "title": "Pasir Bangka",
+      "price": { "truck": "2.335.000", "engkel": "", "pickup": "" },
+      "image": "bangka.jpg"
    },
-   "bangka-putih": {
-      "truk": "2.985.000",
-      "engkel": "1.775.000",
-      "pickup": "-"
+   {
+      "params": { "product": "rangkas-kuning" },
+      "title": "Pasir Rangkas Kuning",
+      "price": { "truck": "1.950.000", "engkel": "", "pickup": "" },
+      "image": "rangkas-kuning.jpg"
    },
-   "kalimantan-tayan": {
-      "truk": "2.655.000",
-      "engkel": "1.625.000",
-      "pickup": "-"
+   {
+      "params": { "product": "rangkas-hitam" },
+      "title": "Pasir Rangkas Hitam",
+      "price": { "truck": "2.350.000", "engkel": "", "pickup": "" },
+      "image": "rangkas-hitam.jpg"
    },
-   "jambi": {
-      "truk": "2.435.000",
-      "engkel": "1.525.000",
-      "pickup": "-"
+   {
+      "params": { "product": "cilegon-ayak" },
+      "title": "Pasir Cilegon Ayak",
+      "price": { "truck": "1.850.000", "engkel": "", "pickup": "" },
+      "image": "cilegon-ayak.jpg"
    },
-
-   "rangkas-kuning": {
-      "truk": "2.100.000",
-      "engkel": "1.400.000",
-      "pickup": "650.000"
-   },
-   "rangkas-hitam": {
-      "truk": "2.500.000",
-      "engkel": "1.500.000",
-      "pickup": "650.000"
-   },
-   "cilegon-ayak": {
-      "truk": "2.000.000",
-      "engkel": "1.150.000",
-      "pickup": "550.000"
-   },
-   "cilegon-cuci": {
-      "truk": "2.200.000",
-      "engkel": "1.300.000",
-      "pickup": "600.000"
+   {
+      "params": { "product": "cilegon-cuci" },
+      "title": "Pasir Cilegon Cuci",
+      "price": { "truck": "2.050.000", "engkel": "", "pickup": "" },
+      "image": "cilegon-cuci.jpg"
    }
-}
+]

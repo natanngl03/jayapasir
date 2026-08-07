@@ -8,56 +8,61 @@ import All from './All.astro';
 <div class='container-fluid py-5 bg-white border-top'>
    <div class='container'>
       <div class='text-center wow fadeIn' data-wow-delay='0.1s'>
-         <h1 class='mb-5'>Produk <span class='text-primary px-2'>Kami</span></h1>
+         <h2 class='mb-5 text-center fs-3 fw-bold'>Produk <span class='text-primary px-2'>Kami</span></h2>
       </div>
 
       <ul class='nav nav-pills mb-5 d-flex align-items-center justify-content-center' id='pills-tab' role='tablist'>
          <li class='nav-item' role='presentation'>
             <button
                class='nav-link active'
-               id='pills-home-tab'
+               id='material-pasir-tab'
                data-bs-toggle='pill'
-               data-bs-target='#pills-home'
+               data-bs-target='#material-pasir'
                type='button'
                role='tab'
-               aria-controls='pills-home'
+               aria-controls='material-pasir'
                aria-selected='true'>Pasir</button
             >
          </li>
          <li class='nav-item' role='presentation'>
             <button
                class='nav-link'
-               id='pills-profile-tab'
+               id='material-batu-tab'
                data-bs-toggle='pill'
-               data-bs-target='#pills-profile'
+               data-bs-target='#material-batu'
                type='button'
                role='tab'
-               aria-controls='pills-profile'
+               aria-controls='material-batu'
                aria-selected='false'>Batu</button
             >
          </li>
          <li class='nav-item' role='presentation'>
             <button
                class='nav-link'
-               id='pills-contact-tab'
+               id='semua-material-tab'
                data-bs-toggle='pill'
-               data-bs-target='#pills-contact'
+               data-bs-target='#semua-material'
                type='button'
                role='tab'
-               aria-controls='pills-contact'
+               aria-controls='semua-material'
                aria-selected='false'>Semua</button
             >
          </li>
       </ul>
 
       <div class='tab-content' id='pills-tabContent'>
-         <div class='tab-pane fade show active' id='pills-home' role='tabpanel' aria-labelledby='pills-home-tab'>
+         <div
+            class='tab-pane fade show active'
+            id='material-pasir'
+            role='tabpanel'
+            aria-labelledby='material-pasir-tab'
+         >
             <Pasir />
          </div>
-         <div class='tab-pane fade' id='pills-profile' role='tabpanel' aria-labelledby='pills-profile-tab'>
+         <div class='tab-pane fade' id='material-batu' role='tabpanel' aria-labelledby='material-batu-tab'>
             <Batu />
          </div>
-         <div class='tab-pane fade' id='pills-contact' role='tabpanel' aria-labelledby='pills-contact-tab'>
+         <div class='tab-pane fade' id='semua-material' role='tabpanel' aria-labelledby='semua-material-tab'>
             <All />
          </div>
       </div>

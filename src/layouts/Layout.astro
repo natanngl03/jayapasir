@@ -15,16 +15,16 @@ import WhatsappBtn from '../components/ui/WhatsappBtn.astro';
       <meta charset='UTF-8' />
       <meta name='viewport' content='width=device-width, initial-scale=1.0' />
 
-      <title>Jaya Pasir | Supplier Pasir, Batu Split & Material Bangunan Jabodetabek</title>
+      <title>Jaya Pasir | Supplier Pasir Murah, Batu Split & Material Bangunan Tangerang Selatan</title>
 
       <meta
          name='description'
-         content='Jaya Pasir merupakan supplier pasir, batu split, sirtu, abu batu, dan berbagai material bangunan berkualitas. Berlokasi di Jelupang, Kota Tangerang Selatan, dan melayani pengiriman ke seluruh wilayah Jabodetabek dengan harga bersaing.'
+         content='Jaya Pasir adalah supplier pasir murah, batu murah, batu split, sirtu, abu batu, dan material bangunan di Tangerang Selatan. Melayani pengiriman cepat ke Jakarta, Bogor, Depok, Tangerang, Bekasi, dan seluruh Jabodetabek dengan harga kompetitif.'
       />
 
       <meta
          name='keywords'
-         content='jual pasir, supplier pasir, pasir bangka, pasir putih, pasir kuning, batu split, sirtu, abu batu, material bangunan, Jelupang, Tangerang Selatan, pasir Jelupang, pasir Tangerang Selatan, pasir Jakarta, pasir Bogor, pasir Depok, pasir Tangerang, pasir Bekasi, supplier material Jabodetabek'
+         content='supplier pasir, jual pasir, pasir murah, supplier batu, batu murah, batu split, sirtu, abu batu, pasir bangka, pasir putih, pasir kuning, material bangunan, Tangerang Selatan, Jakarta, Bogor, Depok, Tangerang, Bekasi, Jabodetabek'
       />
 
       <meta name='author' content='Jaya Pasir' />
@@ -39,11 +39,13 @@ import WhatsappBtn from '../components/ui/WhatsappBtn.astro';
       <meta property='og:site_name' content='Jaya Pasir' />
       <meta property='og:locale' content='id_ID' />
       <meta property='og:url' content='https://jayapasir.com/' />
-      <meta property='og:title' content='Jaya Pasir | Supplier Pasir, Batu Split & Material Bangunan Jabodetabek' />
+      <meta property='og:title' content='Jaya Pasir | Supplier Pasir Murah & Material Bangunan Tangerang Selatan' />
+
       <meta
          property='og:description'
-         content='Supplier pasir, batu split, sirtu, abu batu, dan material bangunan berkualitas. Berlokasi di Jelupang, Kota Tangerang Selatan, melayani pengiriman ke seluruh Jabodetabek.'
+         content='Supplier pasir murah, batu murah, batu split, sirtu, abu batu, dan material bangunan di Tangerang Selatan. Melayani pengiriman ke seluruh Jabodetabek dengan harga kompetitif.'
       />
+
       <meta property='og:image' content='https://jayapasir.com/img/og-image.png' />
       <meta property='og:image:type' content='image/png' />
       <meta property='og:image:width' content='1200' />
@@ -52,11 +54,13 @@ import WhatsappBtn from '../components/ui/WhatsappBtn.astro';
 
       <!-- X (Twitter) -->
       <meta name='twitter:card' content='summary_large_image' />
-      <meta name='twitter:title' content='Jaya Pasir | Supplier Pasir, Batu Split & Material Bangunan Jabodetabek' />
+      <meta name='twitter:title' content='Jaya Pasir | Supplier Pasir Murah & Material Bangunan Tangerang Selatan' />
+
       <meta
          name='twitter:description'
-         content='Supplier pasir, batu split, sirtu, abu batu, dan material bangunan berkualitas dari Jelupang, Kota Tangerang Selatan. Melayani seluruh Jabodetabek.'
+         content='Supplier pasir murah, batu murah, batu split, sirtu, abu batu, dan material bangunan di Tangerang Selatan. Melayani pengiriman ke seluruh Jabodetabek.'
       />
+
       <meta name='twitter:image' content='https://jayapasir.com/img/og-image.png' />
       <meta name='twitter:image:alt' content='Jaya Pasir - Supplier Pasir & Material Bangunan Jabodetabek' />
 
@@ -70,7 +74,10 @@ import WhatsappBtn from '../components/ui/WhatsappBtn.astro';
       <!-- Google Fonts -->
       <link rel='preconnect' href='https://fonts.googleapis.com' />
       <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
-      <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap' rel='stylesheet' />
+      <link
+         href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap'
+         rel='stylesheet'
+      />
 
       <!-- Font Awesome -->
       <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css' />
@@ -84,7 +91,9 @@ import WhatsappBtn from '../components/ui/WhatsappBtn.astro';
 
    <body>
       <Navbar />
-      <slot />
+      <main>
+         <slot />
+      </main>
       <Footer />
       <WhatsappBtn />
 
@@ -115,35 +124,38 @@ import WhatsappBtn from '../components/ui/WhatsappBtn.astro';
          // });
 
          import GLightbox from 'glightbox';
-
-         const lightbox = GLightbox({
+         GLightbox({
             selector: '.glightbox',
          });
 
-         let isOpen = false;
-         let closingFromBack = false;
+         // const lightbox = GLightbox({
+         //    selector: '.glightbox',
+         // });
 
-         lightbox.on('open', () => {
-            isOpen = true;
-            history.pushState({ lightbox: true }, '');
-         });
+         // let isOpen = false;
+         // let closingFromBack = false;
 
-         lightbox.on('close', () => {
-            isOpen = false;
+         // lightbox.on('open', () => {
+         //    isOpen = true;
+         //    history.pushState({ lightbox: true }, '');
+         // });
 
-            if (!closingFromBack) {
-               history.back();
-            }
+         // lightbox.on('close', () => {
+         //    isOpen = false;
 
-            closingFromBack = false;
-         });
+         //    if (!closingFromBack) {
+         //       history.back();
+         //    }
 
-         window.addEventListener('popstate', () => {
-            if (isOpen) {
-               closingFromBack = true;
-               lightbox.close();
-            }
-         });
+         //    closingFromBack = false;
+         // });
+
+         // window.addEventListener('popstate', () => {
+         //    if (isOpen) {
+         //       closingFromBack = true;
+         //       lightbox.close();
+         //    }
+         // });
       </script>
 
       <script is:inline src='https://code.jquery.com/jquery-3.4.1.min.js' defer></script>

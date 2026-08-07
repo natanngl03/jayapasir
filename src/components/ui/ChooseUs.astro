@@ -1,27 +1,41 @@
 ---
 import { Image } from 'astro:assets';
-import SplitIMG from './../../assets/img/armada.png';
+import ArmadaImg from '../../assets/img/armada/armadaa.webp';
 ---
 
 <!-- Feature Start -->
 <section class='container-fluid py-5 bg-light' id='chooseUs'>
    <div class='container'>
-      <p class='mb-5 text-center fs-3 fw-bold'>Mengapa Memilih <span class='text-primary px-2'>Kami ?</span></p>
+      <h2 class='mb-5 text-center fs-3 fw-bold'>Mengapa Memilih <span class='text-primary px-2'>Kami ?</span></h2>
 
       <p class='text-center mb-5'>
-         Kami hadir sebagai penyedia terpercaya yang mengutamakan kualitas, ketepatan volume, dan pelayanan terbaik. Kami melayani kebutuhan
-         proyek kecil hingga besar, dari eceran hingga partai besar, dengan produk berkualitas dan pengiriman tepat waktu.
+         Kami hadir sebagai penyedia terpercaya yang mengutamakan kualitas, ketepatan volume, dan pelayanan terbaik.
+         Kami melayani kebutuhan proyek kecil hingga besar, dari eceran hingga partai besar, dengan produk berkualitas
+         dan pengiriman tepat waktu.
       </p>
       <div class='row g-4'>
          <div class='col-md-6'>
-            <img src='/img/armada/armadaa.webp' alt='armada' class='choose' />
+            <Image
+               src={ArmadaImg}
+               alt='Armada Image'
+               layout='constrained'
+               style={{
+                  width: '100%',
+                  height: '100%',
+                  borderRadius: '10px',
+               }}
+               quality='low'
+               loading='lazy'
+            />
          </div>
          <div class='col-md-6'>
             <div class='row g-4'>
                <div class='col-6'>
                   <i class='fas fa-truck fa-3x text-primary mb-4'></i>
                   <h5>Memiliki Armada Sendiri</h5>
-                  <p class='mb-0'>Didukung armada operasional yang lengkap untuk memastikan proses distribusi berjalan lancar.</p>
+                  <p class='mb-0'>
+                     Didukung armada operasional yang lengkap untuk memastikan proses distribusi berjalan lancar.
+                  </p>
                </div>
                <div class='col-6'>
                   <i class='fas fa-dollar-sign fa-3x text-primary mb-4'></i>
@@ -32,67 +46,20 @@ import SplitIMG from './../../assets/img/armada.png';
                <div class='col-6'>
                   <i class='fa fa-calendar-alt fa-3x text-primary mb-4'></i>
                   <h5>Pengiriman Tepat Waktu</h5>
-                  <p class='mb-0'>Berkomitmen mengirim pesanan sesuai jadwal agar proyek Anda tetap berjalan sesuai rencana.</p>
+                  <p class='mb-0'>
+                     Berkomitmen mengirim pesanan sesuai jadwal agar proyek Anda tetap berjalan sesuai rencana.
+                  </p>
                </div>
                <div class='col-6'>
                   <i class='fas fa-check-double fa-3x text-primary mb-4'></i>
                   <h5>Kualitas Terjamin</h5>
-                  <p class='mb-0'>Setiap material dipilih dan dipastikan memenuhi standar kualitas untuk berbagai kebutuhan.</p>
+                  <p class='mb-0'>
+                     Setiap material dipilih dan dipastikan memenuhi standar kualitas untuk berbagai kebutuhan.
+                  </p>
                </div>
             </div>
          </div>
       </div>
-
-      <!-- <div class='row g-5 align-items-center text-center'>
-         <div class='col-md-6 col-lg-4 wow fadeIn' data-wow-delay='0.1s'>
-            <i class='fa fa-calendar-alt fa-5x text-primary mb-4'></i>
-            <h4>25+ Years Experience</h4>
-            <p class='mb-0'>
-               Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat
-               amet
-            </p>
-         </div>
-         <div class='col-md-6 col-lg-4 wow fadeIn' data-wow-delay='0.3s'>
-            <i class='fa fa-tasks fa-5x text-primary mb-4'></i>
-            <h4>Best Interior Design</h4>
-            <p class='mb-0'>
-               Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat
-               amet
-            </p>
-         </div>
-         <div class='col-md-6 col-lg-4 wow fadeIn' data-wow-delay='0.5s'>
-            <i class='fa fa-pencil-ruler fa-5x text-primary mb-4'></i>
-            <h4>Innovative Architects</h4>
-            <p class='mb-0'>
-               Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat
-               amet
-            </p>
-         </div>
-         <div class='col-md-6 col-lg-4 wow fadeIn' data-wow-delay='0.1s'>
-            <i class='fa fa-user fa-5x text-primary mb-4'></i>
-            <h4>Customer Satisfaction</h4>
-            <p class='mb-0'>
-               Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat
-               amet
-            </p>
-         </div>
-         <div class='col-md-6 col-lg-4 wow fadeIn' data-wow-delay='0.3s'>
-            <i class='fa fa-hand-holding-usd fa-5x text-primary mb-4'></i>
-            <h4>Budget Friendly</h4>
-            <p class='mb-0'>
-               Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat
-               amet
-            </p>
-         </div>
-         <div class='col-md-6 col-lg-4 wow fadeIn' data-wow-delay='0.5s'>
-            <i class='fa fa-check fa-5x text-primary mb-4'></i>
-            <h4>Sustainable Material</h4>
-            <p class='mb-0'>
-               Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat
-               amet
-            </p>
-         </div>
-      </div> -->
    </div>
 </section>
 <!-- Feature End -->
@@ -100,11 +67,5 @@ import SplitIMG from './../../assets/img/armada.png';
 <style>
    #chooseUs {
       scroll-margin-top: 80px;
-   }
-
-   .choose {
-      width: 100%;
-      height: 100%;
-      border-radius: 10px;
    }
 </style>

@@ -4,7 +4,7 @@
    "tabWidth": 3,
    "useTabs": false,
    "trailingComma": "es5",
-   "printWidth": 140,
+   "printWidth": 120,
    "jsxSingleQuote": true,
    "arrowParens": "always",
    "plugins": ["prettier-plugin-astro"],

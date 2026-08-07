@@ -1,38 +1,41 @@
 ---
-export interface CardProps {
+import { Image } from 'astro:assets';
+
+interface Props {
+   img: ImageMetadata;
+   alt: string;
+   gallery: string;
    title: string;
-   imgAlt: string;
+   page: string;
 }
 
-interface Props extends CardProps {
-   type: 'pasir' | 'batu';
-}
-
-const { title, imgAlt, type } = Astro.props;
-
-const imgSrc = type == 'pasir' ? `/img/pasir/${imgAlt}.webp` : `/img/batu/${imgAlt}.webp`;
+const { img, alt, gallery, title, page } = Astro.props;
 ---
 
 <div class='card shadow'>
-   <a href={imgSrc} class='glightbox' data-gallery='gallery'>
-      <img src={imgSrc} class='card-img-top cardimg' alt={imgAlt} width='100%' />
+   <a href={img?.src} class='glightbox' data-gallery={gallery}>
+      <Image
+         src={img}
+         alt={alt}
+         layout='constrained'
+         style={{
+            width: '100%',
+            height: '300px',
+            borderRadius: '10px',
+         }}
+         quality='low'
+         loading='lazy'
+         class='card-img-top cardimg'
+      />
    </a>
    <div class='card-body'>
       <h6 class='card-title text-center mb-3'>{title}</h6>
-      <a href={`/product/${imgAlt}`} class='btn btn-primary text-white d-flex align-items-center justify-content-center gap-2'>
+      <a
+         href={`/product/${page}`}
+         class='btn btn-primary text-white d-flex align-items-center justify-content-center gap-2'
+      >
          <i class='fas fa-long-arrow-alt-right'></i>
          <span>Cek Harga</span>
       </a>
    </div>
 </div>
-
-<style>
-   .cardimg {
-      width: 100%;
-      height: 180px;
-   }
-   .card {
-      border-radius: 10px;
-      overflow: hidden;
-   }
-</style>

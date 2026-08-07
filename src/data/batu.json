@@ -1,47 +1,45 @@
-{
-   "batu-belah": {
-      "truk": "2.325.000",
-      "engkel": "1.475.000",
-      "pickup": "-"
+[
+
+   {
+      "params": { "product": "batu-belah" },
+      "title": "Batu Belah",
+      "price": { "truck": "2.225.000", "engkel": "", "pickup": "" },
+      "image": "batu-belah.webp"
    },
-   "batu-sirtu": {
-      "truk": "1.775.000",
-      "engkel": "1.225.000",
-      "pickup": "-"
+   {
+      "params": { "product": "batu-sirtu" },
+      "title": "Batu Sirtu",
+      "price": { "truck": "1.675.000", "engkel": "", "pickup": "" },
+      "image": "batu-sirtu.webp"
    },
-   "batu-abu": {
-      "truk": "2.325.000",
-      "engkel": "1.475.000",
-      "pickup": "-"
+   {
+      "params": { "product": "batu-abu" },
+      "title": "Batu Abu",
+      "price": { "truck": "2.225.000", "engkel": "", "pickup": "" },
+      "image": "batu-abu.webp"
    },
-   "batu-kuricak": {
-      "truk": "1.940.000",
-      "engkel": "1.300.000",
-      "pickup": "-"
+   {
+      "params": { "product": "batu-kuricak" },
+      "title": "Batu Kuricak",
+      "price": { "truck": "1.840.000", "engkel": "", "pickup": "" },
+      "image": "batu-kuricak.webp"
    },
-   "batu-brangkal-hs": {
-      "truk": "1.610.000",
-      "engkel": "1.150.000",
-      "pickup": "-"
+   {
+      "params": { "product": "batu-brangkal" },
+      "title": "Batu Brangkal",
+      "price": { "truck": "1.510.000", "engkel": "", "pickup": "" },
+      "image": "batu-brangkal.webp"
    },
-   "batu-makadam": {
-      "truk": "1.720.000",
-      "engkel": "1.200.000",
-      "pickup": "-"
+    {
+      "params": { "product": "batu-makadam" },
+      "title": "Batu Makadam",
+      "price": { "truck": "1.620.000", "engkel": "", "pickup": "" },
+      "image": "batu-makadam.webp"
    },
-   "batu-beskos": {
-      "truk": "2.600.000",
-      "engkel": "1.600.000",
-      "pickup": "-"
-   },
-   "batu-sekrining": {
-      "truk": "2.710.000",
-      "engkel": "1.650.000",
-      "pickup": "-"
-   },
-   "batu-split-ancol": {
-      "truk": "3.040.000",
-      "engkel": "1.800.000",
-      "pickup": "-"
+   {
+      "params": { "product": "batu-split" },
+      "title": "Batu Split Ancol",
+      "price": { "truck": "2.940.000", "engkel": "", "pickup": "" },
+      "image": "batu-split.webp"
    }
-}
+]
