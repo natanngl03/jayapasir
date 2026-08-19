@@ -4,16 +4,17 @@
       "answer": {
          "text": "Kami menyediakan berbagai kebutuhan material bangunan, antara lain:",
          "list": [
-            "Pasir Bangka (Putih, Kuning, Sadai, Jambi)",
-            "Pasir Rangkas (Kuning, Hitam, Abadi)",
-            "Pasir Cilegon (Ayak & Cuci)",
-            "Pasir Urug",
+            "Pasir Bangka",
+            "Pasir Rangkas",
+            "Pasir Cilegon",
+            "Pasir Kalimantan",
+            "Pasir Jambi",
             "Batu Split",
             "Batu Sirtu",
             "Batu Makadam",
             "Batu Belah",
             "Batu Abu",
-            "Material Lainnya Silahkan Tanyakan Ke kami "
+            "Material lainnya yang tidak tercantum di halaman ini, silahkan tanyakan ke kami"
          ]
       }
    },
@@ -36,36 +37,36 @@
       "answer": {
          "text": "Kami menyediakan dua pilihan pembayaran:",
          "list": [
-            "DP 40%, kemudian sisa pembayaran dilakukan secara COD di lokasi setelah material tiba.",
-            "Pembayaran lunas (Full Payment) sebelum pengiriman."
+            "Pembayaran DP (Tanda Jadi) : Bisa melalui BANK Transfer maupun melalui rekber Tokopedia & Shoope",
+            "Sisa Pembayaran lunas (Full Payment) setelah barang sampai ditujuan"
          ]
       }
    },
    {
       "faq": "Apakah harga sudah termasuk ongkos kirim?",
       "answer": {
-         "text": "Ya. Harga yang kami berikan sudah termasuk biaya pengiriman (ongkir) ke area layanan Jabodetabek.",
+         "text": "Harga yang tercantum belum termasuk ongkos kirim, kami akan menghitung ulang sesuai dengan lokasi anda.",
          "list": []
       }
    },
    {
       "faq": "Apakah harga sudah termasuk jasa bongkar?",
       "answer": {
-         "text": "Ya. Harga juga sudah termasuk jasa kuli bongkar, sehingga Anda tidak perlu mencari tenaga bongkar tambahan.",
+         "text": "Ya. Harga juga sudah termasuk jasa bongkar, sehingga Anda tidak perlu mencari tenaga bongkar tambahan.",
          "list": []
       }
    },
    {
-      "faq": "Apakah bisa pesan dalam jumlah kecil maupun besar?",
+      "faq": "Apakah bisa pesan dalam jumlah kecil?",
       "answer": {
-         "text": "Bisa. Kami melayani pemesanan untuk kebutuhan rumah tinggal, renovasi, ruko, gudang, hingga proyek konstruksi dalam jumlah besar. Namun ini tergantung jenis produknya",
+         "text": "Untuk pembelian jumlah kecil saat ini kami hanya melayani Tangerang Selatan dan sekitarnya",
          "list": []
       }
    },
    {
       "faq": "Bagaimana cara melakukan pemesanan?",
       "answer": {
-         "text": "Anda dapat menghubungi kami melalui WhatsApp atau telepon. Tim kami akan membantu memberikan informasi produk, menghitung kebutuhan material, serta memberikan penawaran harga.",
+         "text": "Anda dapat menghubungi kami melalui WhatsApp atau telepon. Tim kami akan membantu memberikan informasi produk, serta memberikan penawaran harga.",
          "list": []
       }
    },

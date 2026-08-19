@@ -73,12 +73,32 @@ const image = getImage(item?.image || '');
                         </tr>
                         <tr>
                            <th scope='row'>Engkel (2.5 kubik) <i>*hanya tangsel</i></th>
-                           <!-- <td>Rp {item?.price?.engkel || 'Hubungi kami'}</td> -->
-                           <td>{item?.price?.engkel ? `Rp ${item?.price?.engkel}` : <i>hubungi kami</i>}</td>
+                           <td
+                              >{
+                                 item?.price?.engkel === 'callus' ? (
+                                    <i>hubungi kami</i>
+                                 ) : item?.price?.engkel === 'unavailable' ? (
+                                    <i>tidak tersedia</i>
+                                 ) : (
+                                    `Rp ${item?.price?.engkel}`
+                                 )
+                              }</td
+                           >
                         </tr>
                         <tr>
                            <th scope='row'>Pickup (1.0 kubik) <i>*hanya tangsel</i></th>
-                           <td>{item?.price?.pickup ? `Rp ${item?.price?.pickup}` : <i>hubungi kami</i>}</td>
+
+                           <td
+                              >{
+                                 item?.price?.pickup === 'callus' ? (
+                                    <i>hubungi kami</i>
+                                 ) : item?.price?.pickup === 'unavailable' ? (
+                                    <i>tidak tersedia</i>
+                                 ) : (
+                                    `Rp ${item?.price?.pickup}`
+                                 )
+                              }</td
+                           >
                         </tr>
                      </tbody>
                   </table>
@@ -86,10 +106,17 @@ const image = getImage(item?.image || '');
 
                <p class='m-0'>Notes:</p>
                <ul class='fst-italic text-gray'>
-                  <li>Harga diatas harga acuan Tangerang Selatan</li>
+                  <li>Harga diatas merupakan harga acuan saja <i>**(Belum termasuk ONGKOS)</i></li>
                   <li>Harga final akan dihitung ulang sesuai lokasi anda</li>
-                  <li>Harga final sudah FREE ONGKIR</li>
-                  <li>Selalu tanyakan ketersedian barang & harga terbaru</li>
+                  <li>Selalu tanyakan ketersedian barang & harga terbaru karena dapat berubah sewaktu-waktu.</li>
+                  {
+                     product === 'pasir-cilegon' && (
+                        <li class='text-danger'>
+                           Untuk pasir cilegon terdapat perbedaan harga tiap jenis, harga diatas adalah harga cilegon
+                           ayak. Untuk cilegon jenis lain harap ditanyakan terlebih dahulu
+                        </li>
+                     )
+                  }
                </ul>
 
                <a

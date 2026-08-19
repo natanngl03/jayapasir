@@ -100,67 +100,39 @@ import WhatsappBtn from '../components/ui/WhatsappBtn.astro';
       <script>
          import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
-         // import GLightbox from 'glightbox';
-
-         // const lightbox = GLightbox({
-         //    selector: '.glightbox',
-         // });
-
-         // let isOpen = false;
-
-         // lightbox.on('open', () => {
-         //    isOpen = true;
-         //    history.pushState({ lightbox: true }, '');
-         // });
-
-         // lightbox.on('close', () => {
-         //    isOpen = false;
-         // });
-
-         // window.addEventListener('popstate', () => {
-         //    if (isOpen) {
-         //       lightbox.close();
-         //    }
-         // });
-
          import GLightbox from 'glightbox';
-         GLightbox({
+
+         const lightbox = GLightbox({
             selector: '.glightbox',
          });
 
-         // const lightbox = GLightbox({
-         //    selector: '.glightbox',
-         // });
+         let isOpen = false;
+         let closingFromBack = false;
 
-         // let isOpen = false;
-         // let closingFromBack = false;
+         lightbox.on('open', () => {
+            isOpen = true;
+            history.pushState({ lightbox: true }, '');
+         });
 
-         // lightbox.on('open', () => {
-         //    isOpen = true;
-         //    history.pushState({ lightbox: true }, '');
-         // });
+         lightbox.on('close', () => {
+            isOpen = false;
 
-         // lightbox.on('close', () => {
-         //    isOpen = false;
+            if (!closingFromBack) {
+               history.back();
+            }
 
-         //    if (!closingFromBack) {
-         //       history.back();
-         //    }
+            closingFromBack = false;
+         });
 
-         //    closingFromBack = false;
-         // });
-
-         // window.addEventListener('popstate', () => {
-         //    if (isOpen) {
-         //       closingFromBack = true;
-         //       lightbox.close();
-         //    }
-         // });
+         window.addEventListener('popstate', () => {
+            if (isOpen) {
+               closingFromBack = true;
+               lightbox.close();
+            }
+         });
       </script>
 
       <script is:inline src='https://code.jquery.com/jquery-3.4.1.min.js' defer></script>
-      <!-- <script is:inline src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js' defer></script> -->
-      <!-- <script is:inline src='/lib/easing/easing.min.js' defer></script> -->
       <script is:inline src='/lib/owlcarousel/owl.carousel.min.js' defer></script>
       <script is:inline src='/js/main.js' defer></script>
    </body>
