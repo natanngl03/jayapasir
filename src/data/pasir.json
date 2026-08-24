@@ -2,49 +2,49 @@
    {
       "params": { "product": "pasir-bangka-super" },
       "title": "Pasir Bangka Super",
-      "price": { "truck": "2.340.000", "engkel": "unavailable", "pickup": "unavailable" },
+      "price": { "truck": "3.100.000", "engkel": "unavailable", "pickup": "unavailable" },
       "image": "bangka-super.jpg"
    },
    {
       "params": { "product": "pasir-bangka-putih-super" },
       "title": "Pasir Bangka Putih Super",
-      "price": { "truck": "2.340.000", "engkel": "unavailable", "pickup": "unavailable" },
+      "price": { "truck": "3.100.000", "engkel": "unavailable", "pickup": "unavailable" },
       "image": "bangka-super-putih.jpg"
    },
    {
-      "params": { "product": "pasir-kalimantan-tayan" },
-      "title": "Pasir Kalimantan Tayan",
-      "price": { "truck": "1.980.000", "engkel": "unavailable", "pickup": "unavailable" },
-      "image": "kalimantan-tayan.png"
-   },
-   {
-      "params": { "product": "pasir-kalimantan-pulpis" },
-      "title": "Pasir Kalimantan Pulpis",
-      "price": { "truck": "1.920.000", "engkel": "unavailable", "pickup": "unavailable" },
-      "image": "kalimantan-pulpis.jpg"
+      "params": { "product": "pasir-kalimantan" },
+      "title": "Pasir Kalimantan",
+      "price": { "truck": "2.680.000", "engkel": "unavailable", "pickup": "unavailable" },
+      "image": "pasir-kalimantan.jpg"
    },
    {
       "params": { "product": "pasir-jambi" },
       "title": "Pasir Jambi",
-      "price": { "truck": "1.740.000", "engkel": "unavailable", "pickup": "unavailable" },
+      "price": { "truck": "2.440.000", "engkel": "unavailable", "pickup": "unavailable" },
       "image": "pasir-jambi.jpg"
    },
    {
       "params": { "product": "pasir-rangkas" },
       "title": "Pasir Rangkas",
-      "price": { "truck": "1.800.000", "engkel": "callus", "pickup": "callus" },
+      "price": { "truck": "2.050.000", "engkel": "1.350.000", "pickup": "600.000" },
       "image": "pasir-rangkas.jpg"
    },
    {
       "params": { "product": "pasir-rangkas-abadi" },
-      "title": "Pasir Rangkas Abadi",
-      "price": { "truck": "2.200.000", "engkel": "callus", "pickup": "callus" },
+      "title": "Pasir Rangkas Hitam Abadi",
+      "price": { "truck": "2.450.000", "engkel": "1.450.000", "pickup": "600.000" },
       "image": "rangkas-abadi.jpg"
    },
    {
-      "params": { "product": "pasir-cilegon" },
-      "title": "Pasir Cilegon (Ayak/Cuci/Celup)",
-      "price": { "truck": "1.700.000", "engkel": "callus", "pickup": "callus" },
-      "image": "pasir-cilegon.jpg"
+      "params": { "product": "pasir-cilegon-ayak" },
+      "title": "Pasir Cilegon Ayak",
+      "price": { "truck": "1.950.000", "engkel": "1.100.000", "pickup": "500.000" },
+      "image": "cilegon-ayak.jpg"
+   },
+   {
+      "params": { "product": "pasir-cilegon-cuci" },
+      "title": "Pasir Cilegon Cuci",
+      "price": { "truck": "2.150.000", "engkel": "1.250.000", "pickup": "550.000" },
+      "image": "cilegon-cuci.jpg"
    }
 ]

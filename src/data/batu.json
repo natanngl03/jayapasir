@@ -2,49 +2,49 @@
    {
       "params": { "product": "batu-screening" },
       "title": "Batu Screening",
-      "price": { "truck": "2.040.000", "engkel": "callus", "pickup": "callus" },
+      "price": { "truck": "2.740.000", "engkel": "callus", "pickup": "callus" },
       "image": "batu-screening.jpg"
    },
    {
       "params": { "product": "batu-belah" },
       "title": "Batu Belah",
-      "price": { "truck": "1.620.000", "engkel": "callus", "pickup": "unavailable" },
+      "price": { "truck": "2.320.000", "engkel": "callus", "pickup": "unavailable" },
       "image": "batu-belah.jpg"
    },
    {
       "params": { "product": "batu-sirtu" },
       "title": "Batu Sirtu",
-      "price": { "truck": "1.020.000", "engkel": "callus", "pickup": "unavailable" },
+      "price": { "truck": "1.720.000", "engkel": "callus", "pickup": "unavailable" },
       "image": "batu-sirtu.jpg"
    },
    {
       "params": { "product": "batu-abu" },
       "title": "Batu Abu",
-      "price": { "truck": "1.620.000", "engkel": "callus", "pickup": "callus" },
+      "price": { "truck": "2.320.000", "engkel": "callus", "pickup": "callus" },
       "image": "batu-abu.png"
    },
    {
       "params": { "product": "batu-brangkal" },
       "title": "Batu Brangkal",
-      "price": { "truck": "840.000", "engkel": "callus", "pickup": "unavailable" },
+      "price": { "truck": "1.540.000", "engkel": "callus", "pickup": "unavailable" },
       "image": "batu-brangkal.jpg"
    },
    {
       "params": { "product": "batu-makadam" },
       "title": "Batu Makadam",
-      "price": { "truck": "960.000", "engkel": "callus", "pickup": "unavailable" },
+      "price": { "truck": "1.660.000", "engkel": "callus", "pickup": "unavailable" },
       "image": "batu-makadam.jpg"
    },
    {
       "params": { "product": "batu-kricak" },
       "title": "Batu Kricak",
-      "price": { "truck": "1.200.000", "engkel": "callus", "pickup": "unavailable" },
+      "price": { "truck": "1.900.000", "engkel": "callus", "pickup": "unavailable" },
       "image": "batu-kricak.jpg"
    },
    {
       "params": { "product": "batu-split" },
-      "title": "Batu Split",
-      "price": { "truck": "2.400.000", "engkel": "callus", "pickup": "callus" },
+      "title": "Batu Split 1.2",
+      "price": { "truck": "3.100.000", "engkel": "callus", "pickup": "callus" },
       "image": "batu-split.jpg"
    }
 ]
