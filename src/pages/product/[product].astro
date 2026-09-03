@@ -69,7 +69,17 @@ const image = getImage(item?.image || '');
                      <tbody>
                         <tr>
                            <th scope='row'>Truk (5.5 kubik)</th>
-                           <td>Rp {item?.price?.truck || '-'}</td>
+                           <td
+                              >{
+                                 item?.price?.truck === 'callus' ? (
+                                    <i>hubungi kami</i>
+                                 ) : item?.price?.truck === 'unavailable' ? (
+                                    <i>tidak tersedia</i>
+                                 ) : (
+                                    `Rp ${item?.price?.truck}`
+                                 )
+                              }</td
+                           >
                         </tr>
                         <tr>
                            <th scope='row'>Engkel (2.5 kubik) <i>*hanya tangsel</i></th>
@@ -108,6 +118,7 @@ const image = getImage(item?.image || '');
                <ul class='fst-italic text-gray'>
                   <li>Harga final akan dihitung ulang sesuai lokasi anda</li>
                   <li>Selalu tanyakan ketersedian barang & harga terbaru karena dapat berubah sewaktu-waktu.</li>
+                  <li>Barang yang tidak tercantum harap tanyakan ke kami</li>
                </ul>
 
                <a
