@@ -9,4 +9,22 @@ $secondary: #ffd36a;
 $table-cell-padding-y: 0.75rem;
 $table-cell-padding-x: 1rem;
 
+$headings-margin-bottom: 0;
+$paragraph-margin-bottom: 0;
+
+$spacer: 1rem;
+$spacers: (
+   0: 0,
+   1: $spacer * 0.25,
+   2: $spacer * 0.5,
+   3: $spacer,
+   4: $spacer * 1.5,
+   5: $spacer * 3,
+   6: $spacer * 4,
+   7: $spacer * 5,
+   8: $spacer * 6,
+   9: $spacer * 7,
+   10: $spacer * 8,
+);
+
 @import './../../../node_modules/bootstrap/scss/bootstrap.scss';

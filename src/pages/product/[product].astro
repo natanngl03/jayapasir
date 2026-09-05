@@ -1,15 +1,16 @@
 ---
 import { Image } from 'astro:assets';
 import Layout from './../../layouts/Layout.astro';
-import PasirJson from './../../data/pasir.json';
-import BatuJson from './../../data/batu.json';
+import PasirJson from './../../data/pasirNew.json';
+import BatuJson from './../../data/batuNew.json';
 
 const { product } = Astro.params;
 
-export const PasirData = PasirJson as ProductType[];
-export const BatuData = BatuJson as ProductType[];
+// export const PasirData = PasirJson as ProductType[];
+// export const BatuData = BatuJson as ProductType[];
 
-export const AllData = [...PasirData, ...BatuData];
+// export const AllData = [...PasirJson, ...BatuData];
+export const AllData = [...PasirJson, ...BatuJson];
 
 export function getStaticPaths() {
    return AllData;
@@ -36,7 +37,7 @@ const image = getImage(item?.image || '');
 ---
 
 <Layout>
-   <div class='container-fluid header'>
+   <!--  <div class='container-fluid header'>
       <div class='container'>
          <div class='row g-4'>
             <div class='col-md-5 order-2 order-md-1'>
@@ -141,5 +142,102 @@ const image = getImage(item?.image || '');
       .upper {
          text-transform: uppercase;
       }
-   </style>
+   </style> -->
+
+   <div class='container-fluid py-10'>
+      <div class='container'>
+         <h1 class='text-center display-6 mb-5'>
+            {`Harga ${new Date().getFullYear()} - ${item?.title}`}
+         </h1>
+         <div class='row g-4'>
+            <div class='col-lg-4 order-2 order-lg-1'>
+               <Image
+                  src={image}
+                  alt={item?.params?.product || 'material image'}
+                  layout='constrained'
+                  style={{
+                     width: '100%',
+                     height: '100%',
+                     borderRadius: '10px',
+                  }}
+                  quality='low'
+                  loading='lazy'
+               />
+            </div>
+            <div class='col-lg-8 order-1 order-lg-2'>
+               <div
+                  class='container border border-2 border-primary rounded d-flex flex-column justify-content-between py-3'
+               >
+                  <h2 class='text-center fs-4 fw-light border-bottom border-primary border-2 pb-3'>
+                     Ukuran 1 Dumptruck 6 m3 <br />
+                     <span class='fst-italic fw-bold fs-6'>FREE ONGKIR</span>
+                  </h2>
+                  <div class='row'>
+                     {
+                        item?.data &&
+                           item?.data?.map((val, idx, arr) => {
+                              const calcCol = 12 / arr.length;
+                              const mdCol = `col-lg-${calcCol}`;
+
+                              return (
+                                 <div class={`col-12 ${mdCol} py-4 py-lg-5 text-center`}>
+                                    <h3 class='fs-5 fw-normal'>{val.location}</h3>
+                                    <p class='display-6 fw-bold fs-5 text-danger'>{`Rp. ${val.price}`}</p>
+                                 </div>
+                              );
+                           })
+                     }
+                  </div>
+
+                  <a
+                     href={`https://wa.me/6285117436727?text=Hallo%20Jayapasir,%20saya%20ingin%20melakukan%20order%20${item?.title}`}
+                     class='btn btn-primary d-flex justify-content-center align-items-center gap-2 text-white'
+                  >
+                     <i class='fab fa-whatsapp fa-2x'></i>
+                     <span> Pesan Sekarang </span></a
+                  >
+               </div>
+
+               <div class='pt-2'>
+                  <p class='m-0'>Notes:</p>
+                  <ul class='fst-italic text-gray'>
+                     <li>Harga sudah FREE Ongkir</li>
+                     <li>Harga masih bisa Nego</li>
+                     <li>Selalu tanyakan ketersedian barang & harga terbaru karena dapat berubah sewaktu-waktu.</li>
+                     <li>Barang yang tidak tercantum harap tanyakan ke kami</li>
+                  </ul>
+               </div>
+
+               <!-- <div class='row border border-2 border-primary rounded'>
+                  <div class='col-12 border-bottom border-2 border-primary'>
+                     <div class='py-4'>
+                        <h2 class='text-center fs-3 fw-light'>
+                           Ukuran 1 Dumptruck 6 m3 <br />
+                           <span class='fst-italic fw-bold fs-6'>FREE ONGKIR</span>
+                        </h2>
+                     </div>
+                  </div>
+
+                  <div class='col-12'>
+                     <div class='row'>
+                        {
+                           [...Array(4)].map((val, idx, arr) => {
+                              const calcCol = 12 / arr.length;
+                              const mdCol = `col-md-${calcCol}`;
+
+                              return (
+                                 <div class={`col-12 ${mdCol} py-4 py-md-5 text-center`}>
+                                    <h3 class='fs-5 fw-normal'>Tangerang</h3>
+                                    <p class='display-6 fw-bold fs-3 text-danger'>Rp. 2.090.000</p>
+                                 </div>
+                              );
+                           })
+                        }
+                     </div>
+                  </div>
+               </div> -->
+            </div>
+         </div>
+      </div>
+   </div>
 </Layout>

@@ -1,0 +1,82 @@
+[
+   {
+      "params": { "product": "batu-screening" },
+      "title": "Batu Screening",
+      "image": "batu-screening.jpg",
+      "data": [
+         { "location": "Jakarta Selatan/Tangerang", "price": "3.000.000" },
+         { "location": "Jakarta(Selain Selatan)/Depok/Bogor", "price": "3.100.000" },
+         { "location": "Bekasi", "price": "3.300.000" }
+      ]
+   },
+   {
+      "params": { "product": "batu-belah" },
+      "title": "Batu Belah",
+      "image": "batu-belah.jpg",
+      "data": [
+         { "location": "Jakarta Selatan/Tangerang", "price": "2.300.000" },
+         { "location": "Jakarta(Selain Selatan)/Depok/Bogor", "price": "2.400.000" },
+         { "location": "Bekasi", "price": "2.600.000" }
+      ]
+   },
+   {
+      "params": { "product": "batu-sirtu" },
+      "title": "Batu Sirtu",
+      "image": "batu-sirtu.jpg",
+      "data": [
+         { "location": "Jakarta Selatan/Tangerang", "price": "2.000.000" },
+         { "location": "Jakarta(Selain Selatan)/Depok/Bogor", "price": "2.100.000" },
+         { "location": "Bekasi", "price": "2.300.000" }
+      ]
+   },
+   {
+      "params": { "product": "batu-abu" },
+      "title": "Batu Abu",
+      "image": "batu-abu.png",
+      "data": [
+         { "location": "Jakarta Selatan/Tangerang", "price": "2.200.000" },
+         { "location": "Jakarta(Selain Selatan)/Depok/Bogor", "price": "2.300.000" },
+         { "location": "Bekasi", "price": "2.500.000" }
+      ]
+   },
+   {
+      "params": { "product": "batu-brangkal" },
+      "title": "Batu Brangkal",
+      "image": "batu-brangkal.jpg",
+      "data": [
+         { "location": "Jakarta Selatan/Tangerang", "price": "1.700.000" },
+         { "location": "Jakarta(Selain Selatan)/Depok/Bogor", "price": "1.800.000" },
+         { "location": "Bekasi", "price": "2.000.000" }
+      ]
+   },
+   {
+      "params": { "product": "batu-makadam" },
+      "title": "Batu Makadam",
+      "image": "batu-makadam.jpg",
+      "data": [
+         { "location": "Jakarta Selatan/Tangerang", "price": "1.700.000" },
+         { "location": "Jakarta(Selain Selatan)/Depok/Bogor", "price": "1.800.000" },
+         { "location": "Bekasi", "price": "2.000.000" }
+      ]
+   },
+   {
+      "params": { "product": "batu-split" },
+      "title": "Batu Split",
+      "image": "batu-split.jpg",
+      "data": [
+         { "location": "Jakarta Selatan/Tangerang", "price": "3.100.000" },
+         { "location": "Jakarta(Selain Selatan)/Depok/Bogor", "price": "3.200.000" },
+         { "location": "Bekasi", "price": "3.400.000" }
+      ]
+   },
+   {
+      "params": { "product": "batu-kricak" },
+      "title": "Batu Kricak",
+      "image": "batu-kricak.jpg",
+      "data": [
+         { "location": "Jakarta Selatan/Tangerang", "price": "1.700.000" },
+         { "location": "Jakarta(Selain Selatan)/Depok/Bogor", "price": "1.800.000" },
+         { "location": "Bekasi", "price": "1.900.000" }
+      ]
+   }
+]

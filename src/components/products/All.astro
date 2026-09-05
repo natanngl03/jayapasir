@@ -1,12 +1,9 @@
 ---
 import Card from './Card.astro';
-import PasirJson from './../../data/pasir.json';
-import BatuJson from './../../data/batu.json';
+import PasirData from './../../data/pasirNew.json';
+import BatuData from './../../data/batuNew.json';
 
-const PasirData = PasirJson as ProductType[];
-const BatuData = BatuJson as ProductType[];
-
-const AllData: ProductType[] = [...PasirData, ...BatuData];
+const AllData = [...PasirData, ...BatuData];
 
 const images = import.meta.glob<{ default: ImageMetadata }>('../../assets/img/products/*.{jpg,jpeg,png,webp}', {
    eager: true,

@@ -1,8 +1,6 @@
 ---
 import Card from './Card.astro';
-import Json from './../../data/batu.json';
-
-const BatuData = Json as ProductType[];
+import BatuData from './../../data/batuNew.json';
 
 const images = import.meta.glob<{ default: ImageMetadata }>('../../assets/img/products/*.{jpg,jpeg,png,webp}', {
    eager: true,
