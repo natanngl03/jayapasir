@@ -3,84 +3,48 @@
       "params": { "product": "pasir-bangka-super" },
       "title": "Pasir Bangka Super",
       "image": "bangka-super.jpg",
-      "data": [
-         { "location": "Jakarta", "price": "3.095.000" },
-         { "location": "Tangerang", "price": "3.095.000" },
-         { "location": "Depok/Bogor", "price": "3.150.000" },
-         { "location": "Bekasi", "price": "3.290.000" }
-      ]
+      "price": "3.195.000"
    },
    {
       "params": { "product": "pasir-bangka-putih-super" },
       "title": "Pasir Bangka Putih Super",
       "image": "bangka-super-putih.jpg",
-      "data": [
-         { "location": "Jakarta", "price": "3.095.000" },
-         { "location": "Tangerang", "price": "3.095.000" },
-         { "location": "Depok/Bogor", "price": "3.150.000" },
-         { "location": "Bekasi", "price": "3.290.000" }
-      ]
+      "price": "3.195.000"
    },
    {
       "params": { "product": "pasir-kalimantan" },
       "title": "Pasir Kalimantan",
       "image": "pasir-kalimantan.jpg",
-      "data": [
-         { "location": "Jakarta", "price": "2.900.000" },
-         { "location": "Tangerang", "price": "2.900.000" },
-         { "location": "Depok/Bogor", "price": "3.000.000" },
-         { "location": "Bekasi", "price": "3.100.000" }
-      ]
+      "price": "2.900.000"
    },
    {
       "params": { "product": "pasir-jambi" },
       "title": "Pasir Jambi",
       "image": "pasir-jambi.jpg",
-      "data": [
-         { "location": "Jakarta", "price": "2.635.000" },
-         { "location": "Tangerang", "price": "2.585.000" },
-         { "location": "Depok/Bogor", "price": "2.685.000" },
-         { "location": "Bekasi", "price": "2.785.000" }
-      ]
+      "price": "2.535.000"
    },
    {
       "params": { "product": "pasir-rangkas" },
       "title": "Pasir Rangkas",
       "image": "pasir-rangkas.jpg",
-      "data": [
-         { "location": "Jakarta Selatan/Tangerang", "price": "2.200.000" },
-         { "location": "Jakarta(Selain Selatan)/Depok/Bogor", "price": "2.250.000" },
-         { "location": "Bekasi", "price": "2.350.000" }
-      ]
+      "price": "2.250.000"
    },
    {
       "params": { "product": "pasir-rangkas-abadi" },
       "title": "Pasir Rangkas Hitam Abadi",
       "image": "rangkas-abadi.jpg",
-      "data": [
-         { "location": "Jakarta Selatan/Tangerang", "price": "2.400.000" },
-         { "location": "Jakarta(Selain Selatan)/Depok/Bogor", "price": "2.450.000" },
-         { "location": "Bekasi", "price": "2.550.000" }
-      ]
+      "price": "2.450.000"
    },
    {
       "params": { "product": "pasir-cilegon-ayak" },
       "title": "Pasir Cilegon Ayak",
       "image": "cilegon-ayak.jpg",
-      "data": [
-         { "location": "Jakarta Selatan/Tangerang", "price": "1.900.000" },
-         { "location": "Jakarta(Selain Selatan)/Depok/Bogor", "price": "1.950.000" },
-         { "location": "Bekasi", "price": "2.000.000" }
-      ]
+      "price": "1.950.000"
    },
    {
       "params": { "product": "pasir-cilegon-cuci" },
       "title": "Pasir Cilegon Cuci",
       "image": "cilegon-cuci.jpg",
-      "data": [
-         { "location": "Jakarta Selatan/Tangerang", "price": "2.100.000" },
-         { "location": "Jakarta(Selain Selatan)/Depok/Bogor", "price": "2.150.000" },
-         { "location": "Bekasi", "price": "2.200.000" }
-      ]
+      "price": "2.150.000"
    }
 ]
