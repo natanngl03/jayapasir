@@ -3,48 +3,54 @@
       "params": { "product": "pasir-bangka-super" },
       "title": "Pasir Bangka Super",
       "image": "bangka-super.jpg",
-      "price": "3.195.000"
+      "price": "3.000.000"
    },
    {
       "params": { "product": "pasir-bangka-putih-super" },
       "title": "Pasir Bangka Putih Super",
       "image": "bangka-super-putih.jpg",
-      "price": "3.195.000"
+      "price": "3.000.000"
    },
    {
       "params": { "product": "pasir-kalimantan" },
       "title": "Pasir Kalimantan",
       "image": "pasir-kalimantan2.jpg",
-      "price": "3.000.000"
+      "price": "2.800.000"
    },
    {
       "params": { "product": "pasir-jambi" },
       "title": "Pasir Jambi",
       "image": "pasir-jambi.jpg",
-      "price": "2.535.000"
+      "price": "2.485.000"
    },
    {
       "params": { "product": "pasir-rangkas" },
       "title": "Pasir Rangkas",
       "image": "pasir-rangkas.jpg",
-      "price": "2.250.000"
+      "price": "2.000.000"
    },
    {
       "params": { "product": "pasir-rangkas-abadi" },
       "title": "Pasir Rangkas Hitam Abadi",
       "image": "rangkas-abadi.jpg",
-      "price": "2.450.000"
+      "price": "2.200.000"
    },
    {
       "params": { "product": "pasir-cilegon-ayak" },
       "title": "Pasir Cilegon Ayak",
       "image": "cilegon-ayak.jpg",
-      "price": "1.950.000"
+      "price": "1.700.000"
    },
    {
       "params": { "product": "pasir-cilegon-cuci" },
       "title": "Pasir Cilegon Cuci",
       "image": "cilegon-cuci.jpg",
-      "price": "2.150.000"
+      "price": "1.900.000"
+   },
+   {
+      "params": { "product": "pasir-jalupang" },
+      "title": "Pasir Jalupang",
+      "image": "pasir-jalupang.jpg",
+      "price": "2.700.000"
    }
 ]
