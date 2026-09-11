@@ -1,8 +1,8 @@
 ---
 import Card from './Card.astro';
-import Json from './../../data/pasir.json';
+import PasirData from './../../data/pasirNew.json';
 
-const PasirData = Json as ProductType[];
+// const PasirData = Json as ProductType[];
 
 const images = import.meta.glob<{ default: ImageMetadata }>('../../assets/img/products/*.{jpg,jpeg,png,webp}', {
    eager: true,

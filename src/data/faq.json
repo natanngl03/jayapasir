@@ -37,7 +37,7 @@
       "answer": {
          "text": "Kami menyediakan dua pilihan pembayaran:",
          "list": [
-            "Pembayaran DP (Tanda Jadi) : Bisa melalui BANK Transfer maupun melalui rekber Tokopedia & Shoope",
+            "Pembayaran DP (Tanda Jadi) : Bisa melalui BANK Transfer maupun melalui Tokopedia.",
             "Sisa Pembayaran lunas (Full Payment) setelah barang sampai ditujuan"
          ]
       }
@@ -45,7 +45,7 @@
    {
       "faq": "Apakah harga sudah termasuk ongkos kirim?",
       "answer": {
-         "text": "Harga yang tercantum belum termasuk ongkos kirim, kami akan menghitung ulang sesuai dengan lokasi anda.",
+         "text": "Ya. Harga yang tercantum sudah termasuk ongkos kirim",
          "list": []
       }
    },
