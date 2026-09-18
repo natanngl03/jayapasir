@@ -12,6 +12,12 @@ $table-cell-padding-x: 1rem;
 $headings-margin-bottom: 0;
 $paragraph-margin-bottom: 0;
 
+$link-color: null;
+$link-decoration: none;
+$link-shade-percentage: 0;
+$link-hover-color: null;
+$link-hover-decoration: null !default;
+
 $spacer: 1rem;
 $spacers: (
    0: 0,

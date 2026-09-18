@@ -9,63 +9,65 @@ import LogoImg from '../../assets/img/logo24.webp';
 ---
 
 <div class='container-fluid fixed-top bg-white shadow-sm'>
-   <nav class='navbar navbar-expand-lg navbar-light px-lg-5'>
-      <a href='/' class='navbar-brand ms-4 ms-lg-0'>
-         <!-- <img src='/img/logo24.webp' alt='logo image' class='logo' /> -->
+   <div class='container'>
+      <nav class='navbar navbar-expand-lg navbar-light'>
+         <a href='/' class='navbar-brand'>
+            <!-- <img src='/img/logo24.webp' alt='logo image' class='logo' /> -->
 
-         <Image src={LogoImg} alt='logo image' layout='constrained' quality='low' loading='lazy' class='logo' />
-      </a>
-      <button
-         type='button'
-         class='navbar-toggler me-4'
-         data-bs-toggle='collapse'
-         data-bs-target='#navbarCollapse'
-         aria-label='toggle navigation'
-      >
-         <span class='navbar-toggler-icon'></span>
-      </button>
-      <div class='collapse navbar-collapse pb-1 pb-md-0' id='navbarCollapse'>
-         <div class='navbar-nav mx-auto p-4 p-lg-0'>
-            <a href='/' class='nav-item nav-link custom'>Home</a>
-            <a href='/#chooseUs' class='nav-item nav-link custom'>Tentang</a>
-            <a href='/#faq' class='nav-item nav-link custom'>Pertanyaan</a>
-
-            <div class='nav-item dropdown'>
-               <a href='#' class='nav-link dropdown-toggle' data-bs-toggle='dropdown'>Harga Pasir</a>
-               <div class='dropdown-menu m-0'>
-                  {
-                     PasirList.map((val, idx) => (
-                        <a href={`/product/${val.params.product}`} class='dropdown-item custom'>
-                           {val.title}
-                        </a>
-                     ))
-                  }
-               </div>
-            </div>
-            <div class='nav-item dropdown'>
-               <a href='#' class='nav-link dropdown-toggle' data-bs-toggle='dropdown'>Harga Batu</a>
-               <div class='dropdown-menu m-0'>
-                  {
-                     BatuList.map((val, idx) => (
-                        <a href={`/product/${val.params.product}`} class='dropdown-item custom'>
-                           {val.title}
-                        </a>
-                     ))
-                  }
-               </div>
-            </div>
-         </div>
-         <a
-            class='border border-primary text-decoration-none p-2 rounded d-flex align-items-center justify-content-center gap-2'
-            href='https://wa.me/6285117436727?text=Hallo%20Jayapasir,%20saya%20ingin%20melakukan%20order.'
-            target='_blank'
-            rel='noopener noreferrer'
-         >
-            <i class='fab fa-whatsapp fa-2x'></i>
-            <span> Info: 0851 1743 6727</span>
+            <Image src={LogoImg} alt='logo image' layout='constrained' quality='low' loading='lazy' class='logo' />
          </a>
-      </div>
-   </nav>
+         <button
+            type='button'
+            class='navbar-toggler'
+            data-bs-toggle='collapse'
+            data-bs-target='#navbarCollapse'
+            aria-label='toggle navigation'
+         >
+            <span class='navbar-toggler-icon'></span>
+         </button>
+         <div class='collapse navbar-collapse pb-1 pb-md-0' id='navbarCollapse'>
+            <div class='navbar-nav mx-auto p-4 p-lg-0'>
+               <a href='/' class='nav-item nav-link custom'>Home</a>
+               <a href='/#chooseUs' class='nav-item nav-link custom'>Tentang</a>
+               <a href='/#faq' class='nav-item nav-link custom'>Pertanyaan</a>
+
+               <div class='nav-item dropdown'>
+                  <a href='#' class='nav-link dropdown-toggle' data-bs-toggle='dropdown'>Harga Pasir</a>
+                  <div class='dropdown-menu m-0'>
+                     {
+                        PasirList.map((val, idx) => (
+                           <a href={`/product/${val.params.product}`} class='dropdown-item custom'>
+                              {val.title}
+                           </a>
+                        ))
+                     }
+                  </div>
+               </div>
+               <div class='nav-item dropdown'>
+                  <a href='#' class='nav-link dropdown-toggle' data-bs-toggle='dropdown'>Harga Batu</a>
+                  <div class='dropdown-menu m-0'>
+                     {
+                        BatuList.map((val, idx) => (
+                           <a href={`/product/${val.params.product}`} class='dropdown-item custom'>
+                              {val.title}
+                           </a>
+                        ))
+                     }
+                  </div>
+               </div>
+            </div>
+            <a
+               class='border border-primary text-decoration-none p-2 rounded d-flex align-items-center justify-content-center gap-2'
+               href='https://wa.me/6285117436727?text=Hallo%20Jayapasir,%20saya%20ingin%20melakukan%20order.'
+               target='_blank'
+               rel='noopener noreferrer'
+            >
+               <i class='fab fa-whatsapp fa-2x'></i>
+               <span> Info: 0851 1743 6727</span>
+            </a>
+         </div>
+      </nav>
+   </div>
 </div>
 
 <script>
