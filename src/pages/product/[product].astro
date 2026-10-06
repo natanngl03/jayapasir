@@ -3,6 +3,7 @@ import { Image } from 'astro:assets';
 import Layout from './../../layouts/Layout.astro';
 import PasirJson from './../../data/pasirNew.json';
 import BatuJson from './../../data/batuNew.json';
+import { Icon } from 'astro-icon/components';
 
 const { product } = Astro.params;
 
@@ -16,13 +17,13 @@ export function getStaticPaths() {
    return AllData;
 }
 
-const images = import.meta.glob<{ default: ImageMetadata }>('../../assets/img/products/*.{jpg,jpeg,png,webp}', {
-   eager: true,
-});
+// const images = import.meta.glob<{ default: ImageMetadata }>('../../assets/img/products/*.{jpg,jpeg,png,webp}', {
+//    eager: true,
+// });
 
-function getImage(name: string) {
-   return images[`../../assets/img/products/${name}`]?.default;
-}
+// function getImage(name: string) {
+//    return images[`../../assets/img/products/${name}`]?.default;
+// }
 
 const getProduct = () => {
    const item = AllData.find((item) => item.params.product == product);
@@ -33,36 +34,32 @@ const getProduct = () => {
 
 const item = getProduct();
 
-const image = getImage(item?.image || '');
+// const image = getImage(item?.image || '');
 ---
 
 <Layout>
-   <div class='container-fluid py-10'>
+   <div class='container-fluid pt-5 pb-10'>
       <div class='container'>
          <h1 class='text-center display-6 mb-5 fw-bold'>
             {`Harga ${new Date().getFullYear()} - ${item?.title}`}
          </h1>
          <div class='row g-4'>
-            <div class='col-lg-5 order-2 order-lg-1'>
-               <Image
-                  src={image}
-                  alt={item?.params?.product || 'material image'}
-                  layout='constrained'
-                  style={{
-                     width: '100%',
-                     height: '100%',
-                     borderRadius: '10px',
-                  }}
-                  quality='low'
+            <div class='col-lg-5'>
+               <img
+                  src={`/img/${item?.image}`}
+                  alt={item?.title}
+                  width='100%'
+                  height='100%'
                   loading='lazy'
+                  style='border-radius: 10px;'
                />
             </div>
-            <div class='col-lg-7 order-1 order-lg-2'>
+            <div class='col-lg-7'>
                <div
                   class='container border border-2 border-primary rounded d-flex flex-column justify-content-between py-3'
                >
                   <h2 class='text-center fs-4 fw-bold border-bottom border-primary border-2 pb-3'>
-                     Ukuran 1 Dumptruck 6 m3 <br />
+                     Ukuran 1 Truk - 6 Kubik <br />
                      <span class='fst-italic fw-light fs-6'>FREE ONGKIR</span>
                   </h2>
 
@@ -72,7 +69,7 @@ const image = getImage(item?.image || '');
                      href={`https://wa.me/6285117436727?text=Hallo%20Jayapasir,%20saya%20ingin%20melakukan%20order%20${item?.title}`}
                      class='btn btn-primary d-flex justify-content-center align-items-center gap-2 text-white'
                   >
-                     <i class='fab fa-whatsapp fa-2x'></i>
+                     <Icon name='fa6-brands:whatsapp' size={30} />
                      <span>Pesan Sekarang</span></a
                   >
                </div>

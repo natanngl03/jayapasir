@@ -1,28 +1,16 @@
 ---
 import Card from './Card.astro';
 import PasirData from './../../data/pasirNew.json';
-
-// const PasirData = Json as ProductType[];
-
-const images = import.meta.glob<{ default: ImageMetadata }>('../../assets/img/products/*.{jpg,jpeg,png,webp}', {
-   eager: true,
-});
-
-function getImage(name: string) {
-   return images[`../../assets/img/products/${name}`]?.default;
-}
 ---
 
 <div class='row g-4'>
    {
       PasirData &&
          PasirData.map((val, idx) => {
-            const img = getImage(val.image);
-
             return (
                <div class='col-6 col-md-3'>
                   <Card
-                     img={img}
+                     imgSrc={`/img/${val.image}`}
                      alt={`pasir_${idx}`}
                      gallery='pasir_gallery'
                      title={val.title}

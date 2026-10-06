@@ -6,6 +6,7 @@ import './../assets/scss/bootstrap.min.css';
 import Navbar from './../components/ui/Navbar.astro';
 import Footer from './../components/ui/Footer.astro';
 import WhatsappBtn from '../components/ui/WhatsappBtn.astro';
+import Spinner from '../components/ui/Spinner.astro';
 ---
 
 <!doctype html>
@@ -15,11 +16,11 @@ import WhatsappBtn from '../components/ui/WhatsappBtn.astro';
       <meta charset='UTF-8' />
       <meta name='viewport' content='width=device-width, initial-scale=1.0' />
 
-      <title>Jaya Pasir | Supplier Pasir Murah, Batu Split & Material Bangunan Tangerang Selatan</title>
+      <title>Jelupang Jaya Pasir | Supplier Pasir Murah, Batu Split & Material Bangunan Tangerang Selatan</title>
 
       <meta
          name='description'
-         content='Jaya Pasir adalah supplier pasir murah, batu murah, batu split, sirtu, abu batu, dan material bangunan di Tangerang Selatan. Melayani pengiriman cepat ke Jakarta, Bogor, Depok, Tangerang, Bekasi, dan seluruh Jabodetabek dengan harga kompetitif.'
+         content='Jelupang Jaya Pasir adalah supplier pasir murah, batu murah, batu split, sirtu, abu batu, dan material bangunan di Tangerang Selatan. Melayani pengiriman cepat ke Jakarta, Bogor, Depok, Tangerang, Bekasi, dan seluruh Jabodetabek dengan harga kompetitif.'
       />
 
       <meta
@@ -27,7 +28,7 @@ import WhatsappBtn from '../components/ui/WhatsappBtn.astro';
          content='supplier pasir, jual pasir, pasir murah, supplier batu, batu murah, batu split, sirtu, abu batu, pasir bangka, pasir putih, pasir kuning, material bangunan, Tangerang Selatan, Jakarta, Bogor, Depok, Tangerang, Bekasi, Jabodetabek'
       />
 
-      <meta name='author' content='Jaya Pasir' />
+      <meta name='author' content='Jelupang Jaya Pasir' />
       <meta name='robots' content='index, follow' />
       <meta name='theme-color' content='#C79A3B' />
 
@@ -36,10 +37,13 @@ import WhatsappBtn from '../components/ui/WhatsappBtn.astro';
 
       <!-- Open Graph -->
       <meta property='og:type' content='website' />
-      <meta property='og:site_name' content='Jaya Pasir' />
+      <meta property='og:site_name' content='Jelupang Jaya Pasir' />
       <meta property='og:locale' content='id_ID' />
       <meta property='og:url' content='https://jayapasir.com/' />
-      <meta property='og:title' content='Jaya Pasir | Supplier Pasir Murah & Material Bangunan Tangerang Selatan' />
+      <meta
+         property='og:title'
+         content='Jelupang Jaya Pasir | Supplier Pasir Murah & Material Bangunan Tangerang Selatan'
+      />
 
       <meta
          property='og:description'
@@ -50,11 +54,14 @@ import WhatsappBtn from '../components/ui/WhatsappBtn.astro';
       <meta property='og:image:type' content='image/png' />
       <meta property='og:image:width' content='1200' />
       <meta property='og:image:height' content='630' />
-      <meta property='og:image:alt' content='Jaya Pasir - Supplier Pasir & Material Bangunan Jabodetabek' />
+      <meta property='og:image:alt' content='Jelupang Jaya Pasir - Supplier Pasir & Material Bangunan Jabodetabek' />
 
       <!-- X (Twitter) -->
       <meta name='twitter:card' content='summary_large_image' />
-      <meta name='twitter:title' content='Jaya Pasir | Supplier Pasir Murah & Material Bangunan Tangerang Selatan' />
+      <meta
+         name='twitter:title'
+         content='Jelupang Jaya Pasir | Supplier Pasir Murah & Material Bangunan Tangerang Selatan'
+      />
 
       <meta
          name='twitter:description'
@@ -62,7 +69,7 @@ import WhatsappBtn from '../components/ui/WhatsappBtn.astro';
       />
 
       <meta name='twitter:image' content='https://jayapasir.com/img/og-image.png' />
-      <meta name='twitter:image:alt' content='Jaya Pasir - Supplier Pasir & Material Bangunan Jabodetabek' />
+      <meta name='twitter:image:alt' content='Jelupang Jaya Pasir - Supplier Pasir & Material Bangunan Jabodetabek' />
 
       <!-- Favicon -->
       <link rel='icon' href='/favicon.ico' sizes='any' />
@@ -84,7 +91,7 @@ import WhatsappBtn from '../components/ui/WhatsappBtn.astro';
       />
 
       <!-- Font Awesome -->
-      <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css' />
+      <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css' /> -->
 
       <!-- Library CSS -->
       <link rel='stylesheet' href='/lib/owlcarousel/assets/owl.carousel.min.css' />
@@ -94,6 +101,16 @@ import WhatsappBtn from '../components/ui/WhatsappBtn.astro';
    </head>
 
    <body>
+      <!-- Spinner Start -->
+      <Spinner />
+
+      <!-- <div id="spi" style='position: fixed; inset: 0; background: #FFF; z-index: 99999;' class='d-flex hidden'>
+         <div class='spinner-border text-primary m-auto' role='status'>
+            <span class='visually-hidden'>Loading...</span>
+         </div>
+      </div> -->
+      <!-- Spinner End -->
+
       <Navbar />
       <main>
          <slot />

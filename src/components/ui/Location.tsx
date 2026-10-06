@@ -18,7 +18,7 @@ export default function Location() {
                            <span className='border d-flex flex-column align-items-center gap-2 py-2 rounded'>
                               <FaFacebookSquare style={{ color: 'var(--bs-blue)' }} className='fs-1' />
                               <span className='d-flex align-items-center gap-2 text-dark '>
-                                 <p className=''>Jaya Pasir</p>
+                                 <p className=''>Jelupang Jaya Pasir</p>
                                  <RxExternalLink className='' />
                               </span>
                            </span>
@@ -40,7 +40,7 @@ export default function Location() {
                            <span className='border d-flex flex-column align-items-center gap-2 py-2 rounded'>
                               <FaYoutube style={{ color: 'var(--bs-red)' }} className='fs-1' />
                               <span className='d-flex align-items-center gap-2 text-dark '>
-                                 <p className=''>Jaya Pasir</p>
+                                 <p className=''>Jelupang Jaya Pasir</p>
                                  <RxExternalLink className='' />
                               </span>
                            </span>

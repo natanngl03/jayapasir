@@ -1,4 +1,5 @@
 ---
+import { Icon } from 'astro-icon/components';
 const testimonials = [
    {
       name: 'Budi Santoso',
@@ -33,7 +34,7 @@ const testimonials = [
 
       <p class='text-center mb-5'>
          Kepuasan pelanggan adalah prioritas kami. Simak pengalaman mereka menggunakan pasir dan batu berkualitas dari
-         Jaya Pasir.
+         Jelupang Jaya Pasir.
       </p>
 
       <div class='owl-carousel testimonial-carousel wow fadeIn' data-wow-delay='0.1s'>
@@ -41,12 +42,13 @@ const testimonials = [
             testimonials.map((item, idx) => (
                <div class='testimonial-item'>
                   <div class='testimonial-text position-relative bg-white text-center rounded px-4 py-5'>
-                     <i class='fa fa-quote-left fa-2x mb-3' />
+                     <Icon name='fa6-solid:quote-left' class=' mb-3' size={30} />
+
                      <p class='mb-0'>{item.testimoni}</p>
                   </div>
                   <div class='text-center pt-4'>
                      {/* <img class='img-fluid rounded mx-auto my-3' src={`/img/testimoni/person-${idx + 1}.webp`} /> */}
-                     <i class='fas fa-user img-fluid rounded mx-auto my-3 fa-3x ' />
+                     <Icon name='fa6-solid:user' class='img-fluid rounded mx-auto my-3' size={30} />
                      <h5 class='mb-1'>{item.name}</h5>
                      <small>{item.role}</small>
                   </div>

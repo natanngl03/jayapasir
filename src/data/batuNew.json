@@ -2,49 +2,31 @@
    {
       "params": { "product": "batu-screening" },
       "title": "Batu Screening",
-      "image": "batu-screening.jpg",
-      "price": "2.600.000"
+      "image": "batu_screening.webp",
+      "price": "2.500.000"
    },
    {
-      "params": { "product": "batu-belah" },
-      "title": "Batu Belah",
-      "image": "batu-belah.jpg",
+      "params": { "product": "batu-kali" },
+      "title": "Batu Kali",
+      "image": "batu_kali.webp",
       "price": "1.900.000"
-   },
-   {
-      "params": { "product": "batu-sirtu" },
-      "title": "Batu Sirtu",
-      "image": "batu-sirtu.jpg",
-      "price": "1.700.000"
    },
    {
       "params": { "product": "batu-abu" },
       "title": "Batu Abu",
-      "image": "batu-abu.png",
-      "price": "1.900.000"
+      "image": "pasir_abu_batu.webp",
+      "price": "2.100.000"
    },
    {
       "params": { "product": "batu-brangkal" },
       "title": "Batu Brangkal",
-      "image": "batu-brangkal.jpg",
-      "price": "1.400.000"
-   },
-   {
-      "params": { "product": "batu-makadam" },
-      "title": "Batu Makadam",
-      "image": "batu-makadam.jpg",
+      "image": "batu_brangkal.webp",
       "price": "1.400.000"
    },
    {
       "params": { "product": "batu-split" },
       "title": "Batu Split",
-      "image": "batu-split.jpg",
+      "image": "batu_split.webp",
       "price": "2.700.000"
-   },
-   {
-      "params": { "product": "batu-kricak" },
-      "title": "Batu Kricak",
-      "image": "batu-kricak.jpg",
-      "price": "1.900.000"
    }
 ]
