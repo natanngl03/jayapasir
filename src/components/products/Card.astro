@@ -17,13 +17,6 @@ const { imgSrc, alt, gallery, title, page } = Astro.props;
    </a>
    <div class='card-body'>
       <h6 class='card-title text-center mb-3'>{title}</h6>
-      <a
-         href={`/product/${page}`}
-         class='btn btn-primary text-white d-flex align-items-center justify-content-center gap-2'
-      >
-         <span>Cek Harga</span>
-
-         <Icon name='fa6-solid:arrow-right-long' class='text-white' size={20} />
-      </a>
+      <a href={`/product/${page}`} class='btn btn-primary text-white w-100'>Cek Harga</a>
    </div>
 </div>
