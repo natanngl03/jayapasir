@@ -14,36 +14,19 @@ export default function Location() {
                <div className='col-12 col-md-2 '>
                   <div className='row g-3'>
                      <div className='col-4 col-md-12 text-blue'>
-                        <a href='https://web.facebook.com/61592404657760' target='_blank' rel='noopener noreferrer'>
-                           <span className='border d-flex flex-column align-items-center gap-2 py-2 rounded'>
-                              <FaFacebookSquare style={{ color: 'var(--bs-blue)' }} className='fs-1' />
-                              <span className='d-flex align-items-center gap-2 text-dark '>
-                                 <p className=''>Jelupang Jaya Pasir</p>
-                                 <RxExternalLink className='' />
-                              </span>
-                           </span>
+                        <a href='https://web.facebook.com/61592404657760' target='_blank' rel='noopener noreferrer' className='border d-flex flex-column align-items-center gap-2 py-2 rounded text-dark'>
+                              <FaFacebookSquare style={{ color: 'var(--bs-blue)' }} className='fs-1' />Facebook
                         </a>
                      </div>
                      <div className='col-4 col-md-12'>
-                        <a href='https://www.instagram.com/pasir_jaya' target='_blank' rel='noopener noreferrer'>
-                           <span className='border d-flex flex-column align-items-center gap-2 py-2 rounded'>
-                              <FaInstagramSquare style={{ color: 'var(--bs-pink)' }} className='fs-1' />
-                              <span className='d-flex align-items-center gap-2 text-dark '>
-                                 <p className=''>pasir_jaya</p>
-                                 <RxExternalLink className='' />
-                              </span>
-                           </span>
+
+                         <a href='https://www.instagram.com/pasir_jaya' target='_blank' rel='noopener noreferrer' className='border d-flex flex-column align-items-center gap-2 py-2 rounded text-dark'>
+                              <FaInstagramSquare style={{ color: 'var(--bs-pink)' }} className='fs-1' />Instagram
                         </a>
                      </div>
                      <div className='col-4 col-md-12'>
-                        <a href='https://www.youtube.com/@jayapasir0393' target='_blank' rel='noopener noreferrer'>
-                           <span className='border d-flex flex-column align-items-center gap-2 py-2 rounded'>
-                              <FaYoutube style={{ color: 'var(--bs-red)' }} className='fs-1' />
-                              <span className='d-flex align-items-center gap-2 text-dark '>
-                                 <p className=''>Jelupang Jaya Pasir</p>
-                                 <RxExternalLink className='' />
-                              </span>
-                           </span>
+                        <a href='https://www.youtube.com/@jayapasir0393' target='_blank' rel='noopener noreferrer' className='border d-flex flex-column align-items-center gap-2 py-2 rounded text-dark'>
+                              <FaYoutube style={{ color: 'var(--bs-red)' }} className='fs-1' />Youtube
                         </a>
                      </div>
                   </div>

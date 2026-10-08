@@ -3,43 +3,71 @@
       "params": { "product": "pasir-bangka" },
       "title": "Pasir Bangka",
       "image": "pasir_bangka.webp",
-      "price": "2.600.000"
+      "price": {
+         "pickup": "700.000",
+         "engkel": "1.400.000",
+         "truck": "2.800.000"
+      }
    },
    {
       "params": { "product": "pasir-bangka-putih" },
       "title": "Pasir Bangka Putih",
       "image": "pasir_bangka_putih.webp",
-      "price": "2.800.000"
+      "price": {
+         "pickup": "700.000",
+         "engkel": "1.400.000",
+         "truck": "2.800.000"
+      }
    },
    {
       "params": { "product": "pasir-rangkas" },
       "title": "Pasir Rangkas",
       "image": "pasir_rangkas.webp",
-      "price": "2.000.000"
+      "price": {
+         "pickup": "550.000",
+         "engkel": "1.100.000",
+         "truck": "2.200.000"
+      }
    },
    {
       "params": { "product": "pasir-cor" },
-      "title": "Pasir Cor Abadi",
+      "title": "Pasir Cor Hitam",
       "image": "pasir_cor.webp",
-      "price": "2.300.000"
+      "price": {
+         "pickup": "600.000",
+         "engkel": "1.200.000",
+         "truck": "2.300.000"
+      }
    },
    {
       "params": { "product": "pasir-ayak" },
-      "title": "Pasir Plester Ayak",
+      "title": "Pasir Ayak Cuci",
       "image": "pasir_ayak.webp",
-      "price": "1.800.000"
+      "price": {
+         "pickup": "600.000",
+         "engkel": "1.100.000",
+         "truck": "2.000.000"
+      }
    },
    {
       "params": { "product": "pasir-celup" },
       "title": "Pasir Celup",
       "image": "pasir_celup.webp",
-      "price": "1.900.000"
+      "price": {
+         "pickup": "550.000",
+         "engkel": "1.050.000",
+         "truck": "1.950.000"
+      }
    },
   
    {
       "params": { "product": "pasir-karungan" },
       "title": "Pasir Karungan",
       "image": "pasir_karungan.webp",
-      "price": "20.000/karung"
+      "price": {
+         "pickup": "0",
+         "engkel": "0",
+         "truck": "0"
+      }
    }
 ]

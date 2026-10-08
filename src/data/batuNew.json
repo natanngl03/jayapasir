@@ -3,30 +3,50 @@
       "params": { "product": "batu-screening" },
       "title": "Batu Screening",
       "image": "batu_screening.webp",
-      "price": "2.500.000"
+      "price": {
+         "pickup": "600.000",
+         "engkel": "1.300.000",
+         "truck": "2.500.000"
+      }
    },
    {
       "params": { "product": "batu-kali" },
       "title": "Batu Kali",
       "image": "batu_kali.webp",
-      "price": "1.900.000"
+      "price": {
+         "pickup": "500.000",
+         "engkel": "950.000",
+         "truck": "1.900.000"
+      }
    },
    {
       "params": { "product": "batu-abu" },
       "title": "Batu Abu",
       "image": "pasir_abu_batu.webp",
-      "price": "2.100.000"
+      "price": {
+         "pickup": "600.000",
+         "engkel": "1.100.000",
+         "truck": "2.100.000"
+      }
    },
    {
       "params": { "product": "batu-brangkal" },
       "title": "Batu Brangkal",
       "image": "batu_brangkal.webp",
-      "price": "1.400.000"
+      "price": {
+         "pickup": "500.000",
+         "engkel": "800.000",
+         "truck": "1.500.000"
+      }
    },
    {
       "params": { "product": "batu-split" },
       "title": "Batu Split",
       "image": "batu_split.webp",
-      "price": "2.700.000"
+      "price": {
+         "pickup": "700.000",
+         "engkel": "1.400.000",
+         "truck": "2.700.000"
+      }
    }
 ]

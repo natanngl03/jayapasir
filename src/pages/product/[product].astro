@@ -4,6 +4,7 @@ import Layout from './../../layouts/Layout.astro';
 import PasirJson from './../../data/pasirNew.json';
 import BatuJson from './../../data/batuNew.json';
 import { Icon } from 'astro-icon/components';
+import Price from '../../components/products/Price.astro';
 
 const { product } = Astro.params;
 
@@ -55,34 +56,32 @@ const item = getProduct();
                />
             </div>
             <div class='col-lg-7'>
-               <div
-                  class='container border border-2 border-primary rounded d-flex flex-column justify-content-between py-3'
-               >
-                  <h2 class='text-center fs-4 fw-bold border-bottom border-primary border-2 pb-3'>
-                     Ukuran 1 Truk - 6 Kubik <br />
-                     <span class='fst-italic fw-light fs-6'>FREE ONGKIR</span>
-                  </h2>
-
-                  <h3 class='text-center my-5 text-danger fs-1 fw-bold'>Rp {item?.price}</h3>
-
-                  <a
-                     href={`https://wa.me/6285117436727?text=Hallo%20Jayapasir,%20saya%20ingin%20melakukan%20order%20${item?.title}`}
-                     class='btn btn-primary d-flex justify-content-center align-items-center gap-2 text-white'
-                  >
-                     <Icon name='fa6-brands:whatsapp' size={30} />
-                     <span>Pesan Sekarang</span></a
-                  >
+               <div class='d-flex flex-column gap-3'>
+                  {
+                     item?.title?.toLowerCase() !== 'pasir karungan' ? (
+                        <Fragment>
+                           {item?.price?.pickup && <Price title='1 Pickup - 1.1 Kubik' price={item?.price?.pickup} />}
+                           {item?.price?.engkel && <Price title='1 Engkel - 2.7 Kubik' price={item?.price?.engkel} />}
+                           {item?.price?.truck && <Price title='1 Truk - 6 Kubik' price={item?.price?.truck} />}
+                        </Fragment>
+                     ) : (
+                        <Price title='Per Karung - Mulai Dari' price={'20.000'} />
+                     )
+                  }
                </div>
 
-               <div class='mt-3'>
+               <div class='my-3'>
                   <p class='mb-2 fw-bold fs-2'>Catatan:</p>
                   <ul class='fst-italic text-gray d-flex flex-column gap-2'>
                      <li>Harga sudah <span class='fw-bold'>FREE Ongkir</span></li>
-                     <li>Harga diatas untuk wilayah <span class='fw-bold'>Tangerang & Jakarta Selatan</span></li>
-                     <li>Harga&nbsp;<span class='fw-bold'>diluar wilayah itu</span>&nbsp;silakan hubungi kami</li>
+                     <li>Harga diatas untuk wilayah <span class='fw-bold'>Tangerang Selatan & Sekitarnya</span></li>
                      <li>
-                        Pembelian menggunakan <span class='fw-bold'>Engkel & Pickup</span> hanya untuk wilayah Tangerang,
-                        untuk harga silakan hubungi kami
+                        Harga&nbsp;<span class='fw-bold'>diluar wilayah itu (JABODETABEK)</span>&nbsp;silahkan hubungi
+                        kami
+                     </li>
+                     <li>
+                        Pembelian menggunakan <span class='fw-bold'>Engkel & Pickup</span> hanya untuk wilayah Tangerang Selatan
+                        & Sekitarnya
                      </li>
                      <li>
                         <span class='fw-bold'>Selalu tanyakan</span> ketersedian barang & harga terbaru karena dapat berubah
@@ -92,6 +91,14 @@ const item = getProduct();
 
                   <p class='fw-bold fs-3 mt-2'>***Barang yang tidak tercantum harap tanyakan ke kami</p>
                </div>
+
+               <a
+                  href={`https://wa.me/6285117436727?text=Hallo%20Jayapasir,%20saya%20ingin%20melakukan%20order%20${item?.title}`}
+                  class='btn btn-primary d-flex justify-content-center align-items-center gap-2 text-white'
+               >
+                  <Icon name='fa6-brands:whatsapp' size={30} />
+                  <span>Pesan Sekarang</span></a
+               >
             </div>
          </div>
       </div>
