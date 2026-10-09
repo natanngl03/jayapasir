@@ -3,12 +3,12 @@ import Card from './Card.astro';
 import PasirData from './../../data/pasirNew.json';
 ---
 
-<div class='row g-4'>
+<div class='row g-2'>
    {
       PasirData &&
          PasirData.map((val, idx) => {
             return (
-               <div class='col-6 col-md-3'>
+               <div class='col-6 col-lg-3'>
                   <Card
                      imgSrc={`/img/${val.image}`}
                      alt={`pasir_${idx}`}

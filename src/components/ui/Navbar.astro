@@ -1,21 +1,14 @@
 ---
-// import { BatuList } from '../products/Batu.astro';
-// import { PasirList } from '../products/Pasir.astro';
-import { Image } from 'astro:assets';
 import PasirList from '../../data/pasirNew.json';
 import BatuList from '../../data/batuNew.json';
 import { Icon } from 'astro-icon/components';
-
-import LogoImg from '../../assets/img/logo24.webp';
 ---
 
-<div class='container-fluid sticky-top bg-white shadow-sm'>
+<nav class='sticky-top bg-white shadow-sm'>
    <div class='container'>
-      <nav class='navbar navbar-expand-lg navbar-light'>
+      <div class='navbar navbar-expand-lg navbar-light'>
          <a href='/' class='navbar-brand'>
             <img src='/img/new_logo.webp' alt='logo image' class='logo' />
-
-            <!-- <Image src={LogoImg} alt='logo image' layout='constrained' quality='low' loading='lazy' class='logo' /> -->
          </a>
          <button
             type='button'
@@ -67,9 +60,9 @@ import LogoImg from '../../assets/img/logo24.webp';
                <span> Info: 0851 1743 6727</span>
             </a>
          </div>
-      </nav>
+      </div>
    </div>
-</div>
+</nav>
 
 <script>
    document.querySelectorAll('.custom').forEach((link) => {

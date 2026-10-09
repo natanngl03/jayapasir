@@ -4,35 +4,32 @@ import HeroImg from '../../assets/img/pasir.webp';
 ---
 
 <!-- Header Start -->
-<header class='container-fluid p-0'>
-   <div id='header-carousel' class='carousel slide' data-bs-ride='carousel'>
-      <div class='carousel-inner'>
-         <img src='/img/hero.webp' alt='hero img' style='height: 90dvh; object-fit: cover; width: 100%' />
+<header>
+   <div class='wrapper-hero position-relative'>
+      <img src='/img/hero.webp' alt='hero img' style='object-fit: cover;' width='100%' height='100%' loading='eager' />
+      <div class='container hero-content'>
+         <h1 class='text-center text-white'>
+            Supplier Pasir & Batu Murah Berkualitas <br /> di Tangerang Selatan
+         </h1>
 
-         <div class='carousel-caption d-flex flex-column align-items-center justify-content-center'>
-            <div class='typingcontainer'>
-               <h1>Supplier Pasir Murah & Batu Murah Berkualitas di Tangerang Selatan</h1>
+         <div class='typingcontainer'>
+            <p id='typed' class='text-white'></p>
+         </div>
 
-               <span id='typed' class='fs-3'></span>
-            </div>
+         <p class='mb-3 mt-3 fw-bold text-center'>
+            Melayani pengiriman berbagai jenis pasir dan batu bangunan ke seluruh wilayah Jabodetabek
+         </p>
 
-            <p class='mb-3 mt-3 animated fw-bold slideInDown'>
-               Melayani pengiriman berbagai jenis pasir dan batu bangunan ke seluruh wilayah Jabodetabek dengan armada
-               sendiri, harga kompetitif, dan pengiriman tepat waktu.
-            </p>
-            <div class='d-flex flex-column justify-content-md-center align-items-md-center'>
-               <a
-                  href='https://wa.me/6285117436727?text=Hallo%20Jayapasir,%20saya%20ingin%20melakukan%20order.'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  class='border border-2 border-white text-decoration-none py-2 px-3 mb-3 d-block text-white fs-5 fw-bold rounded'
-                  >Info: 0851 1743 6727</a
-               >
+         <div class='d-flex flex-column justify-content-lg-center align-items-lg-center'>
+            <a
+               href='https://wa.me/6285117436727?text=Hallo%20Jayapasir,%20saya%20ingin%20melakukan%20order.'
+               target='_blank'
+               rel='noopener noreferrer'
+               class='border border-2 border-white text-decoration-none py-2 px-3 mb-3 d-block text-white fs-5 fw-bold rounded'
+               >Info: 0851 1743 6727</a
+            >
 
-               <button type='button' class='btn btn-primary py-2 px-4 animated slideInDown' id='exploreMore'
-                  >Selengkapnya</button
-               >
-            </div>
+            <button type='button' class='btn btn-primary py-2 px-4 text-white' id='exploreMore'>Selengkapnya</button>
          </div>
       </div>
    </div>
@@ -40,17 +37,11 @@ import HeroImg from '../../assets/img/pasir.webp';
 <!-- Header End -->
 
 <style>
-   /* .carousel-item {
-      position: relative;
-   } */
-
-   #header-carousel {
-      position: relative;
+   .wrapper-hero {
+      height: 500px;
    }
 
-   /* carousel-inner */
-
-   .carousel-inner::before {
+   .wrapper-hero::before {
       content: '';
       position: absolute;
       inset: 0;
@@ -58,23 +49,25 @@ import HeroImg from '../../assets/img/pasir.webp';
       z-index: 1;
    }
 
-   .carousel-caption {
-      z-index: 2;
+   .hero-content {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      color: white;
    }
 
-   .typing {
-      overflow: hidden;
-      white-space: nowrap;
-      width: 0;
-      animation: typing 3s steps(100, end) forwards;
+   .typingcontainer {
+      display: flex;
+      font-size: calc(1.3rem + 0.6vw) !important;
    }
 
-   @keyframes typing {
-      from {
-         width: 0;
-      }
-      to {
-         width: 100%;
+   @media (min-width: 1200px) {
+      .wrapper-hero {
+         height: 100dvh;
       }
    }
 </style>

@@ -2,56 +2,90 @@
 import { Icon } from 'astro-icon/components';
 const testimonials = [
    {
-      name: 'Budi Santoso',
-      testimoni:
-         'Pasirnya bersih, kualitas sesuai pesanan, dan pengiriman selalu tepat waktu. Sangat membantu proyek kami.',
-      role: 'Kontraktor',
+      name: 'Udi Nuhdi',
+      testimoni: 'Okee boss, mantap 👍 …',
+      img: 'udi.png',
+   },
+
+   {
+      name: 'Asman',
+      testimoni: 'Mantap bos, kita order lagi ntar',
+      img: 'asman.png',
    },
    {
-      name: 'Andi Pratama',
-      testimoni: 'Sudah beberapa kali pesan batu split di sini. Kualitas konsisten dan pelayanannya cepat.',
-      role: 'Mandor Proyek',
+      name: 'Duwi Putra',
+      testimoni: 'Harga terjangkau, pasirnya jg sesuai dgn yg dipesan',
+      img: 'duwi.png',
    },
    {
-      name: 'Rina Lestari',
-      testimoni:
-         'Material datang sesuai jumlah pesanan dan kualitas pasirnya bagus untuk pekerjaan plester maupun cor.',
-      role: 'Pemilik Rumah',
+      name: 'Esmelia Malau',
+      testimoni: 'kualitas pasirnya oke, pengirimannya cepat👍👍mantap pokoknya 🙌 sukses selalu jaya pasir …',
+      img: 'esmelia.png',
    },
    {
-      name: 'Dedi Saputra',
-      testimoni:
-         'Supplier yang dapat diandalkan. Pengiriman selalu sesuai jadwal sehingga pekerjaan proyek tidak terlambat.',
-      role: 'Developer Perumahan',
+      name: 'Fahmi',
+      testimoni: 'Makasih pak, ntar bakal langganan 👍',
+      img: 'fahmi.png',
+   },
+   {
+      name: 'Ika',
+      testimoni: 'Pasirnya murah & bagus 👍👌 makasih pak 🙏🏻 …',
+      img: 'ika.png',
+   },
+
+   {
+      name: 'Usup',
+      testimoni: 'Barang lengkap, batu split nya joss 👍',
+      img: 'usup.png',
+   },
+
+   {
+      name: 'Alisya',
+      testimoni: 'Pasir murah berkualitas, pelayanannya ramah 🙏🏻',
+      img: 'alisya.png',
    },
 ];
 ---
 
 <!-- Testimonial Start -->
-<section class='container-fluid bg-light py-5'>
+<section class='bg-light py-5 testimonial'>
    <div class='container'>
-      <h2 class='mb-5 text-center fs-3 fw-bold'>Apa Kata<span class='text-primary px-2'>Mereka ?</span></h2>
+      <div class='text-center mx-auto wow fadeInUp mb-10' data-wow-delay='0.2s' style={{ maxWidth: '800px' }}>
+         <h2 class='mb-2 text-center fs-3 fw-bold'>Apa Kata<span class='text-primary px-2'>Mereka ?</span></h2>
 
-      <p class='text-center mb-5'>
-         Kepuasan pelanggan adalah prioritas kami. Simak pengalaman mereka menggunakan pasir dan batu berkualitas dari
-         Jelupang Jaya Pasir.
-      </p>
-
-      <div class='owl-carousel testimonial-carousel wow fadeIn' data-wow-delay='0.1s'>
+         <p class='text-center'>
+            Kepuasan pelanggan adalah prioritas kami. Simak pengalaman mereka menggunakan pasir dan batu berkualitas
+            dari Jelupang Jaya Pasir.
+         </p>
+      </div>
+      <div class='owl-carousel testimonial-carousel wow fadeInUp' data-wow-delay='0.2s'>
          {
             testimonials.map((item, idx) => (
-               <div class='testimonial-item'>
-                  <div class='testimonial-text position-relative bg-white text-center rounded px-4 py-5'>
-                     <Icon name='fa6-solid:quote-left' class=' mb-3' size={30} />
+               <div class='testimonial-item bg-white border rounded'>
+                  <div class='testimonial-img my-3'>
+                     <img
+                        src={`/img/testimoni/${item.img}`}
+                        class='img-fluid'
+                        alt='testimoni'
+                        width='20px'
+                        height='20px'
+                     />
+                  </div>
+                  <div class='d-flex flex-column align-items-center'>
+                     <p class='mb-0 fw-bold'>{item.name}</p>
+                     <div class='d-flex text-primary'>
+                        {[...Array(5)].map((_, idx) => (
+                           <Icon name='fa6-solid:star' size={20} class='text-warning' />
+                        ))}
+                     </div>
+                  </div>
+                  <div class='testimonial-text'>
+                     <p set:html={item.testimoni} />
+                  </div>
 
-                     <p class='mb-0'>{item.testimoni}</p>
-                  </div>
-                  <div class='text-center pt-4'>
-                     {/* <img class='img-fluid rounded mx-auto my-3' src={`/img/testimoni/person-${idx + 1}.webp`} /> */}
-                     <Icon name='fa6-solid:user' class='img-fluid rounded mx-auto my-3' size={30} />
-                     <h5 class='mb-1'>{item.name}</h5>
-                     <small>{item.role}</small>
-                  </div>
+                  {/* <div class='testimonial-quote-right'>
+                        <FaQuoteRight />
+                     </div> */}
                </div>
             ))
          }
@@ -61,67 +95,96 @@ const testimonials = [
 <!-- Testimonial End -->
 
 <style is:global>
-   /*** Testimonial ***/
-   .testimonial-item .testimonial-text i {
-      color: var(--bs-primary);
+   .testimonial .testimonial-item {
+      position: relative;
+      margin-bottom: 30px;
+      padding: 0 25px 25px 25px;
    }
 
-   .testimonial-item .testimonial-text * {
-      transition: 0.5s;
-   }
-
-   .testimonial-item .testimonial-text::after {
-      position: absolute;
+   .testimonial .testimonial-item::before {
       content: '';
-      bottom: -29px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 0;
-      height: 0;
-      border: 15px solid;
-      border-color: var(--bs-light) transparent transparent transparent;
+      position: absolute;
+      width: 100%;
+      height: calc(100% - 50px);
+      bottom: 0;
+      left: 0;
+      border-radius: 10px;
+      background: var(--bs-light);
+      z-index: -1;
    }
 
-   .testimonial-carousel .owl-item.center .testimonial-item .testimonial-text::after {
-      border-color: var(--bs-primary) transparent transparent transparent;
-   }
-
-   .testimonial-carousel .owl-item.center .testimonial-item .testimonial-text {
-      background: var(--bs-primary) !important;
-   }
-
-   .testimonial-carousel .owl-item.center .testimonial-item .testimonial-text * {
-      color: #ffffff;
-   }
-
-   .testimonial-carousel .owl-item .testimonial-item img {
-      width: 75px;
-      height: 75px;
-   }
-
-   .testimonial-carousel .owl-dots {
-      margin-top: 24px;
+   .testimonial .testimonial-item .testimonial-img {
       display: flex;
-      align-items: flex-end;
       justify-content: center;
    }
 
-   .testimonial-carousel .owl-dot {
-      position: relative;
-      display: inline-block;
-      margin: 0 5px;
-      width: 15px;
-      height: 15px;
-      border-radius: 4px;
-      border: 1px solid var(--bs-primary);
+   .testimonial .testimonial-item .testimonial-img img {
+      width: 100px;
+      height: 100px;
+      border-radius: 100px;
+      border: 5px solid var(--bs-light);
+      border-style: double;
+      background: var(--bs-white);
+   }
+
+   .testimonial .testimonial-item .testimonial-text {
+      padding: 25px 0;
+      text-align: center;
+   }
+
+   .testimonial .testimonial-item .testimonial-title {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .testimonial .testimonial-item .testimonial-quote-left {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      top: 20px;
+      left: 25px;
+      border-radius: 60px;
+      color: var(--bs-primary);
+      background: var(--bs-white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .testimonial-carousel .owl-stage-outer {
+      margin-top: 58px;
+      margin-right: -1px;
+   }
+
+   .testimonial .owl-nav .owl-prev {
+      position: absolute;
+      top: -58px;
+      left: 0;
+      background: var(--bs-primary);
+      color: var(--bs-white);
+      padding: 5px 30px;
+      border-radius: 30px;
       transition: 0.5s;
    }
 
-   .testimonial-carousel .owl-dot.active {
-      background: var(--bs-primary);
+   .testimonial .owl-nav .owl-prev:hover {
+      background: var(--bs-secondary);
+      color: var(--bs-white);
    }
 
-   .fa-user {
-      color: var(--bs-gray);
+   .testimonial .owl-nav .owl-next {
+      position: absolute;
+      top: -58px;
+      right: 0;
+      background: var(--bs-primary);
+      color: var(--bs-white);
+      padding: 5px 30px;
+      border-radius: 30px;
+      transition: 0.5s;
+   }
+
+   .testimonial .owl-nav .owl-next:hover {
+      background: var(--bs-secondary);
+      color: var(--bs-white);
    }
 </style>
