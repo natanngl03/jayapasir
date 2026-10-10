@@ -35,8 +35,8 @@
       "image": "pasir_cor.webp",
       "price": {
          "pickup": "600.000",
-         "engkel": "1.200.000",
-         "truck": "2.300.000"
+         "engkel": "1.300.000",
+         "truck": "2.500.000"
       }
    },
    {
@@ -44,7 +44,7 @@
       "title": "Pasir Ayak Cuci",
       "image": "pasir_ayak.webp",
       "price": {
-         "pickup": "600.000",
+         "pickup": "500.000",
          "engkel": "1.100.000",
          "truck": "2.000.000"
       }
