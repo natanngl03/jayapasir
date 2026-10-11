@@ -1,4 +1,12 @@
 [
+   
+   {
+      "faq": "Mengapa harga di tempat lain jauh lebih murah?",
+      "answer": {
+         "text": "Harga material yang lebih murah belum tentu memberikan kualitas dan kuantitas yang sama. Di Jelupang Jaya Pasir, kami mengutamakan kualitas material tanpa oplosan serta memastikan kubikasi sesuai dengan pesanan.",
+         "list": []
+      }
+   },
    {
       "faq": "Apa saja produk yang dijual?",
       "answer": {
@@ -21,7 +29,7 @@
    {
       "faq": "Melayani pengiriman ke mana saja?",
       "answer": {
-         "text": "Kami melayani pengiriman khusus wilayah Jabodetabek (Jakarta, Bogor, Depok, Tangerang, dan Bekasi).",
+         "text": "Kami melayani pengiriman khusus wilayah Jabodetabek (Jakarta, Bogor Kota, Depok, Tangerang, dan Bekasi).",
          "list": []
       }
    },
@@ -35,8 +43,8 @@
    {
       "faq": "Bagaimana sistem pembayarannya?",
       "answer": {
-         "text": "Pelunasan Pembayaran Bisa Dilakukan Di Tempat",
-         "list": []
+         "text": "Pembayaran ada 2 kondisi :",
+         "list": ["Untuk orderan pertama kali, wajib DP minimal uang jalan sebagai tanda jadi.", "Untuk orderan berikutnya tanpa DP & pelunasan di tempat."]
       }
    },
    {
@@ -63,7 +71,7 @@
    {
       "faq": "Bagaimana cara melakukan pemesanan?",
       "answer": {
-         "text": "Anda dapat menghubungi kami melalui WhatsApp atau telepon. Tim kami akan membantu memberikan informasi produk, serta memberikan penawaran harga.",
+         "text": "Anda dapat menghubungi kami melalui whatsApp atau telepon. Tim kami akan membantu memberikan informasi produk, serta memberikan penawaran harga.",
          "list": []
       }
    },
@@ -77,7 +85,7 @@
    {
       "faq": "Berapa lama proses pengiriman?",
       "answer": {
-         "text": "Pengiriman langsung di hari yang sama terhitung dari pembayaran masuk",
+         "text": "Pengiriman langsung di hari yang sama",
          "list": []
       }
    },
