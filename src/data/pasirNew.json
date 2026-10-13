@@ -4,9 +4,9 @@
       "title": "Pasir Bangka",
       "image": "pasir_bangka.webp",
       "price": {
-         "pickup": "700.000",
-         "engkel": "1.400.000",
-         "truck": "2.800.000"
+         "pickup": "600.000",
+         "engkel": "1.300.000",
+         "truck": "2.700.000"
       }
    },
    {
@@ -24,19 +24,19 @@
       "title": "Pasir Rangkas",
       "image": "pasir_rangkas.webp",
       "price": {
-         "pickup": "550.000",
-         "engkel": "1.100.000",
-         "truck": "2.200.000"
+         "pickup": "500.000",
+         "engkel": "1.000.000",
+         "truck": "2.100.000"
       }
    },
    {
       "params": { "product": "pasir-cor" },
-      "title": "Pasir Cor Hitam",
-      "image": "pasir_cor.webp",
+      "title": "Pasir Cor Hitam (Abadi)",
+      "image": "pasir_abadi.webp",
       "price": {
-         "pickup": "600.000",
-         "engkel": "1.300.000",
-         "truck": "2.500.000"
+         "pickup": "550.000",
+         "engkel": "1.200.000",
+         "truck": "2.400.000"
       }
    },
    {
@@ -45,8 +45,8 @@
       "image": "pasir_ayak.webp",
       "price": {
          "pickup": "500.000",
-         "engkel": "1.100.000",
-         "truck": "2.000.000"
+         "engkel": "900.000",
+         "truck": "1.800.000"
       }
    },
    {
@@ -54,9 +54,9 @@
       "title": "Pasir Celup",
       "image": "pasir_celup.webp",
       "price": {
-         "pickup": "550.000",
-         "engkel": "1.050.000",
-         "truck": "1.950.000"
+         "pickup": "450.000",
+         "engkel": "800.000",
+         "truck": "1.700.000"
       }
    },
   
@@ -69,5 +69,46 @@
          "engkel": "0",
          "truck": "0"
       }
+   },
+   {
+      "params": { "product": "pasir-jalupang" },
+      "title": "Pasir Jalupang",
+      "image": "pasir_jalupang.webp",
+      "price": {
+         "pickup": "600.000",
+         "engkel": "1.200.000",
+         "truck": "2.600.000"
+      }
+   },
+   {
+      "params": { "product": "tanah-urug" },
+      "title": "Tanah Urug",
+      "image": "tanah_urug2.webp",
+      "price": {
+         "pickup": "400.000",
+         "engkel": "750.000",
+         "truck": "1.400.000"
+      }
+   },
+   {
+      "params": { "product": "pasir-cilegon" },
+      "title": "Pasir Cilegon",
+      "image": "pasir_cilegon.webp",
+      "price": {
+         "pickup": "400.000",
+         "engkel": "700.000",
+         "truck": "1.600.000"
+      }
+   },
+   {
+      "params": { "product": "pasir-cilegon-cuci" },
+      "title": "Pasir Cilegon Cuci",
+      "image": "pasir_cilegon_cuci.webp",
+      "price": {
+         "pickup": "450.000",
+         "engkel": "800.000",
+         "truck": "1.700.000"
+      }
    }
+   
 ]
