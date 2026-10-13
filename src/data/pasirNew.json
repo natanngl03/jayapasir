@@ -109,6 +109,15 @@
          "engkel": "800.000",
          "truck": "1.700.000"
       }
+   },
+   {
+      "params": { "product": "pasir-rangkas-abadi" },
+      "title": "Pasir Rangkas Abadi",
+      "image": "pasir_abadi.webp",
+      "price": {
+         "pickup": "550.000",
+         "engkel": "1.200.000",
+         "truck": "2.400.000"
+      }
    }
-   
 ]
