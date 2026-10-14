@@ -5,8 +5,8 @@
       "image": "batu_screening.webp",
       "price": {
          "pickup": "600.000",
-         "engkel": "1.200.000",
-         "truck": "2.300.000"
+         "engkel": "1.100.000",
+         "truck": "2.100.000"
       }
    },
    {
@@ -14,9 +14,9 @@
       "title": "Batu Kali",
       "image": "batu_kali.webp",
       "price": {
-         "pickup": "500.000",
-         "engkel": "900.000",
-         "truck": "1.800.000"
+         "pickup": "400.000",
+         "engkel": "800.000",
+         "truck": "1.600.000"
       }
    },
    {
@@ -24,9 +24,9 @@
       "title": "Batu Abu",
       "image": "pasir_abu_batu.webp",
       "price": {
-         "pickup": "600.000",
-         "engkel": "1.100.000",
-         "truck": "2.100.000"
+         "pickup": "500.000",
+         "engkel": "900.000",
+         "truck": "1.900.000"
       }
    },
    {
@@ -34,9 +34,9 @@
       "title": "Batu Brangkal",
       "image": "batu_brangkal.webp",
       "price": {
-         "pickup": "500.000",
+         "pickup": "400.000",
          "engkel": "800.000",
-         "truck": "1.500.000"
+         "truck": "1.300.000"
       }
    },
    {
@@ -45,8 +45,8 @@
       "image": "batu_split.webp",
       "price": {
          "pickup": "700.000",
-         "engkel": "1.400.000",
-         "truck": "2.800.000"
+         "engkel": "1.300.000",
+         "truck": "2.600.000"
       }
    },
    {
@@ -56,7 +56,7 @@
       "price": {
          "pickup": "400.000",
          "engkel": "700.000",
-         "truck": "1.400.000"
+         "truck": "1.300.000"
       }
    },
    {
@@ -66,7 +66,7 @@
       "price": {
          "pickup": "600.000",
          "engkel": "1.100.000",
-         "truck": "2.200.000"
+         "truck": "2.000.000"
       }
    },
     {
@@ -76,7 +76,7 @@
       "price": {
          "pickup": "500.000",
          "engkel": "900.000",
-         "truck": "1.900.000"
+         "truck": "1.700.000"
       }
    }
 ]

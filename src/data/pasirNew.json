@@ -26,7 +26,7 @@
       "price": {
          "pickup": "500.000",
          "engkel": "1.000.000",
-         "truck": "2.100.000"
+         "truck": "1.900.000"
       }
    },
    {
@@ -35,8 +35,8 @@
       "image": "pasir_abadi.webp",
       "price": {
          "pickup": "550.000",
-         "engkel": "1.200.000",
-         "truck": "2.400.000"
+         "engkel": "1.100.000",
+         "truck": "2.100.000"
       }
    },
    {
@@ -44,9 +44,9 @@
       "title": "Pasir Ayak Cuci",
       "image": "pasir_ayak.webp",
       "price": {
-         "pickup": "500.000",
-         "engkel": "900.000",
-         "truck": "1.800.000"
+         "pickup": "450.000",
+         "engkel": "800.000",
+         "truck": "1.600.000"
       }
    },
    {
@@ -56,7 +56,7 @@
       "price": {
          "pickup": "450.000",
          "engkel": "800.000",
-         "truck": "1.700.000"
+         "truck": "1.600.000"
       }
    },
   
@@ -116,8 +116,8 @@
       "image": "pasir_abadi.webp",
       "price": {
          "pickup": "550.000",
-         "engkel": "1.200.000",
-         "truck": "2.400.000"
+         "engkel": "1.100.000",
+         "truck": "2.100.000"
       }
    }
 ]
