@@ -40,7 +40,10 @@ const pages = [
                      const href = item.page === 'home' ? '/' : `/${item.page}`;
 
                      return (
-                        <a href={href} class={`nav-item nav-link ${page == item.page && 'fw-bold text-primary'}`}>
+                        <a
+                           href={href}
+                           class={`nav-item nav-link custom ${page == item.page && 'fw-bold text-primary'}`}
+                        >
                            {item.label}
                         </a>
                      );
