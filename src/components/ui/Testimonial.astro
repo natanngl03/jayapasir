@@ -50,15 +50,17 @@ const testimonials = [
 <!-- Testimonial Start -->
 <section class='bg-light py-5 testimonial'>
    <div class='container'>
-      <div class='text-center mx-auto wow fadeInUp mb-10' data-wow-delay='0.2s' style={{ maxWidth: '800px' }}>
-         <h2 class='mb-2 text-center fs-3 fw-bold'>Apa Kata<span class='text-primary px-2'>Mereka ?</span></h2>
+      <div class='text-center mx-auto mb-10' style={{ maxWidth: '800px' }}>
+         <h2 class='mb-2 text-center fs-3 fw-bold wow fadeInDown' data-wow-delay='0.1s'>
+            Apa Kata<span class='text-primary px-2'>Mereka ?</span>
+         </h2>
 
-         <p class='text-center'>
+         <p class='text-center wow fadeInDown' data-wow-delay='0.2s'>
             Kepuasan pelanggan adalah prioritas kami. Simak pengalaman mereka menggunakan pasir dan batu berkualitas
             dari Jelupang Jaya Pasir.
          </p>
       </div>
-      <div class='owl-carousel testimonial-carousel wow fadeInUp' data-wow-delay='0.2s'>
+      <div class='owl-carousel testimonial-carousel wow fadeIn' data-wow-delay='0.2s'>
          {
             testimonials.map((item, idx) => (
                <div class='testimonial-item bg-white border rounded'>

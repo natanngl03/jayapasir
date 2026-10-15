@@ -1,13 +1,12 @@
 ---
 import Faq from '../components/ui/Faq.astro';
+import Header from '../components/ui/Header.astro';
 import Layout from '../layouts/Layout.astro';
 import Products from './../components/products/Products.astro';
 ---
 
 <Layout page='product'>
-   <section class='text-center bg-primary py-6 text-white'>
-      <h1>Produk Kami</h1>
-   </section>
+   <Header title='Produk Kami' />
 
    <Products className='pt-6 pb-10' withoutTitle />
 </Layout>

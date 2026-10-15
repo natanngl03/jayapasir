@@ -1,12 +1,11 @@
 ---
 import Faq from '../components/ui/Faq.astro';
+import Header from '../components/ui/Header.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout page='faq'>
-   <section class='text-center bg-primary py-6 text-white'>
-      <h1>Pertanyaan</h1>
-   </section>
+   <Header title='Pertanyaan' />
 
    <Faq className='pt-6 pb-10' />
 </Layout>

@@ -14,18 +14,21 @@ const { className } = Astro.props;
 <!-- FAQ Start -->
 <section class={className} id='faq'>
    <div class='container'>
-      <h2 class='mb-5 text-center fs-3 fw-bold'>Yang Sering<span class='text-primary px-2'>Ditanyakan</span></h2>
+      <h2 class='mb-5 text-center fs-3 fw-bold wow fadeInDown' data-wow-delay='0.1s'>
+         Yang Sering<span class='text-primary px-2'>Ditanyakan</span>
+      </h2>
 
       <div class='row'>
          <div class='col-lg-6'>
             <div class='accordion' id='accordionFAQ1'>
                {
-                  faq1.map((val, idx) => {
-                     const targetId = `faqOne${idx}`;
-                     const targetHeading = `faqOneHeading${idx}`;
+                  faq1.map((val, idx1) => {
+                     const targetId = `faqOne${idx1}`;
+                     const targetHeading = `faqOneHeading${idx1}`;
+                     const delay = `0.1s`;
 
                      return (
-                        <div class='accordion-item'>
+                        <div class='accordion-item wow fadeInDown' data-wow-delay={delay}>
                            <h2 class='accordion-header' id={targetHeading}>
                               <button
                                  class='accordion-button collapsed border-bottom bg-light'
@@ -64,12 +67,13 @@ const { className } = Astro.props;
          <div class='col-lg-6'>
             <div class='accordion' id='accordionFAQ2'>
                {
-                  faq2.map((val, idx) => {
-                     const targetId = `faqTwo${idx}`;
-                     const targetHeading = `faqTwoHeading${idx}`;
+                  faq2.map((val, idx2) => {
+                     const targetId = `faqTwo${idx2}`;
+                     const targetHeading = `faqTwoHeading${idx2}`;
+                     const delay = `0.1s`;
 
                      return (
-                        <div class='accordion-item'>
+                        <div class='accordion-item wow fadeInDown' data-wow-delay={delay}>
                            <h2 class='accordion-header' id={targetHeading}>
                               <button
                                  class='accordion-button collapsed border-bottom bg-light'

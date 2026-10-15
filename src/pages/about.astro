@@ -1,13 +1,12 @@
 ---
 import ChooseUs from '../components/ui/ChooseUs.astro';
+import Header from '../components/ui/Header.astro';
 import Testimonial from '../components/ui/Testimonial.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout page='about'>
-   <section class='text-center bg-primary py-6 text-white'>
-      <h1>Tentang Kami</h1>
-   </section>
+   <Header title='Tentang Kami' />
 
    <ChooseUs className='pt-6 pb-10 bg-white' />
    <Testimonial />

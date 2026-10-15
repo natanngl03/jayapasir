@@ -11,7 +11,7 @@ interface Props {
 const { imgSrc, alt, gallery, title, page } = Astro.props;
 ---
 
-<div class='card shadow'>
+<div class='card shadow wow fadeIn' data-wow-delay='0.1s'>
    <a href={imgSrc} class='glightbox' data-gallery={gallery}>
       <img src={imgSrc} alt={title} class='card-img-top cardimg' loading='lazy' width='100%' height='250px' />
    </a>

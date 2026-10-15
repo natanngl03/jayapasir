@@ -1,0 +1,11 @@
+---
+interface Props {
+   title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<section class='text-center bg-primary py-6 text-white'>
+   <h1 class='wow fadeInDown' data-wow-delay='0.1s'>{title}</h1>
+</section>
