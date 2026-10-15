@@ -17,6 +17,15 @@ const { imgSrc, alt, gallery, title, page } = Astro.props;
    </a>
    <div class='card-body'>
       <h6 class='card-title text-center mb-3'>{title}</h6>
-      <a href={`/product/${page}`} class='btn btn-primary text-white w-100'>Cek Harga</a>
+
+      <a
+         href={`https://wa.me/6285117436727?text=Hallo%20Jayapasir,%20saya%20ingin%20melakukan%20order%20${title}`}
+         target='_blank'
+         rel='noopener noreferrer'
+         class='btn btn-primary text-white w-100'
+      >
+         <Icon name='fa6-brands:whatsapp' size={20} />
+         &nbsp;Cek Harga
+      </a>
    </div>
 </div>

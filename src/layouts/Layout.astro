@@ -7,6 +7,12 @@ import Navbar from './../components/ui/Navbar.astro';
 import Footer from './../components/ui/Footer.astro';
 import WhatsappBtn from '../components/ui/WhatsappBtn.astro';
 import Spinner from '../components/ui/Spinner.astro';
+
+interface Props {
+   page: string;
+}
+
+const { page } = Astro.props;
 ---
 
 <!doctype html>
@@ -108,7 +114,7 @@ import Spinner from '../components/ui/Spinner.astro';
       </div> -->
       <!-- Spinner End -->
 
-      <Navbar />
+      <Navbar page={page} />
       <main>
          <slot />
       </main>

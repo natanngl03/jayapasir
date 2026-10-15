@@ -8,23 +8,11 @@ import Price from '../../components/products/Price.astro';
 
 const { product } = Astro.params;
 
-// export const PasirData = PasirJson as ProductType[];
-// export const BatuData = BatuJson as ProductType[];
-
-// export const AllData = [...PasirJson, ...BatuData];
 export const AllData = [...PasirJson, ...BatuJson];
 
 export function getStaticPaths() {
    return AllData;
 }
-
-// const images = import.meta.glob<{ default: ImageMetadata }>('../../assets/img/products/*.{jpg,jpeg,png,webp}', {
-//    eager: true,
-// });
-
-// function getImage(name: string) {
-//    return images[`../../assets/img/products/${name}`]?.default;
-// }
 
 const getProduct = () => {
    const item = AllData.find((item) => item.params.product == product);
@@ -34,11 +22,9 @@ const getProduct = () => {
 };
 
 const item = getProduct();
-
-// const image = getImage(item?.image || '');
 ---
 
-<Layout>
+<Layout page='_product'>
    <div class='pt-5 pb-10'>
       <div class='container'>
          <h1 class='text-center display-6 mb-5 fw-bold'>

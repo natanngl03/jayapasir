@@ -2,6 +2,20 @@
 import PasirList from '../../data/pasirNew.json';
 import BatuList from '../../data/batuNew.json';
 import { Icon } from 'astro-icon/components';
+
+interface Props {
+   page: string;
+}
+
+const { page } = Astro.props;
+
+const pages = [
+   { label: 'Beranda', page: 'home' },
+   { label: 'Tentang', page: 'about' },
+   { label: 'Kontak', page: 'contact' },
+   { label: 'Produk', page: 'product' },
+   { label: 'Pertanyaan', page: 'faq' },
+];
 ---
 
 <nav class='sticky-top bg-white shadow-sm'>
@@ -21,11 +35,19 @@ import { Icon } from 'astro-icon/components';
          </button>
          <div class='collapse navbar-collapse pb-1 pb-md-0' id='navbarCollapse'>
             <div class='navbar-nav mx-auto p-4 p-lg-0'>
-               <a href='/' class='nav-item nav-link custom'>Home</a>
-               <a href='/#chooseUs' class='nav-item nav-link custom'>Tentang</a>
-               <a href='/#faq' class='nav-item nav-link custom'>Pertanyaan</a>
+               {
+                  pages.map((item) => {
+                     const href = item.page === 'home' ? '/' : `/${item.page}`;
 
-               <div class='nav-item dropdown'>
+                     return (
+                        <a href={href} class={`nav-item nav-link ${page == item.page && 'fw-bold text-primary'}`}>
+                           {item.label}
+                        </a>
+                     );
+                  })
+               }
+
+               <!-- <div class='nav-item dropdown'>
                   <a href='#' class='nav-link dropdown-toggle' data-bs-toggle='dropdown'>Harga Pasir</a>
                   <div class='dropdown-menu m-0'>
                      {
@@ -48,7 +70,7 @@ import { Icon } from 'astro-icon/components';
                         ))
                      }
                   </div>
-               </div>
+               </div> -->
             </div>
             <a
                class='border border-primary text-decoration-none p-2 rounded d-flex align-items-center justify-content-center gap-2'

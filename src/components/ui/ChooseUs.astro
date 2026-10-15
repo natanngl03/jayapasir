@@ -1,9 +1,15 @@
 ---
 import { Icon } from 'astro-icon/components';
+
+interface Props {
+   className: string;
+}
+
+const { className } = Astro.props;
 ---
 
 <!-- Feature Start -->
-<section class='py-5 bg-light' id='chooseUs'>
+<section class={className} id='chooseUs'>
    <div class='container'>
       <h2 class='mb-5 text-center fs-3 fw-bold'>Mengapa Memilih <span class='text-primary px-2'>Kami ?</span></h2>
 

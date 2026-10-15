@@ -11,14 +11,14 @@ import Video from '../components/ui/Video.astro';
 import Location from '../components/ui/Location.astro';
 ---
 
-<Layout>
+<Layout page='home'>
    <Hero />
-   <ChooseUs />
-   <Products />
+   <ChooseUs className='py-5 bg-light' />
+   <Products className='py-5 bg-white border-top' />
    <!-- <Video /> -->
    <!-- <Armada /> -->
    <Divider />
-   <Faq />
+   <Faq className='py-5 border-top border-bottom' />
    <Testimonial />
    <Location />
 </Layout>
