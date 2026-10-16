@@ -24,7 +24,7 @@ const getProduct = () => {
 const item = getProduct();
 ---
 
-<Layout page='_product'>
+<Layout page={item?.params?.product || ''}>
    <div class='pt-5 pb-10'>
       <div class='container'>
          <h1 class='text-center display-6 mb-5 fw-bold'>
@@ -36,7 +36,6 @@ const item = getProduct();
                   src={`/img/${item?.image}`}
                   alt={item?.title}
                   width='100%'
-                  height='100%'
                   loading='lazy'
                   style='border-radius: 10px;'
                />
@@ -46,22 +45,27 @@ const item = getProduct();
                   {
                      item?.title?.toLowerCase() !== 'pasir karungan' ? (
                         <Fragment>
-                           {item?.price?.pickup && <Price title='1 Pickup - 1.1 Kubik' price={item?.price?.pickup} />}
-                           {item?.price?.engkel && <Price title='1 Engkel - 2.7 Kubik' price={item?.price?.engkel} />}
                            {item?.price?.truck && <Price title='1 Truk - 6 Kubik' price={item?.price?.truck} />}
+                           {item?.price?.engkel && (
+                              <Price title='1 Engkel - 2.7 Kubik <br /> (Hanya Tangsel)' price={item?.price?.engkel} />
+                           )}
+                           {item?.price?.pickup && (
+                              <Price title='1 Pickup - 1.1 Kubik <br /> (Hanya Tangsel)' price={item?.price?.pickup} />
+                           )}
                         </Fragment>
                      ) : (
-                        <Price title='Per Karung - Mulai Dari' price={'30.000'} />
+                        <Price title='Per Karung' price={'30.000'} />
                      )
                   }
                </div>
-
+            </div>
+            <div class='col'>
                <div class='my-3'>
                   <p class='mb-2 fw-bold fs-2'>Catatan:</p>
                   <ul class='fst-italic text-gray d-flex flex-column gap-2'>
                      <li>
-                        Harga diatas adalah acuan untuk wilayah <span class='fw-bold'
-                           >Tangerang Selatan (Jelupang/BSD/Pd.Jagung & Sekitarnya)</span
+                        Harga diatas adalah <span class='fw-bold'>ESTIMASI</span> untuk wilayah <span class='fw-bold'
+                           >Tangerang Selatan & Sekitarnya</span
                         >
                      </li>
                      <li>

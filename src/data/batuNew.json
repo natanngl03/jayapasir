@@ -4,19 +4,19 @@
       "title": "Batu Screening",
       "image": "batu_screening.webp",
       "price": {
-         "pickup": "600.000",
-         "engkel": "1.100.000",
-         "truck": "2.100.000"
+         "pickup": "cu",
+         "engkel": "cu",
+         "truck": "2.700.000"
       }
    },
    {
-      "params": { "product": "batu-kali" },
-      "title": "Batu Kali",
+      "params": { "product": "batu-belah" },
+      "title": "Batu Belah",
       "image": "batu_kali.webp",
       "price": {
-         "pickup": "400.000",
-         "engkel": "800.000",
-         "truck": "1.600.000"
+         "pickup": "500.000",
+         "engkel": "1.100.000",
+         "truck": "2.200.000"
       }
    },
    {
@@ -24,9 +24,9 @@
       "title": "Batu Abu",
       "image": "pasir_abu_batu.webp",
       "price": {
-         "pickup": "500.000",
-         "engkel": "900.000",
-         "truck": "1.900.000"
+         "pickup": "cu",
+         "engkel": "cu",
+         "truck": "2.200.000"
       }
    },
    {
@@ -36,7 +36,7 @@
       "price": {
          "pickup": "400.000",
          "engkel": "800.000",
-         "truck": "1.300.000"
+         "truck": "1.200.000"
       }
    },
    {
@@ -45,8 +45,8 @@
       "image": "batu_split.webp",
       "price": {
          "pickup": "700.000",
-         "engkel": "1.300.000",
-         "truck": "2.600.000"
+         "engkel": "1.400.000",
+         "truck": "2.800.000"
       }
    },
    {
@@ -54,9 +54,9 @@
       "title": "Sirtu Sungai",
       "image": "batu_sirtu_sungai.webp",
       "price": {
-         "pickup": "400.000",
-         "engkel": "700.000",
-         "truck": "1.300.000"
+         "pickup": "-",
+         "engkel": "-",
+         "truck": "1.500.000"
       }
    },
    {
@@ -64,9 +64,9 @@
       "title": "Sirtu Beskos",
       "image": "batu_beskos.webp",
       "price": {
-         "pickup": "600.000",
-         "engkel": "1.100.000",
-         "truck": "2.000.000"
+         "pickup": "cu",
+         "engkel": "cu",
+         "truck": "2.300.000"
       }
    },
     {
@@ -74,9 +74,9 @@
       "title": "Sirtu Makadam",
       "image": "batu_makadam.webp",
       "price": {
-         "pickup": "500.000",
-         "engkel": "900.000",
-         "truck": "1.700.000"
+         "pickup": "cu",
+         "engkel": "cu",
+         "truck": "1.900.000"
       }
    }
 ]

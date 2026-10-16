@@ -7,15 +7,43 @@ interface Props {
    page: string;
 }
 
+// {
+//       "params": { "product": "pasir-bangka" },
+//       "title": "Pasir Bangka",
+//       "image": "pasir_bangka.webp",
+//       "price": {
+//          "pickup": "600.000",
+//          "engkel": "1.300.000",
+//          "truck": "2.700.000"
+//       }
+//    },
+
+type ProductType = {
+   params: { product: string };
+};
+
 const { page } = Astro.props;
 
 const pages = [
    { label: 'Beranda', page: 'home' },
    { label: 'Tentang', page: 'about' },
-   { label: 'Kontak', page: 'contact' },
-   { label: 'Produk', page: 'product' },
-   { label: 'Pertanyaan', page: 'faq' },
+   // { label: 'Kontak', page: 'contact' },
+   // { label: 'Produk', page: 'product' },
+   // { label: 'Pertanyaan', page: 'faq' },
 ];
+
+const others = [
+   { label: 'Pertanyaan', page: 'faq' },
+   { label: 'Kontak', page: 'contact' },
+];
+
+const isOtherActive = (page: string, list: Array<{ label: string; page: string }>) => {
+   return list.some((x) => x.page === page);
+};
+
+const isProductActive = (page: string, list: Array<ProductType>) => {
+   return list.some((x) => x.params.product === page);
+};
 ---
 
 <nav class='sticky-top bg-white shadow-sm'>
@@ -50,12 +78,19 @@ const pages = [
                   })
                }
 
-               <!-- <div class='nav-item dropdown'>
-                  <a href='#' class='nav-link dropdown-toggle' data-bs-toggle='dropdown'>Harga Pasir</a>
+               <div class='nav-item dropdown'>
+                  <a
+                     href='#'
+                     class={`nav-link dropdown-toggle ${isProductActive(page, PasirList) && 'fw-bold text-primary'}`}
+                     data-bs-toggle='dropdown'>Harga Pasir</a
+                  >
                   <div class='dropdown-menu m-0'>
                      {
                         PasirList.map((val, idx) => (
-                           <a href={`/product/${val.params.product}`} class='dropdown-item custom'>
+                           <a
+                              href={`/product/${val.params.product}`}
+                              class={`dropdown-item custom ${page == val.params.product && 'fw-bold text-primary'}`}
+                           >
                               {val.title}
                            </a>
                         ))
@@ -63,17 +98,44 @@ const pages = [
                   </div>
                </div>
                <div class='nav-item dropdown'>
-                  <a href='#' class='nav-link dropdown-toggle' data-bs-toggle='dropdown'>Harga Batu</a>
+                  <a
+                     href='#'
+                     class={`nav-link dropdown-toggle ${isProductActive(page, BatuList) && 'fw-bold text-primary'}`}
+                     data-bs-toggle='dropdown'>Harga Batu</a
+                  >
                   <div class='dropdown-menu m-0'>
                      {
                         BatuList.map((val, idx) => (
-                           <a href={`/product/${val.params.product}`} class='dropdown-item custom'>
+                           <a
+                              href={`/product/${val.params.product}`}
+                              class={`dropdown-item custom ${page == val.params.product && 'fw-bold text-primary'}`}
+                           >
                               {val.title}
                            </a>
                         ))
                      }
                   </div>
-               </div> -->
+               </div>
+
+               <div class='nav-item dropdown'>
+                  <a
+                     href='#'
+                     class={`nav-link dropdown-toggle ${isOtherActive(page, others) && 'fw-bold text-primary'}`}
+                     data-bs-toggle='dropdown'>Lainnya</a
+                  >
+                  <div class='dropdown-menu m-0'>
+                     {
+                        others.map((val, idx) => (
+                           <a
+                              href={`/${val.page}`}
+                              class={`dropdown-item custom ${page == val.page && 'fw-bold text-primary'}`}
+                           >
+                              {val.label}
+                           </a>
+                        ))
+                     }
+                  </div>
+               </div>
             </div>
             <a
                class='border border-primary text-decoration-none p-2 rounded d-flex align-items-center justify-content-center gap-2'
