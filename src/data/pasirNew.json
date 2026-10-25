@@ -21,11 +21,11 @@
    },
    {
       "params": { "product": "pasir-cor-kuning" },
-      "title": "Pasir Cor Kuning",
+      "title": "Pasir Cor",
       "image": "pasir_rangkas.webp",
       "price": {
-         "pickup": "500.000",
-         "engkel": "1.000.000",
+         "pickup": "cu",
+         "engkel": "cu",
          "truck": "1.900.000"
       }
    },
@@ -34,8 +34,8 @@
       "title": "Pasir Cor Hitam",
       "image": "pasir_abadi.webp",
       "price": {
-         "pickup": "550.000",
-         "engkel": "1.100.000",
+         "pickup": "cu",
+         "engkel": "cu",
          "truck": "2.100.000"
       }
    },
@@ -44,8 +44,8 @@
       "title": "Pasir Ayak",
       "image": "pasir_ayak.webp",
       "price": {
-         "pickup": "450.000",
-         "engkel": "800.000",
+         "pickup": "cu",
+         "engkel": "cu",
          "truck": "1.600.000"
       }
    },
@@ -54,8 +54,8 @@
       "title": "Pasir Celup",
       "image": "pasir_celup.webp",
       "price": {
-         "pickup": "450.000",
-         "engkel": "800.000",
+         "pickup": "cu",
+         "engkel": "cu",
          "truck": "1.600.000"
       }
    },
@@ -64,12 +64,12 @@
       "title": "Pasir Pasang",
       "image": "pasir_pasang.webp",
       "price": {
-         "pickup": "450.000",
-         "engkel": "800.000",
+         "pickup": "cu",
+         "engkel": "cu",
          "truck": "1.600.000"
       }
    },
-  
+
    {
       "params": { "product": "pasir-karungan" },
       "title": "Pasir Karungan",
@@ -80,4 +80,4 @@
          "truck": "0"
       }
    }
-   ]
+]

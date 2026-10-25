@@ -14,8 +14,8 @@
       "title": "Batu Belah",
       "image": "batu_kali.webp",
       "price": {
-         "pickup": "500.000",
-         "engkel": "1.100.000",
+         "pickup": "cu",
+         "engkel": "cu",
          "truck": "2.200.000"
       }
    },
@@ -34,8 +34,8 @@
       "title": "Batu Brangkal",
       "image": "batu_brangkal.webp",
       "price": {
-         "pickup": "400.000",
-         "engkel": "800.000",
+         "pickup": "cu",
+         "engkel": "cu",
          "truck": "1.200.000"
       }
    },
@@ -44,8 +44,8 @@
       "title": "Batu Split",
       "image": "batu_split.webp",
       "price": {
-         "pickup": "700.000",
-         "engkel": "1.400.000",
+         "pickup": "cu",
+         "engkel": "cu",
          "truck": "2.800.000"
       }
    },
@@ -69,7 +69,7 @@
          "truck": "2.300.000"
       }
    },
-    {
+   {
       "params": { "product": "batu-makadam" },
       "title": "Sirtu Makadam",
       "image": "batu_makadam.webp",
