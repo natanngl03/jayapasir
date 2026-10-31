@@ -1,5 +1,4 @@
 [
-   
    {
       "faq": "Mengapa harga di tempat lain jauh lebih murah?",
       "answer": {
@@ -43,8 +42,8 @@
    {
       "faq": "Bagaimana sistem pembayarannya?",
       "answer": {
-         "text": "Pembayaran ada 2 kondisi :",
-         "list": ["Untuk orderan pertama kali, wajib DP minimal uang jalan sebagai tanda jadi.", "Untuk orderan berikutnya tanpa DP & pelunasan di tempat."]
+         "text": "Pembayaran dapat dilakukan setelah barang sampai (COD).",
+         "list": []
       }
    },
    {
