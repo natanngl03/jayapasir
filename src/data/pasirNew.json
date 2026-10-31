@@ -6,7 +6,17 @@
       "price": {
          "pickup": "cu",
          "engkel": "cu",
-         "truck": "2.700.000"
+         "truck": "2.800.000"
+      }
+   },
+   {
+      "params": { "product": "pasir-bangka-putih" },
+      "title": "Pasir Bangka Putih",
+      "image": "pasir_bangka_putih.webp",
+      "price": {
+         "pickup": "cu",
+         "engkel": "cu",
+         "truck": "2.950.000"
       }
    },
    {
@@ -21,7 +31,7 @@
    },
    {
       "params": { "product": "pasir-cor-kuning" },
-      "title": "Pasir Cor",
+      "title": "Pasir Rangkas Kuning",
       "image": "pasir_rangkas.webp",
       "price": {
          "pickup": "cu",
@@ -31,7 +41,7 @@
    },
    {
       "params": { "product": "pasir-cor-hitam" },
-      "title": "Pasir Cor Hitam",
+      "title": "Pasir Rangkas Hitam (ABADI)",
       "image": "pasir_abadi.webp",
       "price": {
          "pickup": "cu",
@@ -41,22 +51,22 @@
    },
    {
       "params": { "product": "pasir-ayak" },
-      "title": "Pasir Ayak",
+      "title": "Pasir Cilegon Ayak",
       "image": "pasir_ayak.webp",
       "price": {
          "pickup": "cu",
          "engkel": "cu",
-         "truck": "1.600.000"
+         "truck": "1.800.000"
       }
    },
    {
       "params": { "product": "pasir-celup" },
-      "title": "Pasir Celup",
+      "title": "Pasir Cilegon Cuci",
       "image": "pasir_celup.webp",
       "price": {
          "pickup": "cu",
          "engkel": "cu",
-         "truck": "1.600.000"
+         "truck": "1.700.000"
       }
    },
    {
@@ -66,7 +76,7 @@
       "price": {
          "pickup": "cu",
          "engkel": "cu",
-         "truck": "1.600.000"
+         "truck": "1.800.000"
       }
    },
 

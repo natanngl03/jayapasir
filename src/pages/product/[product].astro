@@ -1,5 +1,4 @@
 ---
-import { Image } from 'astro:assets';
 import Layout from './../../layouts/Layout.astro';
 import PasirJson from './../../data/pasirNew.json';
 import BatuJson from './../../data/batuNew.json';
@@ -24,7 +23,11 @@ const getProduct = () => {
 const item = getProduct();
 ---
 
-<Layout page={item?.params?.product || ''}>
+<Layout
+   page={item?.params?.product || ''}
+   title={`${item?.title || 'Pasir Dan Batu'} | Jelupang Jaya Pasir`}
+   description={`Harga Murah ${item?.title || 'Pasir Dan Batu'}, Pembelian Dapat Menggunakan Mobil Truk, Engkel Maupun Pickup - Jelupang Jaya Pasir`}
+>
    <div class='pt-5 pb-10'>
       <div class='container'>
          <h1 class='text-center display-6 mb-5 fw-bold'>
@@ -46,9 +49,7 @@ const item = getProduct();
                      item?.title?.toLowerCase() !== 'pasir karungan' ? (
                         <Fragment>
                            {item?.price?.truck && <Price title='1 Truk - 6 Kubik' price={item?.price?.truck} />}
-                           {item?.price?.engkel && (
-                              <Price title='1 Engkel - 2.7 Kubik <br /> (Hanya Tangsel)' price={item?.price?.engkel} />
-                           )}
+                           {item?.price?.engkel && <Price title='1 Engkel - 2.7 Kubik' price={item?.price?.engkel} />}
                            {item?.price?.pickup && (
                               <Price title='1 Pickup - 1.1 Kubik <br /> (Hanya Tangsel)' price={item?.price?.pickup} />
                            )}
@@ -78,8 +79,9 @@ const item = getProduct();
                         >
                      </li>
                      <li>
-                        Pembelian menggunakan <span class='fw-bold'>Engkel & Pickup</span> hanya untuk wilayah Tangerang Selatan
-                        & Sekitarnya
+                        Pembelian menggunakan <span class='fw-bold'>Engkel & Pickup</span> hanya untuk wilayah <span
+                           class='fw-bold'>Tangerang Selatan & Sekitarnya</span
+                        >
                      </li>
                      <li>
                         <span class='fw-bold'>Selalu tanyakan</span> ketersedian barang & harga terbaru karena dapat berubah
