@@ -1,50 +1,6 @@
 ---
 import { Icon } from 'astro-icon/components';
-const testimonials = [
-   {
-      name: 'Udi Nuhdi',
-      testimoni: 'Okee boss, mantap 👍 …',
-      img: 'udi.png',
-   },
-
-   {
-      name: 'Asman',
-      testimoni: 'Mantap bos, kita order lagi ntar',
-      img: 'asman.png',
-   },
-   {
-      name: 'Duwi Putra',
-      testimoni: 'Harga terjangkau, pasirnya jg sesuai dgn yg dipesan',
-      img: 'duwi.png',
-   },
-   {
-      name: 'Esmelia Malau',
-      testimoni: 'kualitas pasirnya oke, pengirimannya cepat👍👍mantap pokoknya 🙌 sukses selalu jaya pasir …',
-      img: 'esmelia.png',
-   },
-   {
-      name: 'Fahmi',
-      testimoni: 'Makasih pak, ntar bakal langganan 👍',
-      img: 'fahmi.png',
-   },
-   {
-      name: 'Ika',
-      testimoni: 'Pasirnya murah & bagus 👍👌 makasih pak 🙏🏻 …',
-      img: 'ika.png',
-   },
-
-   {
-      name: 'Usup',
-      testimoni: 'Barang lengkap, batu split nya joss 👍',
-      img: 'usup.png',
-   },
-
-   {
-      name: 'Alisya',
-      testimoni: 'Pasir murah berkualitas, pelayanannya ramah 🙏🏻',
-      img: 'alisya.png',
-   },
-];
+import TestimoniJSON from '../../data/testimoni.json';
 ---
 
 <!-- Testimonial Start -->
@@ -62,7 +18,7 @@ const testimonials = [
       </div>
       <div class='owl-carousel testimonial-carousel wow fadeIn' data-wow-delay='0.2s'>
          {
-            testimonials.map((item, idx) => (
+            TestimoniJSON.map((item, idx) => (
                <div class='testimonial-item bg-white border rounded'>
                   <div class='testimonial-img my-3'>
                      <img
@@ -84,10 +40,6 @@ const testimonials = [
                   <div class='testimonial-text'>
                      <p set:html={item.testimoni} />
                   </div>
-
-                  {/* <div class='testimonial-quote-right'>
-                        <FaQuoteRight />
-                     </div> */}
                </div>
             ))
          }
